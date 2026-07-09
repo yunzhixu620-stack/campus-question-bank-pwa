@@ -14,6 +14,8 @@
   --green: #28a66f;
   --shadow: 0 14px 34px rgba(44, 58, 82, 0.12);
   --radius: 8px;
+  --bottom-nav-height: calc(64px + env(safe-area-inset-bottom));
+  --practice-action-height: calc(64px + env(safe-area-inset-bottom));
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
 }
 
@@ -25,6 +27,8 @@ html,
 body {
   min-height: 100%;
   margin: 0;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -49,11 +53,15 @@ button {
   position: relative;
   width: 100%;
   max-width: 430px;
-  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0 auto;
   overflow-x: hidden;
-  padding: max(10px, env(safe-area-inset-top)) 14px calc(78px + env(safe-area-inset-bottom));
+  padding: max(8px, env(safe-area-inset-top)) 14px calc(78px + env(safe-area-inset-bottom));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(245, 247, 251, 0.96) 220px, var(--bg));
+}
+
+.phone-shell[data-view="practice"] {
+  padding-bottom: calc(var(--practice-action-height) + 18px);
 }
 
 .app-topbar {
@@ -61,11 +69,11 @@ button {
   top: 0;
   z-index: 20;
   display: grid;
-  grid-template-columns: 44px 1fr 44px;
+  grid-template-columns: 36px 1fr 36px;
   align-items: center;
-  height: 52px;
-  margin: -10px -14px 10px;
-  padding: 8px 14px 0;
+  height: 44px;
+  margin: -8px -14px 8px;
+  padding: 6px 14px 0;
   background: rgba(255, 255, 255, 0.86);
   backdrop-filter: blur(16px);
 }
@@ -78,7 +86,7 @@ button {
 
 .topbar-title {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .network-status {
@@ -99,8 +107,8 @@ button {
 
 .icon-button {
   display: grid;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   place-items: center;
   border-radius: 999px;
   background: transparent;
@@ -616,35 +624,36 @@ h1 {
   gap: 12px;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 8px 0 14px;
+  margin: 4px 0 8px;
 }
 
 .practice-head span {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .practice-head h1,
 .list-head h1,
 .sheet-head h1 {
   margin-top: 3px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .mode-switch {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-  padding: 5px;
+  gap: 4px;
+  padding: 4px;
   border-radius: 999px;
   background: #eaf0f5;
 }
 
 .mode-switch button {
-  min-height: 38px;
+  min-height: 32px;
   border-radius: 999px;
   background: transparent;
   color: #647082;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -654,7 +663,7 @@ h1 {
 }
 
 .thin-progress {
-  margin: 14px 4px;
+  margin: 8px 4px;
 }
 
 .question-card,
@@ -662,8 +671,8 @@ h1 {
 .memory-panel,
 .exam-card,
 .answer-sheet {
-  margin-top: 16px;
-  padding: 18px;
+  margin-top: 10px;
+  padding: 12px;
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: 0 10px 28px rgba(44, 58, 82, 0.08);
@@ -731,7 +740,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .question-image {
@@ -807,15 +816,16 @@ h1 {
 }
 
 .question-text {
-  margin-top: 16px;
-  font-size: 20px;
-  line-height: 1.55;
+  margin-top: 10px;
+  font-size: clamp(15px, 3.9vw, 16.5px);
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .option-list {
   display: grid;
-  gap: 12px;
-  margin-top: 18px;
+  gap: 8px;
+  margin-top: 12px;
 }
 
 .image-only-note {
@@ -838,11 +848,11 @@ h1 {
 
 .option-button {
   display: grid;
-  grid-template-columns: 36px minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: 32px minmax(0, 1fr);
+  gap: 8px;
   align-items: center;
-  min-height: 58px;
-  padding: 11px 13px;
+  min-height: 48px;
+  padding: 8px 10px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: #fff;
@@ -852,17 +862,19 @@ h1 {
 
 .option-button strong {
   display: grid;
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   place-items: center;
   border-radius: 8px;
   color: #111827;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .option-button span {
   min-width: 0;
-  line-height: 1.42;
+  font-size: 14.5px;
+  line-height: 1.38;
+  overflow-wrap: anywhere;
 }
 
 .option-button.correct {
@@ -894,8 +906,8 @@ h1 {
 .answer-toggle,
 .primary-action {
   width: 100%;
-  min-height: 48px;
-  margin-top: 18px;
+  min-height: 44px;
+  margin-top: 13px;
   border-radius: var(--radius);
   background: #e9edff;
   color: var(--blue);
@@ -913,28 +925,44 @@ h1 {
 
 .analysis-card p {
   margin-top: 12px;
-  font-size: 16px;
-  line-height: 1.65;
+  font-size: 15.5px;
+  line-height: 1.58;
 }
 
 .practice-actions {
-  position: sticky;
-  bottom: calc(64px + env(safe-area-inset-bottom));
+  position: fixed;
+  right: max(0px, calc((100vw - 430px) / 2));
+  bottom: 0;
+  left: max(0px, calc((100vw - 430px) / 2));
+  z-index: 40;
   display: grid;
-  grid-template-columns: 76px 86px 1fr;
+  grid-template-columns: 58px 66px 72px 1fr;
   gap: 8px;
-  margin: 18px -4px 0;
-  padding: 8px 4px;
-  background: linear-gradient(180deg, rgba(245, 247, 251, 0), rgba(245, 247, 251, 0.95) 28%);
+  width: min(430px, 100%);
+  margin: 0 auto;
+  padding: 8px 12px calc(8px + env(safe-area-inset-bottom));
+  background: rgba(255, 255, 255, 0.96);
+  border-top: 1px solid rgba(219, 224, 232, 0.9);
+  box-shadow: 0 -10px 26px rgba(44, 58, 82, 0.08);
+  backdrop-filter: blur(16px);
 }
 
 .practice-actions button {
-  min-height: 46px;
+  min-height: 44px;
   border-radius: var(--radius);
   background: #ffffff;
   color: #4f5968;
-  box-shadow: 0 8px 18px rgba(44, 58, 82, 0.1);
+  box-shadow: none;
+  font-size: 14px;
   font-weight: 800;
+}
+
+.practice-actions .answer-toggle {
+  width: auto;
+  min-height: 44px;
+  margin-top: 0;
+  background: #eef2ff;
+  color: var(--blue);
 }
 
 .practice-actions .primary-action {
@@ -1166,6 +1194,23 @@ h1 {
   backdrop-filter: blur(16px);
 }
 
+.phone-shell[data-view="practice"] .bottom-nav {
+  display: none;
+}
+
+.phone-shell[data-view="practice"] .app-topbar {
+  height: 38px;
+  margin-bottom: 2px;
+}
+
+.phone-shell[data-view="practice"] .topbar-title {
+  font-size: 15px;
+}
+
+.phone-shell[data-view="practice"] .network-status {
+  display: none;
+}
+
 .bottom-nav button {
   border-radius: var(--radius);
   background: transparent;
@@ -1194,10 +1239,10 @@ h1 {
   }
 
   .question-text {
-    font-size: 18px;
+    font-size: 14.8px;
   }
 
   .practice-actions {
-    grid-template-columns: 68px 76px 1fr;
+    grid-template-columns: 54px 62px 66px 1fr;
   }
 }

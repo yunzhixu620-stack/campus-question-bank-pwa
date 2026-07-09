@@ -933,7 +933,7 @@ function renderQuestion() {
     : "图片题会保留整题截图或题干图表，可点开放大";
   document.querySelector("#memory-panel").classList.toggle("visible", memoryMode);
   document.querySelector("#analysis-card").classList.toggle("visible", memoryMode);
-  document.querySelector("#answer-toggle").textContent = memoryMode ? "背题模式：答案已显示" : "查看答案解析";
+  document.querySelector("#answer-toggle").textContent = memoryMode ? "答案显示" : "看解析";
   document.querySelector("#mark-favorite").textContent = progress.favorite ? "已收藏" : "收藏";
   document.querySelector("#mark-wrong").textContent = progress.wrong ? "已记入" : "记错题";
   if (question.options?.length) {
@@ -1483,7 +1483,9 @@ function bindEvents() {
     if (button) goToExamIndex(button.dataset.examIndex);
   });
   document.querySelector("#answer-toggle").addEventListener("click", () => {
-    document.querySelector("#analysis-card").classList.toggle("visible");
+    const analysisCard = document.querySelector("#analysis-card");
+    analysisCard.classList.toggle("visible");
+    document.querySelector("#answer-toggle").textContent = analysisCard.classList.contains("visible") ? "收起" : "看解析";
   });
   document.querySelector("#next-question").addEventListener("click", () => {
     advanceQuestion();
