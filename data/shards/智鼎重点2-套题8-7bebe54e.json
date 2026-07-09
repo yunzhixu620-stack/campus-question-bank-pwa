@@ -26,7 +26,7 @@
     "question": "智鼎重点2 / 套题8 第 1 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/001-aa434ce653.png"
     ],
@@ -35,10 +35,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-73ab64b048f5203bba",
@@ -67,7 +73,7 @@
     "question": "智鼎重点2 / 套题8 第 2 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/002-6e87a99db4.png"
     ],
@@ -76,10 +82,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-532678047b7861b373",
@@ -108,7 +120,7 @@
     "question": "智鼎重点2 / 套题8 第 3 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/003-ae7a6fd3a2.png"
     ],
@@ -117,10 +129,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-2338ac57c1b423f624",
@@ -149,7 +167,7 @@
     "question": "智鼎重点2 / 套题8 第 4 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/004-a29e2d8dd7.png"
     ],
@@ -158,10 +176,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-027be86db5a01912f0",
@@ -190,7 +214,7 @@
     "question": "智鼎重点2 / 套题8 第 5 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/005-59fb8f78ed.png"
     ],
@@ -199,10 +223,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-99ae8312326f899a3f",
@@ -231,7 +261,7 @@
     "question": "智鼎重点2 / 套题8 第 6 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/006-68280025bf.png"
     ],
@@ -240,10 +270,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-43713022f45f329fd3",
@@ -272,7 +308,7 @@
     "question": "智鼎重点2 / 套题8 第 7 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/007-09da7d0f2b.png"
     ],
@@ -281,10 +317,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-86914cd135c8ce8fd3",
@@ -313,7 +355,7 @@
     "question": "智鼎重点2 / 套题8 第 8 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/008-c8e086be7b.png"
     ],
@@ -322,10 +364,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-fbe68f550975249a9e",
@@ -354,7 +402,7 @@
     "question": "智鼎重点2 / 套题8 第 9 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/009-0b37666dbd.png"
     ],
@@ -363,10 +411,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-4a81b01cf64a56481d",
@@ -395,7 +449,7 @@
     "question": "智鼎重点2 / 套题8 第 10 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/010-39750cf235.png"
     ],
@@ -404,10 +458,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-7162eb75fa51626590",
@@ -436,7 +496,7 @@
     "question": "智鼎重点2 / 套题8 第 11 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/011-bf22ba9a1c.png"
     ],
@@ -445,10 +505,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-8b5dd5f9e83fcfd664",
@@ -477,7 +543,7 @@
     "question": "智鼎重点2 / 套题8 第 12 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/012-d1a9a723c2.png"
     ],
@@ -486,10 +552,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-13de1e87a3e40db51b",
@@ -518,7 +590,7 @@
     "question": "智鼎重点2 / 套题8 第 13 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/013-1eefb4c08d.png"
     ],
@@ -527,10 +599,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-427d026899dbf9ac9a",
@@ -559,7 +637,7 @@
     "question": "智鼎重点2 / 套题8 第 14 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/014-d1bdd724bd.png"
     ],
@@ -568,10 +646,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-fa5db86904714e8ce3",
@@ -600,7 +684,7 @@
     "question": "智鼎重点2 / 套题8 第 15 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/015-6e318d4519.png"
     ],
@@ -609,10 +693,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-a047c8905e900a0e23",
@@ -641,7 +731,7 @@
     "question": "智鼎重点2 / 套题8 第 16 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/016-b75a2827fa.png"
     ],
@@ -650,10 +740,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-109110f69b8280712a",
@@ -682,7 +778,7 @@
     "question": "智鼎重点2 / 套题8 第 17 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/017-b141727c0c.png"
     ],
@@ -691,10 +787,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-5056b38aeeaba9a1e7",
@@ -723,7 +825,7 @@
     "question": "智鼎重点2 / 套题8 第 18 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/018-36bb6541e5.png"
     ],
@@ -732,10 +834,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-05a39da9f5f4b085a9",
@@ -764,7 +872,7 @@
     "question": "智鼎重点2 / 套题8 第 19 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/019-71daf6715a.png"
     ],
@@ -773,10 +881,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-0a3187a4003e598800",
@@ -805,7 +919,7 @@
     "question": "智鼎重点2 / 套题8 第 20 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/020-102174a77a.png"
     ],
@@ -814,10 +928,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-fd00c7fd0cdc566f87",
@@ -846,7 +966,7 @@
     "question": "智鼎重点2 / 套题8 第 21 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/021-4fe58980c4.png"
     ],
@@ -855,10 +975,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-27ca8882604fc0d404",
@@ -887,7 +1013,7 @@
     "question": "智鼎重点2 / 套题8 第 22 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/022-e73d03a9d6.png"
     ],
@@ -896,10 +1022,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-f310b851d3e425d9f1",
@@ -928,7 +1060,7 @@
     "question": "智鼎重点2 / 套题8 第 23 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/023-41dc86ea55.png"
     ],
@@ -937,10 +1069,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-f7abfcd6f46599e8d6",
@@ -969,7 +1107,7 @@
     "question": "智鼎重点2 / 套题8 第 24 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/024-43eebf2bb4.png"
     ],
@@ -978,10 +1116,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-d2e788a2dedf4bfdd5",
@@ -1010,7 +1154,7 @@
     "question": "智鼎重点2 / 套题8 第 25 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/025-6795b06537.png"
     ],
@@ -1019,10 +1163,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-27cb93c7e319601d1a",
@@ -1051,7 +1201,7 @@
     "question": "智鼎重点2 / 套题8 第 26 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/026-ad6a148634.png"
     ],
@@ -1060,10 +1210,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-fbe692c4d618ff436a",
@@ -1092,7 +1248,7 @@
     "question": "智鼎重点2 / 套题8 第 27 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/027-1ac1a95edc.png"
     ],
@@ -1101,10 +1257,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-ed867f74a23603fc9a",
@@ -1133,7 +1295,7 @@
     "question": "智鼎重点2 / 套题8 第 28 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/028-30b3c5f9f0.png"
     ],
@@ -1142,10 +1304,16 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   },
   {
     "id": "q-img-827e9580f1fbc65562",
@@ -1174,7 +1342,7 @@
     "question": "智鼎重点2 / 套题8 第 29 题（整题截图）",
     "options": [],
     "answer": [],
-    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "analysis": "本题为整题截图资料，截图可能包含答案标记；仅用于搜题定位、收藏、背题浏览和后续人工结构化，不进入每日计划、随机练习、模块刷题或模拟考试。",
     "images": [
       "assets/questions/智鼎重点2-套题8-7bebe54e/029-eb50dac237.png"
     ],
@@ -1183,9 +1351,15 @@
       "图片题",
       "整题截图",
       "待OCR",
-      "智鼎重点2 / 套题8"
+      "智鼎重点2 / 套题8",
+      "答案外露",
+      "仅资料查看"
     ],
     "importConfidence": 0.45,
-    "needsOcr": true
+    "needsOcr": true,
+    "answerRevealed": true,
+    "practiceMode": "reference-only",
+    "practiceEligible": false,
+    "answerLeakReason": "整题截图可能包含已勾选或高亮答案，不能用于先答题后看答案的普通练习。"
   }
 ]

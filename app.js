@@ -152,6 +152,15 @@ function currentQuestionObject() {
   return questions[currentQuestion % questions.length];
 }
 
+function nextPracticeQuestionIndex(startIndex = currentQuestion) {
+  if (!questions.length) return 0;
+  for (let offset = 1; offset <= questions.length; offset += 1) {
+    const index = (startIndex + offset) % questions.length;
+    if (practiceEligibleQuestion(questions[index])) return index;
+  }
+  return (startIndex + 1) % questions.length;
+}
+
 function questionKey() {
   return currentQuestionObject()?.id || questions[0]?.id || "";
 }
@@ -159,6 +168,19 @@ function questionKey() {
 function firstAnswer(question) {
   if (Array.isArray(question.answer)) return question.answer[0] || "";
   return question.answer || "";
+}
+
+function referenceOnlyQuestion(question) {
+  return Boolean(
+    question?.practiceMode === "reference-only" ||
+      question?.answerRevealed ||
+      question?.questionType === "image-only" ||
+      (!question?.options?.length && question?.images?.length),
+  );
+}
+
+function practiceEligibleQuestion(question) {
+  return Boolean(question?.options?.length >= 2 && firstAnswer(question) && !referenceOnlyQuestion(question));
 }
 
 function normalizeQuestion(rawQuestion) {
@@ -300,6 +322,34 @@ async function writeUserState() {
   }
 }
 
+function sanitizeUserQuestionQueues() {
+  if (!currentUserState) return;
+  if (activeSession?.questionIds?.length && activeSession.type !== "single" && activeSession.type !== "reference") {
+    activeSession.questionIds = activeSession.questionIds.filter((id) => practiceEligibleQuestion(getQuestionById(id)));
+    if (!activeSession.questionIds.length) {
+      activeSession = null;
+    } else {
+      activeSession.index = Math.max(0, Math.min(activeSession.index || 0, activeSession.questionIds.length - 1));
+    }
+    currentUserState.activeSession = activeSession;
+  }
+  Object.values(currentUserState.dailyPlans || {}).forEach((plan) => {
+    if (!Array.isArray(plan.questionIds)) return;
+    plan.questionIds = plan.questionIds.filter((id) => practiceEligibleQuestion(getQuestionById(id)));
+    plan.reviewIds = (plan.reviewIds || []).filter((id) => practiceEligibleQuestion(getQuestionById(id)));
+    plan.newCount = Math.max(0, plan.questionIds.length - plan.reviewIds.length);
+    plan.reviewCount = plan.reviewIds.length;
+  });
+  if (examSession?.questionIds?.length) {
+    examSession.questionIds = examSession.questionIds.filter((id) => examEligibleQuestion(getQuestionById(id)));
+    if (examSession.questionIds.length < 2) examSession = null;
+    currentUserState.examSession = examSession;
+  }
+  if (!activeSession && questions[currentQuestion] && !practiceEligibleQuestion(questions[currentQuestion])) {
+    currentQuestion = nextPracticeQuestionIndex(currentQuestion);
+  }
+}
+
 async function loadCurrentUser(index = currentUserIndex) {
   currentUserIndex = index;
   const user = users[currentUserIndex];
@@ -308,6 +358,7 @@ async function loadCurrentUser(index = currentUserIndex) {
   examSession = currentUserState.examSession || null;
   examSeconds = examSession?.seconds || 0;
   currentQuestion = currentUserState.currentQuestion || 0;
+  sanitizeUserQuestionQueues();
   if (activeSession?.questionIds?.length) {
     setCurrentQuestionById(activeSession.questionIds[activeSession.index || 0]);
   }
@@ -390,6 +441,10 @@ function availableQuestionIds(filter = () => true) {
   return questions.filter(filter).map((question) => question.id);
 }
 
+function availablePracticeQuestionIds(filter = () => true) {
+  return questions.filter((question) => practiceEligibleQuestion(question) && filter(question)).map((question) => question.id);
+}
+
 function sampleBalancedByCategory(count, candidateIds, excludedIds = new Set()) {
   const candidates = uniqueIds(candidateIds).filter((id) => !excludedIds.has(id));
   if (!count || candidates.length <= count) return shuffled(candidates);
@@ -442,7 +497,7 @@ function reviewQuestionIds(limit) {
         score: dueBoost + (progress.wrongCount || 1) * 10 + (item.updatedAt ? new Date(item.updatedAt).getTime() / 10000000000000 : 0),
       };
     })
-    .filter((item) => questionIndexById.has(item.id))
+    .filter((item) => questionIndexById.has(item.id) && practiceEligibleQuestion(getQuestionById(item.id)))
     .sort((left, right) => right.score - left.score);
   return uniqueIds(scored.map((item) => item.id)).slice(0, limit);
 }
@@ -476,23 +531,39 @@ function dailyPlanPreview() {
     existing?.days === days &&
     Array.isArray(existing.questionIds) &&
     existing.questionIds.length &&
-    existing.questionIds.every((id) => questionIndexById.has(id))
+    existing.questionIds.every((id) => questionIndexById.has(id) && practiceEligibleQuestion(getQuestionById(id)))
   ) {
     return existing;
   }
 
-  const doneCount = questions.filter((question) => isQuestionDone(question.id)).length;
-  const remainingCount = Math.max(0, questions.length - doneCount);
+  const practiceQuestions = questions.filter(practiceEligibleQuestion);
+  if (!practiceQuestions.length) {
+    const emptyPlan = {
+      date,
+      days,
+      questionIds: [],
+      reviewIds: [],
+      newCount: 0,
+      reviewCount: 0,
+      tags: ["暂无可正常练习题"],
+      createdAt: new Date().toISOString(),
+    };
+    currentUserState.dailyPlans[date] = emptyPlan;
+    void writeUserState();
+    return emptyPlan;
+  }
+  const doneCount = practiceQuestions.filter((question) => isQuestionDone(question.id)).length;
+  const remainingCount = Math.max(0, practiceQuestions.length - doneCount);
   const newTarget = Math.max(1, Math.ceil(remainingCount / days));
   const reviewTarget = Math.min(currentUserState.mistakes?.length || 0, Math.max(0, Math.round(newTarget * 0.15)));
   const reviewIds = reviewQuestionIds(reviewTarget);
   const excludedIds = new Set(reviewIds);
-  const newCandidateIds = availableQuestionIds((question) => !isQuestionDone(question.id));
+  const newCandidateIds = availablePracticeQuestionIds((question) => !isQuestionDone(question.id));
   let newIds = sampleBalancedByCategory(newTarget, newCandidateIds, excludedIds);
   if (newIds.length < newTarget) {
     newIds = [
       ...newIds,
-      ...sampleBalancedByCategory(newTarget - newIds.length, availableQuestionIds(), new Set([...excludedIds, ...newIds])),
+      ...sampleBalancedByCategory(newTarget - newIds.length, availablePracticeQuestionIds(), new Set([...excludedIds, ...newIds])),
     ];
   }
   const questionIds = uniqueIds([...reviewIds, ...newIds]);
@@ -513,20 +584,24 @@ function dailyPlanPreview() {
 
 function buildExtraSession(size) {
   const count = clampNumber(size, 1, 200, 30);
-  const unseenIds = availableQuestionIds((question) => !isQuestionDone(question.id));
+  const unseenIds = availablePracticeQuestionIds((question) => !isQuestionDone(question.id));
   let ids = sampleBalancedByCategory(count, unseenIds);
   if (ids.length < count) {
-    ids = [...ids, ...sampleBalancedByCategory(count - ids.length, availableQuestionIds(), new Set(ids))];
+    ids = [...ids, ...sampleBalancedByCategory(count - ids.length, availablePracticeQuestionIds(), new Set(ids))];
   }
   return ids;
 }
 
 function examEligibleQuestion(question) {
-  return Boolean(question?.options?.length >= 2 && firstAnswer(question));
+  return practiceEligibleQuestion(question);
 }
 
 function startSession(title, questionIds, type = "practice", meta = "") {
-  const ids = uniqueIds(questionIds);
+  const rawIds = uniqueIds(questionIds);
+  const ids =
+    type === "single" || type === "reference"
+      ? rawIds
+      : rawIds.filter((id) => practiceEligibleQuestion(getQuestionById(id)));
   if (!ids.length || !currentUserState) return false;
   activeSession = {
     id: `${type}-${Date.now()}`,
@@ -565,9 +640,14 @@ function startSessionFromTarget(target) {
   }
   if (sessionType === "category") {
     const category = target.dataset.category;
-    const candidates = availableQuestionIds((question) => question.category === category && !isQuestionDone(question.id));
-    const fallback = availableQuestionIds((question) => question.category === category);
-    startSession(category, sampleBalancedByCategory(currentUserState.prefs?.defaultBatchSize || 30, candidates.length ? candidates : fallback), "category", "专项练习");
+    const candidates = availablePracticeQuestionIds((question) => question.category === category && !isQuestionDone(question.id));
+    const fallback = availablePracticeQuestionIds((question) => question.category === category);
+    if (fallback.length) {
+      startSession(category, sampleBalancedByCategory(currentUserState.prefs?.defaultBatchSize || 30, candidates.length ? candidates : fallback), "category", "专项练习");
+      return;
+    }
+    const referenceIds = availableQuestionIds((question) => question.category === category && referenceOnlyQuestion(question));
+    startSession(`${category}资料查看`, sampleBalancedByCategory(currentUserState.prefs?.defaultBatchSize || 30, referenceIds), "reference", "答案外露，仅浏览");
     return;
   }
   if (sessionType === "single" && target.dataset.questionId) {
@@ -590,10 +670,10 @@ function advanceQuestion() {
       recordRecent(`${finishedTitle}已完成`, `${finishedCount} 题 · 可重新抽样`, "完成", activeSession.questionIds[activeSession.index]);
       activeSession = null;
       currentUserState.activeSession = null;
-      currentQuestion = (currentQuestion + 1) % questions.length;
+      currentQuestion = nextPracticeQuestionIndex(currentQuestion);
     }
   } else {
-    currentQuestion = (currentQuestion + 1) % questions.length;
+    currentQuestion = nextPracticeQuestionIndex(currentQuestion);
   }
   memorySide = "front";
   void writeUserState();
@@ -654,22 +734,35 @@ function renderChapters() {
   questions.forEach((question) => {
     const category = question.category || "未分类";
     if (!categoryMap.has(category)) {
-      categoryMap.set(category, { mark: category.slice(0, 1), title: category, count: 0, done: 0, sources: new Set() });
+      categoryMap.set(category, {
+        mark: category.slice(0, 1),
+        title: category,
+        count: 0,
+        practiceCount: 0,
+        referenceCount: 0,
+        done: 0,
+        sources: new Set(),
+      });
     }
     const item = categoryMap.get(category);
     item.count += 1;
+    if (practiceEligibleQuestion(question)) item.practiceCount += 1;
+    if (referenceOnlyQuestion(question)) item.referenceCount += 1;
     item.sources.add(question.source || "题库");
-    if (progress[question.id]?.done || progress[question.id]?.answeredCount > 0) item.done += 1;
+    if (practiceEligibleQuestion(question) && (progress[question.id]?.done || progress[question.id]?.answeredCount > 0)) item.done += 1;
   });
   const displayChapters = categoryMap.size
-    ? [...categoryMap.values()].sort((left, right) => right.count - left.count)
-    : chapters.map((item) => ({ ...item, count: 0, done: 0, sources: new Set(["样本"]) }));
+    ? [...categoryMap.values()].sort((left, right) => right.practiceCount - left.practiceCount || right.count - left.count)
+    : chapters.map((item) => ({ ...item, count: 0, practiceCount: 0, referenceCount: 0, done: 0, sources: new Set(["样本"]) }));
   list.innerHTML = displayChapters
     .map(
       (item) => {
-        const progressPercent = item.count ? Math.round((item.done / item.count) * 100) : item.progress || 0;
+        const progressPercent = item.practiceCount ? Math.round((item.done / item.practiceCount) * 100) : item.progress || 0;
+        const isReferenceOnly = !item.practiceCount && item.referenceCount;
         const meta = item.count
-          ? `${item.count} 题 · 已练 ${item.done} · ${[...item.sources].slice(0, 2).join(" / ")}`
+          ? isReferenceOnly
+            ? `${item.count} 题 · 答案外露，仅资料查看`
+            : `${item.practiceCount} 可练 · 已练 ${item.done} · ${item.referenceCount ? `${item.referenceCount} 仅资料 · ` : ""}${[...item.sources].slice(0, 2).join(" / ")}`
           : item.meta;
         return `
       <button class="chapter-item" data-target="practice" data-session="category" data-category="${escapeHtml(item.title)}" type="button">
@@ -790,12 +883,14 @@ function renderSearchResults() {
   resultList.innerHTML = results
     .map((question) => {
       const hasOcrHit = query && normalizeForSearch(question.ocrText || "").includes(normalizeForSearch(query));
-      const pill = hasOcrHit ? "OCR" : question.images?.length ? "图片" : "文字";
+      const isReferenceOnly = referenceOnlyQuestion(question);
+      const pill = isReferenceOnly ? "仅资料" : hasOcrHit ? "OCR" : question.images?.length ? "图片" : "文字";
+      const preview = hasOcrHit ? question.ocrText : question.analysis || question.options?.join(" ") || "";
       return `
         <button class="record-item" data-target="practice" data-session="single" data-question-id="${escapeHtml(question.id)}" type="button">
           <span class="record-copy">
             <strong>${highlightSnippet(question.text, query, 68)}</strong>
-            <p>${escapeHtml(question.category)} · ${escapeHtml(question.source)} · ${highlightSnippet(question.analysis || question.options?.join(" ") || "", query, 72)}</p>
+            <p>${escapeHtml(question.category)} · ${escapeHtml(question.source)} · ${highlightSnippet(preview, query, 72)}</p>
           </span>
           <span class="record-pill">${pill}</span>
         </button>
@@ -813,6 +908,7 @@ function renderQuestion() {
   const questionImage = document.querySelector("#question-image");
   const realImage = document.querySelector("#question-real-image");
   const hasRealImage = Boolean(question.images?.length);
+  const isReferenceOnly = referenceOnlyQuestion(question);
   const sessionTotal = activeSession?.questionIds?.length || 30;
   const sessionIndex = activeSession?.questionIds?.length ? (activeSession.index || 0) + 1 : (currentQuestion % sessionTotal) + 1;
   document.querySelector("#practice-meta").textContent = `第 ${sessionIndex} / ${sessionTotal} 题`;
@@ -829,7 +925,9 @@ function renderQuestion() {
   realImage.src = hasRealImage ? question.images[0] : "";
   realImage.alt = hasRealImage ? `${question.category}题图` : "题目图表";
   document.querySelector("#question-image-caption").textContent = hasRealImage
-    ? question.images.length > 1
+    ? isReferenceOnly
+      ? "答案外露资料图，点按放大"
+      : question.images.length > 1
       ? `题图 1 / ${question.images.length}，点按放大`
       : "题图，点按放大"
     : "图片题会保留整题截图或题干图表，可点开放大";
@@ -852,8 +950,8 @@ function renderQuestion() {
   } else {
     optionList.innerHTML = `
       <div class="image-only-note">
-        <strong>整题截图题</strong>
-        <span>题干、选项和答案以图片为准；当前没有结构化选项，适合浏览、收藏和错题复习。</span>
+        <strong>${isReferenceOnly ? "答案外露资料题" : "整题截图题"}</strong>
+        <span>${isReferenceOnly ? "截图里可能已经有勾选或高亮答案，只用于搜题定位、收藏和背题浏览，不进入普通刷题。" : "当前没有结构化选项，适合浏览、收藏和后续人工整理。"}</span>
       </div>
     `;
   }
@@ -1454,8 +1552,8 @@ function bindEvents() {
 }
 
 function updateHomeStats() {
-  const progressItems = Object.values(currentUserState?.progress || {});
-  const doneCount = progressItems.filter((item) => item.done || item.answeredCount > 0).length;
+  const progress = currentUserState?.progress || {};
+  const doneCount = questions.filter((question) => practiceEligibleQuestion(question) && (progress[question.id]?.done || progress[question.id]?.answeredCount > 0)).length;
   document.querySelector("#total-count").textContent = String(questions.length);
   document.querySelector("#done-count").textContent = String(doneCount);
   const mistakeCount = currentUserState?.mistakes?.length || 0;
