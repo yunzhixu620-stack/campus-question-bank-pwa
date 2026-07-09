@@ -14,7 +14,7 @@
   <body>
     <main class="phone-shell" data-view="home">
       <header class="app-topbar">
-        <button class="icon-button" type="button" aria-label="返回">
+        <button class="icon-button" id="topbar-back" type="button" aria-label="返回">
           <span class="chevron-left"></span>
         </button>
         <div class="topbar-center">
@@ -25,6 +25,10 @@
           <span class="dot-menu"></span>
         </button>
       </header>
+      <div class="app-status" id="app-status" hidden>
+        <span id="app-status-text">正在加载题库</span>
+        <button id="app-status-action" type="button">重试</button>
+      </div>
 
       <section class="view view-home" id="view-home">
         <div class="overview-panel">
@@ -315,7 +319,10 @@
             <h1>草稿纸</h1>
             <p>计算题可直接手写，下面有简易计算器</p>
           </div>
-          <button class="mini-button" id="clear-canvas" type="button">清空</button>
+          <div class="sheet-actions">
+            <button class="mini-button" id="sheet-close" type="button">关闭</button>
+            <button class="mini-button" id="clear-canvas" type="button">清空</button>
+          </div>
         </div>
         <canvas id="scratch-canvas" width="720" height="520" aria-label="草稿纸"></canvas>
         <div class="calculator">

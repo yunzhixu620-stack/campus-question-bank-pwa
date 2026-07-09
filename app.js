@@ -84,6 +84,9 @@ let currentUserIndex = 0;
 let currentUserState = null;
 let dbPromise = null;
 let questionIndexById = new Map();
+const VALID_VIEWS = new Set(["home", "search", "practice", "mistakes", "favorites", "recent", "exam", "sheet"]);
+let sheetReturnView = "home";
+let dataLoadInFlight = null;
 const users = [
   { id: "user-a", name: "用户 A" },
   { id: "user-b", name: "用户 B" },
@@ -208,28 +211,73 @@ function normalizeQuestion(rawQuestion) {
   };
 }
 
-async function loadQuestionData() {
+function setAppStatus(message = "", type = "info", actionText = "") {
+  const status = document.querySelector("#app-status");
+  const text = document.querySelector("#app-status-text");
+  const action = document.querySelector("#app-status-action");
+  if (!status || !text || !action) return;
+  if (!message) {
+    status.hidden = true;
+    return;
+  }
+  status.hidden = false;
+  status.classList.toggle("warning", type === "warning");
+  status.classList.toggle("error", type === "error");
+  text.textContent = message;
+  action.hidden = !actionText;
+  action.textContent = actionText || "重试";
+}
+
+async function fetchJsonWithTimeout(url, options = {}) {
+  const timeout = options.timeout || 25000;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeout);
   try {
-    const indexResponse = await fetch("./data/index.json", { cache: "no-cache" });
-    if (!indexResponse.ok) return;
-    const index = await indexResponse.json();
+    const response = await fetch(url, {
+      cache: options.cache || "no-cache",
+      signal: controller.signal,
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return response.json();
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function loadQuestionData({ showLoading = false } = {}) {
+  if (dataLoadInFlight) return dataLoadInFlight;
+  dataLoadInFlight = (async () => {
+  try {
+    if (showLoading) setAppStatus("正在加载题库数据，网络慢时可能需要几秒。", "info");
+    const index = await fetchJsonWithTimeout("./data/index.json", { timeout: 20000 });
     const shardPaths = (index.libraries || []).flatMap((library) => library.shards || []);
-    const loadedQuestions = [];
-    for (const shardPath of shardPaths) {
-      const shardResponse = await fetch(`./${shardPath}`, { cache: "no-cache" });
-      if (!shardResponse.ok) continue;
-      const shardQuestions = await shardResponse.json();
-      loadedQuestions.push(...shardQuestions.map(normalizeQuestion));
-    }
+    const shardResults = await Promise.allSettled(shardPaths.map((shardPath) => fetchJsonWithTimeout(`./${shardPath}`, { timeout: 30000 })));
+    const loadedQuestions = shardResults
+      .filter((result) => result.status === "fulfilled" && Array.isArray(result.value))
+      .flatMap((result) => result.value.map(normalizeQuestion));
+    const failedCount = shardResults.filter((result) => result.status === "rejected").length;
     if (loadedQuestions.length) {
       questions = loadedQuestions;
       rebuildQuestionIndex();
       document.querySelector("#total-count").textContent = String(index.totalQuestions || questions.length);
       document.querySelector("#practice-title").textContent = index.libraries?.[0]?.name || "真实题库样本";
+      if (failedCount) {
+        setAppStatus(`题库已部分加载：${loadedQuestions.length} 题可用，${failedCount} 个分片暂时失败。`, "warning", "重试");
+      } else {
+        setAppStatus("");
+      }
+      return true;
     }
-  } catch {
-    // The prototype remains usable with built-in demo questions when data files are absent.
+    setAppStatus("题库数据暂时没有加载成功，当前只显示内置示例题。", "error", "重试");
+    return false;
+  } catch (error) {
+    setAppStatus(`题库加载失败：${error.name === "AbortError" ? "网络超时" : "请检查网络后重试"}。`, "error", "重试");
+    return false;
+  } finally {
+    dataLoadInFlight = null;
   }
+  })();
+  return dataLoadInFlight;
 }
 
 function defaultUserState(user) {
@@ -707,7 +755,9 @@ function previousQuestion() {
 function startPracticeTimer() {
   if (practiceTimer) return;
   practiceTimer = setInterval(() => {
-    if (!activeSession || shell.dataset.view !== "practice") return;
+    const view = shell.dataset.view;
+    const activePracticeView = view === "practice" || (view === "sheet" && sheetReturnView === "practice");
+    if (!activeSession || !activePracticeView) return;
     activeSession.seconds = (activeSession.seconds || 0) + 1;
     document.querySelector("#practice-timer").textContent = formatSeconds(activeSession.seconds);
     if (activeSession.seconds % 5 === 0) {
@@ -741,7 +791,24 @@ function setRecordListsFromState() {
   renderRecords("recent", "#recent-list");
 }
 
-function goTo(view) {
+function updateSheetCloseButton() {
+  const closeButton = document.querySelector("#sheet-close");
+  if (!closeButton) return;
+  closeButton.textContent = sheetReturnView === "practice" ? "返回练习" : sheetReturnView === "exam" ? "返回模拟" : "关闭";
+}
+
+function closeSheet() {
+  const fallback = activeSession?.questionIds?.length ? "practice" : examSession ? "exam" : "home";
+  const target = sheetReturnView && sheetReturnView !== "sheet" ? sheetReturnView : fallback;
+  goTo(target);
+}
+
+function goTo(view, options = {}) {
+  view = VALID_VIEWS.has(view) ? view : "home";
+  const fromView = shell.dataset.view || "home";
+  if (view === "sheet") {
+    sheetReturnView = options.returnTo || (fromView !== "sheet" ? fromView : sheetReturnView) || "home";
+  }
   shell.dataset.view = view;
   if (currentUserState) {
     currentUserState.lastView = view;
@@ -750,13 +817,13 @@ function goTo(view) {
   bottomNav.querySelectorAll("button").forEach((button) => {
     button.classList.toggle("active", button.dataset.target === view);
   });
-  if (view === "practice") {
+  if (view === "practice" || (view === "sheet" && sheetReturnView === "practice" && activeSession?.questionIds?.length)) {
     renderQuestion();
     startPracticeTimer();
   } else {
     stopPracticeTimer();
   }
-  if (view === "exam") {
+  if (view === "exam" || (view === "sheet" && sheetReturnView === "exam" && examSession && !examSession.submitted)) {
     ensureExamSession();
     renderExam();
     startExamTimer();
@@ -769,6 +836,7 @@ function goTo(view) {
     setTimeout(() => document.querySelector("#search-input")?.focus(), 50);
   }
   if (view === "sheet") {
+    updateSheetCloseButton();
     resizeCanvasBackingStore();
   }
 }
@@ -1591,6 +1659,23 @@ function bindEvents() {
     renderSearchResults();
     void writeUserState();
   });
+  document.querySelector("#app-status-action").addEventListener("click", async () => {
+    setAppStatus("正在重新加载题库数据。", "info");
+    const loaded = await loadQuestionData({ showLoading: false });
+    if (loaded) renderAllDynamicSections();
+  });
+  document.querySelector("#topbar-back").addEventListener("click", () => {
+    const view = shell.dataset.view;
+    if (view === "sheet") {
+      closeSheet();
+      return;
+    }
+    if (view === "practice" && activeSession?.questionIds?.length) {
+      goTo("home");
+      return;
+    }
+    goTo("home");
+  });
   document.querySelector("#user-switch").addEventListener("click", (event) => {
     event.currentTarget.disabled = true;
     loadCurrentUser((currentUserIndex + 1) % users.length).finally(() => {
@@ -1678,7 +1763,8 @@ function bindEvents() {
     renderPracticeSheet();
     void writeUserState();
   });
-  document.querySelector("#open-sheet-top").addEventListener("click", () => goTo("sheet"));
+  document.querySelector("#sheet-close").addEventListener("click", closeSheet);
+  document.querySelector("#open-sheet-top").addEventListener("click", () => goTo("sheet", { returnTo: "practice" }));
   document.querySelector("#option-list").addEventListener("click", (event) => {
     const button = event.target.closest(".option-button");
     if (button) chooseOption(button);
@@ -1758,7 +1844,7 @@ async function initApp() {
   updateNetworkStatus();
   window.addEventListener("online", updateNetworkStatus);
   window.addEventListener("offline", updateNetworkStatus);
-  await loadQuestionData();
+  await loadQuestionData({ showLoading: true });
   await loadCurrentUser(currentUserIndex);
 }
 

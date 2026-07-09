@@ -107,6 +107,50 @@ button {
   color: #9a5b00;
 }
 
+.app-status {
+  position: sticky;
+  top: 44px;
+  z-index: 18;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  margin: -2px 0 10px;
+  padding: 9px 10px;
+  border: 1px solid #d5e6f6;
+  border-radius: var(--radius);
+  background: #f3f8ff;
+  color: #385a82;
+  font-size: 13px;
+  box-shadow: 0 8px 18px rgba(44, 58, 82, 0.06);
+}
+
+.app-status[hidden] {
+  display: none;
+}
+
+.app-status.warning {
+  border-color: #f3d59d;
+  background: #fff8ea;
+  color: #805b18;
+}
+
+.app-status.error {
+  border-color: #f1bdc2;
+  background: #fff2f3;
+  color: #93323a;
+}
+
+.app-status button {
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 7px;
+  background: #fff;
+  color: inherit;
+  font-size: 12px;
+  font-weight: 800;
+}
+
 .icon-button {
   display: grid;
   width: 34px;
@@ -1405,6 +1449,28 @@ h1 {
   background: #f1f4f8;
   color: #596474;
   font-size: 12px;
+}
+
+.phone-shell[data-view="sheet"] {
+  background: #fff;
+}
+
+.phone-shell[data-view="sheet"] .app-topbar {
+  display: none;
+}
+
+.phone-shell[data-view="sheet"] .bottom-nav {
+  display: none;
+}
+
+.phone-shell[data-view="sheet"] {
+  padding-bottom: calc(16px + env(safe-area-inset-bottom));
+}
+
+.sheet-actions {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
 }
 
 #scratch-canvas {
