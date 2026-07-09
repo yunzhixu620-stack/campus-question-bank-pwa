@@ -3965,8 +3965,14 @@
     "tags": [
       "数学运算"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-16b78130468cfd8e23",
@@ -4651,8 +4657,14 @@
     "tags": [
       "数学运算"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-04ba69417fb30051fa",
@@ -5043,8 +5055,14 @@
     "tags": [
       "数学运算"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-2d5294039bbb446f6e",
@@ -6807,8 +6825,14 @@
     "tags": [
       "数学运算"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-fbfa470e275b1dd34d",
@@ -9012,8 +9036,14 @@
     "tags": [
       "数学运算"
     ],
-    "importConfidence": 0.58,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-1b6539a022435b3ad1",
@@ -10678,8 +10708,14 @@
     "tags": [
       "数学运算"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-cb1a771c4e2741cb20",
@@ -11805,8 +11841,14 @@
     "tags": [
       "数学运算"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-9940076279f6803eba",
@@ -12099,8 +12141,14 @@
     "tags": [
       "数学运算"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-66ece46cec7cfa5a0c",
@@ -15186,8 +15234,14 @@
     "tags": [
       "数学运算"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-5d9a26fbe0b70feb73",
@@ -19792,8 +19846,14 @@
     "tags": [
       "数学运算"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-1189d3d392afcf28df",

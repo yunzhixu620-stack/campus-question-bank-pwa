@@ -161,9 +161,12 @@
       "图形推理",
       "图表题"
     ],
-    "importConfidence": 0.82,
+    "importConfidence": 0.45,
     "importNotes": [
-      "auto_docx_image_associated"
+      "auto_docx_image_associated",
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_stem",
+      "audit_answer_marker_inside_analysis"
     ],
     "imageRefs": [
       "media/image2.png",
@@ -274,6 +277,8 @@
       "media/image107.png",
       "media/image108.png",
       "media/image109.png"
-    ]
+    ],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   }
 ]

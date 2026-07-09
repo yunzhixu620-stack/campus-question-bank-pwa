@@ -2846,8 +2846,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-b328e96d49f91fccaf",
@@ -2996,8 +3002,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-03c6e6c8bcff882660",
@@ -6246,8 +6258,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-a485b9163da1514cfe",
@@ -6496,8 +6514,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-09ee9c7be60b253c48",
@@ -6896,8 +6920,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-68d76e5ace72100df9",
@@ -10246,8 +10276,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-3a31559755fb5cd857",
@@ -10346,8 +10382,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-51acc0b975a014150c",
@@ -10896,8 +10938,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-0664141452fdb25d19",
@@ -12196,8 +12244,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-e7e16caa16cbab2ac8",
@@ -13746,8 +13800,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-6ffe6ab903e1351272",
@@ -13996,8 +14056,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-d1df4eabf18d5a5e09",
@@ -14446,8 +14512,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-781dcfe5b72ccac07c",
@@ -15196,8 +15268,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-8f85e6eaeca7c3b295",
@@ -15746,8 +15824,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-f472058b6ca12885cc",
@@ -18396,8 +18480,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-39f35bb398b3be929f",
@@ -19046,8 +19136,14 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.58,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-af44c3bf48ce4a3d07",

@@ -278,9 +278,15 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-3c4265b9b9632e2e",
@@ -393,9 +399,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-6f08e85ff866177c",
@@ -449,9 +461,15 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-ca03336c48e70a38",
@@ -851,9 +869,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-9e63feb794cadfbc",
@@ -1251,9 +1275,15 @@
       "资料分析",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-937dbb33a3b662db",
@@ -1476,9 +1506,15 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-5960acb1856279df",
@@ -1759,9 +1795,15 @@
       "资料分析",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-d39c44b39d90d019",
@@ -1872,9 +1914,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-f9db7541070cfecb",
@@ -1929,9 +1977,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-daf904f1968b38e7",
@@ -1986,9 +2040,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-d1c0f7dbdf2f7642",
@@ -2042,9 +2102,14 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-dbc6982fe92a8880",
@@ -2100,9 +2165,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-9b167cd3b3d54b13",
@@ -2157,9 +2228,16 @@
       "资料分析",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-00ec3efb7285e833",
@@ -2216,9 +2294,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-77b160f8b65224a1",
@@ -2274,9 +2358,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-a8122baa8c92f697",
@@ -2330,9 +2420,16 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-e82cabbe83ffa15e",
@@ -2445,9 +2542,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-8a5f9879983b4eb5",
@@ -2503,9 +2606,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-4c0f51c3dd3395b5",
@@ -2563,9 +2672,16 @@
       "语义理解",
       "逻辑关系"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-61d3e93f06d52a57",
@@ -2622,9 +2738,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-c96d91c925257ea0",
@@ -2738,9 +2860,15 @@
       "语义理解",
       "逻辑关系"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-bd0da901ba6cb0b0",
@@ -2795,9 +2923,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-e9758c4558eab4e2",
@@ -2851,9 +2985,15 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-f870b39dcb8ac358",
@@ -2910,9 +3050,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-9dd6b94f1772aee0",
@@ -2966,9 +3112,15 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-9fde735f75a447dd",
@@ -3024,9 +3176,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-16a145d76a540f76",
@@ -3081,11 +3239,15 @@
       "资料分析",
       "占比"
     ],
-    "importConfidence": 0.66,
+    "importConfidence": 0.45,
     "importNotes": [
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-358c164fe015a0a1",
@@ -3140,9 +3302,15 @@
       "资料分析",
       "占比"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-0e602499b9af9c44",
@@ -3253,9 +3421,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-670150e952e1e5f5",
@@ -3310,9 +3485,14 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-ef7ceba02dfd750e",
@@ -3369,9 +3549,15 @@
       "语义理解",
       "逻辑关系"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-c368a20b2ac35258",
@@ -3426,9 +3612,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-b02b972465d81a35",
@@ -3540,9 +3732,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-72d69b5d39034194",
@@ -3824,9 +4022,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-99e85deca3378e17",
@@ -3882,9 +4086,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-892c097b84d1192e",
@@ -3940,9 +4150,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-793f8571302780f9",
@@ -3996,9 +4212,14 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-71c3a22d670da12a",
@@ -4052,9 +4273,15 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-2772482b757e7010",
@@ -4109,9 +4336,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-9d8c771006426508",
@@ -4167,9 +4400,15 @@
       "图表题",
       "逻辑关系"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-98d5c56536df34be",
@@ -4280,9 +4519,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-9ad09edd46acfefb",
@@ -4339,9 +4584,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-3772db346336fa07",
@@ -4453,9 +4704,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-74ada0ef7e4ed62c",
@@ -4509,9 +4766,14 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-08e6cec06e9989ab",
@@ -4565,9 +4827,14 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-6bc29c35e101ea7f",
@@ -4623,9 +4890,15 @@
       "图表题",
       "逻辑关系"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-fe43f416eea61c4a",
@@ -4681,9 +4954,16 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_stem",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-0a39c9fb5a2b6ab0",
@@ -4738,9 +5018,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-a50330e1222fd12a",
@@ -4852,9 +5139,15 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-77a7b7c170591492",
@@ -4908,9 +5201,15 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-53b6d83665182d57",
@@ -4965,9 +5264,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-138d98abcf28a88d",
@@ -5022,9 +5327,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-6c329a6f48224ad5",
@@ -5135,9 +5446,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-4e5f6cc8b752bfa0",
@@ -5247,9 +5564,15 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-3bb0819e5286884c",
@@ -5306,9 +5629,15 @@
       "语义理解",
       "逻辑关系"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-bfddfa757e455f03",
@@ -5363,9 +5692,15 @@
       "资料分析",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-fcd0eab9577e634a",
@@ -5420,9 +5755,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-1afd63f49107e9a1",
@@ -5477,9 +5819,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_stem",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-9f1a45b40eb61e6b",
@@ -5534,9 +5883,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-936eaa5c54700b64",
@@ -5590,9 +5945,15 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-c28568bcad4e63fc",
@@ -5706,9 +6067,15 @@
       "语义理解",
       "逻辑关系"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-ec8a8992f6137c07",
@@ -5763,11 +6130,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.66,
+    "importConfidence": 0.45,
     "importNotes": [
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_stem",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-81bdd6d411bf8dc3",
@@ -5879,9 +6251,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-bd7f8af9223d9349",
@@ -5935,11 +6314,15 @@
     "tags": [
       "资料分析"
     ],
-    "importConfidence": 0.66,
+    "importConfidence": 0.45,
     "importNotes": [
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-7fc009c6b597b1c0",
@@ -6051,9 +6434,14 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-1d64706031f79c99",
@@ -6694,11 +7082,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-f27f31eedd6d4421",
@@ -6812,9 +7204,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-01536256ac07420f",
@@ -6984,11 +7382,15 @@
       "占比",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_stem"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-f22fcdf99e6ae4b7",
@@ -7043,9 +7445,14 @@
       "资料分析",
       "占比"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-3686cdff57cfa544",
@@ -7747,12 +8154,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-6d723306840ed56e",
@@ -7808,9 +8219,14 @@
       "总量计算",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-6d28e163ac4de235",
@@ -8212,12 +8628,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-bd174237bc23e926",
@@ -8329,12 +8749,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-950d23395464a5d6",
@@ -8508,11 +8932,15 @@
       "占比",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_option_block_inside_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-e74e6c447c68845b",
@@ -8568,11 +8996,15 @@
       "占比",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_stem"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-6cfbc378182fa5c8",
@@ -8628,11 +9060,15 @@
       "占比",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-8b27d6b15ea1ae1d",
@@ -8747,11 +9183,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-09dc0f3a566ff274",
@@ -9097,12 +9537,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-20c876d866f50d6f",
@@ -9276,11 +9720,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.66,
+    "importConfidence": 0.45,
     "importNotes": [
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis",
+      "audit_analysis_truncated_tail"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-93428038cf652530",
@@ -9508,11 +9957,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-000488a591d0d407",
@@ -10103,11 +10556,15 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-e0739bbdc06aee0f",
@@ -10162,12 +10619,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-01d3385fdf53fb3b",
@@ -10455,11 +10916,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment",
+      "audit_answer_marker_inside_stem"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-5f38819adeacad76",
@@ -10573,11 +11039,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-67d88a4355e8fb02",
@@ -10693,9 +11163,15 @@
       "占比",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-cdae7ec0bddec131",
@@ -10750,11 +11226,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-968bf8cd61250ec5",
@@ -10929,12 +11410,16 @@
       "占比",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-79647ef9e28456ec",
@@ -11225,11 +11710,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-a4be8e3c7a3d91f2",
@@ -11285,9 +11774,15 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-fd9ebfa6e5ee25da",
@@ -11343,9 +11838,15 @@
       "总量计算",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-59f431755a1f5dcd",
@@ -11402,9 +11903,14 @@
       "总量计算",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-d7f486dd9894b167",
@@ -11460,12 +11966,16 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-6a7b206a2c9359ff",
@@ -11698,11 +12208,15 @@
       "占比",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_stem"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-f7390a8b501485e6",
@@ -12113,11 +12627,16 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis",
+      "audit_analysis_truncated_tail"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-224c5fcde31a1e64",
@@ -12348,11 +12867,15 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_stem"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-54bb438de4291744",
@@ -12705,9 +13228,14 @@
       "总量计算",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-92fad8e89ac9e25c",
@@ -12763,12 +13291,16 @@
       "占比",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-0cf8d2344a17db17",
@@ -13061,11 +13593,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis",
+      "audit_analysis_truncated_tail"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-630799f0de75f753",
@@ -13180,11 +13717,15 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_stem"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-6f4582d1b967269d",
@@ -13535,11 +14076,16 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-68fb20ef81dda188",
@@ -13595,11 +14141,15 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.66,
+    "importConfidence": 0.45,
     "importNotes": [
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-2f5442eecb5c94c4",
@@ -13715,12 +14265,16 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-d841566f579317f7",
@@ -13775,9 +14329,14 @@
       "资料分析",
       "增长率"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-eb0ed0b9822519cb",
@@ -14005,11 +14564,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.66,
+    "importConfidence": 0.45,
     "importNotes": [
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-61dfe094a9ae2211",
@@ -14242,11 +14805,15 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-8cf00c7395b5b099",
@@ -14301,12 +14868,16 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-6b834c6066550971",
@@ -14420,11 +14991,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-63baefd371ac5c72",
@@ -14540,11 +15115,15 @@
       "占比",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-ec5c0ff97de85222",
@@ -14716,12 +15295,16 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-b1aea361a8333736",
@@ -14955,11 +15538,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.66,
+    "importConfidence": 0.45,
     "importNotes": [
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-7939a639738014fd",
@@ -15016,11 +15603,15 @@
       "总量计算",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-8f1b8ad9f40f2e74",
@@ -15077,9 +15668,15 @@
       "总量计算",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-e292e17221d6b6ba",
@@ -15250,9 +15847,14 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-e146c7b43e3d1553",
@@ -15424,9 +16026,15 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-753448f4f1510138",
@@ -15539,9 +16147,15 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_option_block_inside_analysis",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-abbab9d9f22603ba",
@@ -15598,11 +16212,16 @@
       "总量计算",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_option_block_inside_analysis",
+      "audit_analysis_truncated_tail"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-26b20ea00a071967",
@@ -15658,11 +16277,16 @@
       "增长率",
       "图表题"
     ],
-    "importConfidence": 0.66,
+    "importConfidence": 0.45,
     "importNotes": [
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis",
+      "audit_analysis_truncated_tail"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-61309ddb01102ed7",
@@ -15717,12 +16341,17 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.48,
+    "importConfidence": 0.45,
     "importNotes": [
       "question_mentions_image_needs_media_alignment",
-      "short_stem_or_analysis"
+      "short_stem_or_analysis",
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis",
+      "audit_analysis_truncated_tail"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-410fe3255b0f389e",
@@ -15833,9 +16462,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-f2754a189ec7dcd1",
@@ -16008,10 +16643,15 @@
       "资料分析",
       "图表题"
     ],
-    "importConfidence": 0.68,
+    "importConfidence": 0.45,
     "importNotes": [
-      "question_mentions_image_needs_media_alignment"
+      "question_mentions_image_needs_media_alignment",
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_stem",
+      "audit_answer_marker_inside_analysis"
     ],
-    "imageRefs": []
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   }
 ]

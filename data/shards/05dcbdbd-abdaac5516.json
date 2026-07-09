@@ -437,8 +437,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-772f1fd3c01748a961",
@@ -1662,8 +1668,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-a6ff4f8f75ef735b7b",
@@ -2299,8 +2311,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.58,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-7a240f548391425b12",
@@ -3230,8 +3248,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-486ae796b11c4165ad",
@@ -16166,8 +16190,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.58,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-3dbedcd57f32f664f9",
@@ -18126,8 +18156,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-7542cd098fdd88a623",
@@ -19351,8 +19387,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-5d11f89f6a20abbe08",
@@ -21409,8 +21451,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-0ae5c5f1b01417014b",
@@ -23320,8 +23368,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-b6618dd50543295893",
@@ -24888,8 +24942,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-be3c0915a012ec652e",
@@ -25378,8 +25438,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-2c7c525b2dd247c756",
@@ -25525,8 +25591,14 @@
     "tags": [
       "常识判断"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-43f3964bbed1708687",

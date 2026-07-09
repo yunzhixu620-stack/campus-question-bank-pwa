@@ -334,9 +334,15 @@
     "tags": [
       "言语理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-0ba945941f41a914",
@@ -449,9 +455,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-f325c4d4cb167205",
@@ -505,9 +517,15 @@
     "tags": [
       "言语理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-f862b54de57c5cdd",
@@ -907,9 +925,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-f6d306d4d35d4157",
@@ -1363,9 +1387,15 @@
       "言语理解",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-290a9aa54f53a45e",
@@ -1532,9 +1562,15 @@
       "言语理解",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-c5b09ec02ce418b2",
@@ -1872,9 +1908,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-7f3e820e4fe853db",
@@ -1929,9 +1971,15 @@
       "言语理解",
       "图表题"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-3634e9d21fb535a6",
@@ -1985,9 +2033,14 @@
     "tags": [
       "言语理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-49a83eddd8826784",
@@ -2043,9 +2096,15 @@
       "图表题",
       "语义理解"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment",
+      "audit_analysis_truncated_tail"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   },
   {
     "id": "q-b07ef792442f31f4",
@@ -2105,8 +2164,15 @@
       "语义理解",
       "逻辑关系"
     ],
-    "importConfidence": 0.86,
-    "importNotes": [],
-    "imageRefs": []
+    "importConfidence": 0.45,
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment",
+      "audit_answer_marker_inside_analysis",
+      "audit_option_block_inside_analysis"
+    ],
+    "imageRefs": [],
+    "practiceEligible": false,
+    "practiceMode": "review-only"
   }
 ]

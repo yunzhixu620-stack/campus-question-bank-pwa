@@ -2250,8 +2250,14 @@
     "tags": [
       "逻辑推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-9b9c5009bc7daac721",
@@ -2299,8 +2305,14 @@
     "tags": [
       "逻辑推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_next_question_inside_analysis"
+    ]
   },
   {
     "id": "q-pdf-de880d32d1b71148ef",
@@ -2544,8 +2556,14 @@
     "tags": [
       "逻辑推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-e43558dae41b0e2ece",
@@ -4700,8 +4718,14 @@
     "tags": [
       "逻辑推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-0dcfa9fd7950fa7a99",
@@ -4749,8 +4773,14 @@
     "tags": [
       "逻辑推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-f6891d1212ec8fef8b",
@@ -6611,8 +6641,14 @@
     "tags": [
       "逻辑推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-2a97ecdab399f68cb6",
@@ -7493,8 +7529,14 @@
     "tags": [
       "逻辑推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-ba7a5416bb1cea4eb5",
@@ -7542,8 +7584,14 @@
     "tags": [
       "逻辑推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-5b4cf8cc9b34381554",
@@ -11070,8 +11118,14 @@
     "tags": [
       "逻辑推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-abe56558404e5f64fd",
@@ -13226,8 +13280,14 @@
     "tags": [
       "逻辑推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-a41731b36a885a2357",
@@ -14598,8 +14658,14 @@
     "tags": [
       "逻辑推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-08661c596a3f4c86ed",

@@ -77,6 +77,7 @@ let memoryMode = false;
 let memorySide = "front";
 let memoryAutoTimer = null;
 let examTimer = null;
+let practiceTimer = null;
 let examSeconds = 0;
 let examSession = null;
 let currentUserIndex = 0;
@@ -179,8 +180,16 @@ function referenceOnlyQuestion(question) {
   );
 }
 
+function reviewOnlyQuestion(question) {
+  return Boolean(
+    question?.practiceMode === "review-only" ||
+      question?.reviewOnly === true ||
+      question?.importNotes?.some((note) => String(note).startsWith("audit_") || note === "auto_audit_suspected_incomplete_question"),
+  );
+}
+
 function practiceEligibleQuestion(question) {
-  return Boolean(question?.options?.length >= 2 && firstAnswer(question) && !referenceOnlyQuestion(question));
+  return Boolean(question?.options?.length >= 2 && firstAnswer(question) && !referenceOnlyQuestion(question) && !reviewOnlyQuestion(question));
 }
 
 function normalizeQuestion(rawQuestion) {
@@ -609,6 +618,9 @@ function startSession(title, questionIds, type = "practice", meta = "") {
     title,
     questionIds: ids,
     index: 0,
+    seconds: 0,
+    answers: {},
+    marked: {},
     createdAt: new Date().toISOString(),
   };
   currentUserState.activeSession = activeSession;
@@ -680,6 +692,37 @@ function advanceQuestion() {
   renderQuestion();
 }
 
+function previousQuestion() {
+  if (activeSession?.questionIds?.length) {
+    activeSession.index = Math.max(0, (activeSession.index || 0) - 1);
+    setCurrentQuestionById(activeSession.questionIds[activeSession.index]);
+  } else {
+    currentQuestion = Math.max(0, currentQuestion - 1);
+  }
+  memorySide = "front";
+  void writeUserState();
+  renderQuestion();
+}
+
+function startPracticeTimer() {
+  if (practiceTimer) return;
+  practiceTimer = setInterval(() => {
+    if (!activeSession || shell.dataset.view !== "practice") return;
+    activeSession.seconds = (activeSession.seconds || 0) + 1;
+    document.querySelector("#practice-timer").textContent = formatSeconds(activeSession.seconds);
+    if (activeSession.seconds % 5 === 0) {
+      currentUserState.activeSession = activeSession;
+      void writeUserState();
+    }
+  }, 1000);
+}
+
+function stopPracticeTimer() {
+  if (!practiceTimer) return;
+  clearInterval(practiceTimer);
+  practiceTimer = null;
+}
+
 function recordRecent(title, meta, pill, questionId = questionKey()) {
   if (!currentUserState) return;
   currentUserState.recent = moveToFront(currentUserState.recent, {
@@ -709,6 +752,9 @@ function goTo(view) {
   });
   if (view === "practice") {
     renderQuestion();
+    startPracticeTimer();
+  } else {
+    stopPracticeTimer();
   }
   if (view === "exam") {
     ensureExamSession();
@@ -883,8 +929,9 @@ function renderSearchResults() {
   resultList.innerHTML = results
     .map((question) => {
       const hasOcrHit = query && normalizeForSearch(question.ocrText || "").includes(normalizeForSearch(query));
+      const isReviewOnly = reviewOnlyQuestion(question);
       const isReferenceOnly = referenceOnlyQuestion(question);
-      const pill = isReferenceOnly ? "仅资料" : hasOcrHit ? "OCR" : question.images?.length ? "图片" : "文字";
+      const pill = isReviewOnly ? "待复核" : isReferenceOnly ? "仅资料" : hasOcrHit ? "OCR" : question.images?.length ? "图片" : "文字";
       const preview = hasOcrHit ? question.ocrText : question.analysis || question.options?.join(" ") || "";
       return `
         <button class="record-item" data-target="practice" data-session="single" data-question-id="${escapeHtml(question.id)}" type="button">
@@ -909,12 +956,16 @@ function renderQuestion() {
   const realImage = document.querySelector("#question-real-image");
   const hasRealImage = Boolean(question.images?.length);
   const isReferenceOnly = referenceOnlyQuestion(question);
+  const isReviewOnly = reviewOnlyQuestion(question);
   const sessionTotal = activeSession?.questionIds?.length || 30;
   const sessionIndex = activeSession?.questionIds?.length ? (activeSession.index || 0) + 1 : (currentQuestion % sessionTotal) + 1;
-  document.querySelector("#practice-meta").textContent = `第 ${sessionIndex} / ${sessionTotal} 题`;
+  const selectedAnswer = activeSession?.answers?.[question.id] || "";
+  document.querySelector("#practice-count").textContent = `${sessionIndex}/${sessionTotal}`;
+  document.querySelector("#practice-timer").textContent = formatSeconds(activeSession?.seconds || 0);
   document.querySelector("#practice-title").textContent = activeSession?.title || "随机练习";
   document.querySelector(".thin-progress span").style.width = `${Math.min(100, Math.round((sessionIndex / sessionTotal) * 100))}%`;
-  document.querySelector("#question-type").textContent = question.type;
+  document.querySelector("#question-type").textContent = isReviewOnly ? "待复核" : isReferenceOnly ? "资料题" : "单选题";
+  document.querySelector("#question-category").textContent = question.category;
   document.querySelector("#question-score").textContent = question.source || "1 分";
   document.querySelector("#question-text").textContent = question.text;
   document.querySelector("#answer-text").textContent = firstAnswer(question);
@@ -939,12 +990,19 @@ function renderQuestion() {
   if (question.options?.length) {
     optionList.innerHTML = question.options
       .map(
-        (option, index) => `
-      <button class="option-button ${memoryMode && letters[index] === firstAnswer(question) ? "correct" : ""}" data-letter="${letters[index]}" type="button">
+        (option, index) => {
+          const letter = letters[index];
+          const answered = Boolean(selectedAnswer);
+          const isCorrect = letter === firstAnswer(question);
+          const isSelected = selectedAnswer === letter;
+          const reveal = memoryMode || answered;
+          return `
+      <button class="option-button ${reveal && isCorrect ? "correct" : ""} ${isSelected ? "selected" : ""} ${reveal && isSelected && !isCorrect ? "wrong" : ""}" data-letter="${letter}" type="button">
         <strong>${letters[index]}</strong>
         <span>${escapeHtml(option)}</span>
       </button>
-    `,
+    `;
+        },
       )
       .join("");
   } else {
@@ -956,6 +1014,75 @@ function renderQuestion() {
     `;
   }
   renderMemoryCard();
+  renderPracticeNav();
+  renderPracticeSheet();
+}
+
+function renderPracticeNav() {
+  const prevButton = document.querySelector("#prev-question");
+  const nextButton = document.querySelector("#next-question");
+  const index = activeSession?.questionIds?.length ? activeSession.index || 0 : currentQuestion;
+  const total = activeSession?.questionIds?.length || questions.length;
+  prevButton.disabled = index <= 0;
+  prevButton.textContent = index <= 0 ? "无" : "上一题";
+  nextButton.textContent = index >= total - 1 ? "完成" : "下一题";
+}
+
+function practiceSheetOpen() {
+  document.querySelector("#practice-sheet-backdrop").classList.add("visible");
+  document.querySelector("#practice-sheet-backdrop").setAttribute("aria-hidden", "false");
+  renderPracticeSheet();
+}
+
+function practiceSheetClose() {
+  document.querySelector("#practice-sheet-backdrop").classList.remove("visible");
+  document.querySelector("#practice-sheet-backdrop").setAttribute("aria-hidden", "true");
+}
+
+function isPracticeMarked(questionId) {
+  const progress = currentUserState?.progress?.[questionId];
+  return Boolean(progress?.wrong || progress?.favorite || activeSession?.marked?.[questionId]);
+}
+
+function renderPracticeSheet() {
+  const grid = document.querySelector("#practice-sheet-grid");
+  if (!grid) return;
+  const ids = activeSession?.questionIds?.length ? activeSession.questionIds : [currentQuestionObject()?.id].filter(Boolean);
+  const activeIndex = activeSession?.questionIds?.length ? activeSession.index || 0 : 0;
+  grid.innerHTML = ids
+    .map((id, index) => {
+      const answered = Boolean(activeSession?.answers?.[id]);
+      const marked = isPracticeMarked(id);
+      return `<button class="${answered ? "done" : ""} ${marked ? "marked" : ""} ${index === activeIndex ? "current" : ""}" data-practice-index="${index}" type="button">${index + 1}</button>`;
+    })
+    .join("");
+}
+
+function goToPracticeIndex(index) {
+  if (!activeSession?.questionIds?.length) return;
+  activeSession.index = Math.max(0, Math.min(activeSession.questionIds.length - 1, Number(index) || 0));
+  setCurrentQuestionById(activeSession.questionIds[activeSession.index]);
+  memorySide = "front";
+  renderQuestion();
+  practiceSheetClose();
+  void writeUserState();
+}
+
+function finishPracticeSession() {
+  if (!activeSession?.questionIds?.length) return;
+  const total = activeSession.questionIds.length;
+  let answered = 0;
+  let correct = 0;
+  activeSession.questionIds.forEach((id) => {
+    const question = getQuestionById(id);
+    const chosen = activeSession.answers?.[id] || "";
+    if (chosen) answered += 1;
+    if (chosen && question && chosen === firstAnswer(question)) correct += 1;
+  });
+  const result = document.querySelector("#practice-submit-result");
+  result.textContent = `已答 ${answered}/${total}，正确 ${correct}，未答 ${total - answered}。`;
+  recordRecent(`${activeSession.title || "练习"}已提交`, `正确 ${correct}/${total} · 用时 ${formatSeconds(activeSession.seconds || 0)}`, "提交", activeSession.questionIds[activeSession.index || 0]);
+  void writeUserState();
 }
 
 function chooseOption(button) {
@@ -963,6 +1090,12 @@ function chooseOption(button) {
   if (!question?.options?.length || !firstAnswer(question)) return;
   const chosen = button.dataset.letter;
   const isAnswerCorrect = chosen === firstAnswer(question);
+  if (activeSession?.questionIds?.length) {
+    activeSession.answers ||= {};
+    activeSession.answers[question.id] = chosen;
+    activeSession.updatedAt = new Date().toISOString();
+    currentUserState.activeSession = activeSession;
+  }
   document.querySelectorAll(".option-button").forEach((option) => {
     const isCorrect = option.dataset.letter === firstAnswer(question);
     const isChosen = option === button;
@@ -994,6 +1127,7 @@ function chooseOption(button) {
       setRecordListsFromState();
     }
   });
+  renderQuestion();
 }
 
 function setMode(nextMemoryMode) {
@@ -1490,6 +1624,20 @@ function bindEvents() {
   document.querySelector("#next-question").addEventListener("click", () => {
     advanceQuestion();
   });
+  document.querySelector("#prev-question").addEventListener("click", () => {
+    previousQuestion();
+  });
+  document.querySelector("#practice-back").addEventListener("click", () => goTo("home"));
+  document.querySelector("#open-practice-sheet").addEventListener("click", practiceSheetOpen);
+  document.querySelector("#close-practice-sheet").addEventListener("click", practiceSheetClose);
+  document.querySelector("#practice-sheet-backdrop").addEventListener("click", (event) => {
+    if (event.target.id === "practice-sheet-backdrop") practiceSheetClose();
+  });
+  document.querySelector("#practice-sheet-grid").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-practice-index]");
+    if (button) goToPracticeIndex(button.dataset.practiceIndex);
+  });
+  document.querySelector("#submit-practice-session").addEventListener("click", finishPracticeSession);
   document.querySelector("#mark-favorite").addEventListener("click", (event) => {
     const question = currentQuestionObject();
     const progress = getQuestionProgress(question.id);
@@ -1507,6 +1655,7 @@ function bindEvents() {
     }
     event.currentTarget.textContent = progress.favorite ? "已收藏" : "收藏";
     setRecordListsFromState();
+    renderPracticeSheet();
     void writeUserState();
   });
   document.querySelector("#mark-wrong").addEventListener("click", (event) => {
@@ -1526,6 +1675,7 @@ function bindEvents() {
     });
     event.currentTarget.textContent = "已记入";
     setRecordListsFromState();
+    renderPracticeSheet();
     void writeUserState();
   });
   document.querySelector("#open-sheet-top").addEventListener("click", () => goTo("sheet"));

@@ -1446,8 +1446,14 @@
       "数字推理",
       "数学与推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_stem_starts_like_fragment"
+    ]
   },
   {
     "id": "q-pdf-1b5d102f99de430a9e",
@@ -4946,8 +4952,14 @@
       "数字推理",
       "数学与推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_analysis_truncated_tail"
+    ]
   },
   {
     "id": "q-pdf-b85977812947ef3170",
@@ -14446,8 +14458,14 @@
       "数字推理",
       "数学与推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-40b4ecd1b33486699c",
@@ -16396,8 +16414,14 @@
       "数字推理",
       "数学与推理"
     ],
-    "importConfidence": 0.9,
-    "pageHint": null
+    "importConfidence": 0.45,
+    "pageHint": null,
+    "practiceEligible": false,
+    "practiceMode": "review-only",
+    "importNotes": [
+      "auto_audit_suspected_incomplete_question",
+      "audit_very_short_analysis"
+    ]
   },
   {
     "id": "q-pdf-0bcb52a4bd5300c627",
