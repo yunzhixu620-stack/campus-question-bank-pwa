@@ -1,0 +1,19 @@
+{
+  "name": "校招测评练习题库",
+  "short_name": "校招题库",
+  "description": "手机端刷题、错题、收藏、闪卡背题和草稿纸原型。",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#12a9ae",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

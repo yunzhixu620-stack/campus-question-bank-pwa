@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "generatedFrom": "docx+pdf+image merged prototype",
+  "totalQuestions": 3360,
+  "libraries": [
+    {
+      "id": "docx-batch",
+      "name": "DOCX 批量题库",
+      "questionCount": 797,
+      "shards": [
+        "data/shards/481240-b9a11137-28e0e2c538.json",
+        "data/shards/6554223-fe10c2ff-a4bf8f21b8.json",
+        "data/shards/10495216-88a8d164-8555eb5325.json",
+        "data/shards/17602177-9846b4bb-bbc1bcc6f2.json",
+        "data/shards/54641698-de73293c-37d5bc1a0c.json"
+      ]
+    },
+    {
+      "id": "pdf-epi-batch",
+      "name": "PDF EPI 批量题库",
+      "questionCount": 2075,
+      "shards": [
+        "data/shards/05dcbdbd-abdaac5516.json",
+        "data/shards/76779bc9-c2926a4770.json",
+        "data/shards/0800c2fc-aa6f9321bc.json",
+        "data/shards/7a3bc1b5-45117bc1f8.json",
+        "data/shards/1faa57d8-fafb028eb2.json"
+      ]
+    },
+    {
+      "id": "image-sets",
+      "name": "智鼎图片套题",
+      "questionCount": 488,
+      "shards": [
+        "data/shards/智鼎重点2-套题1-808fdc88.json",
+        "data/shards/智鼎重点2-套题2-cd1af1d1.json",
+        "data/shards/智鼎重点2-套题3-a43621fb.json",
+        "data/shards/智鼎重点2-套题4-63a4bf58.json",
+        "data/shards/智鼎重点2-套题5-4bc2f5c9.json",
+        "data/shards/智鼎重点2-套题6-9f744132.json",
+        "data/shards/智鼎重点2-套题7-9805711b.json",
+        "data/shards/智鼎重点2-套题8-7bebe54e.json",
+        "data/shards/智鼎重点2-套题9-e37b921d.json",
+        "data/shards/智鼎重点2-套题10-8ac65195.json",
+        "data/shards/智鼎重点3-套题1-0272eed2.json",
+        "data/shards/智鼎重点3-套题2-784aa53b.json",
+        "data/shards/智鼎重点3-套题3-2885d213.json",
+        "data/shards/智鼎重点3-套题4-89b870f8.json",
+        "data/shards/智鼎重点3-套题5-00d99ce4.json",
+        "data/shards/智鼎重点3-套题6-7adf5b4d.json"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "category-b77d3f7f82",
+      "name": "资料分析",
+      "questionCount": 619
+    },
+    {
+      "id": "category-4a6f077361",
+      "name": "常识判断",
+      "questionCount": 605
+    },
+    {
+      "id": "category-8810b9a84e",
+      "name": "图片套题",
+      "questionCount": 488
+    },
+    {
+      "id": "category-8ca5b5bc5b",
+      "name": "言语理解",
+      "questionCount": 460
+    },
+    {
+      "id": "category-dcaf21d869",
+      "name": "数学运算",
+      "questionCount": 412
+    },
+    {
+      "id": "category-6b7a976e0c",
+      "name": "逻辑推理",
+      "questionCount": 347
+    },
+    {
+      "id": "category-1abfe833f5",
+      "name": "数字推理",
+      "questionCount": 334
+    },
+    {
+      "id": "category-f470110535",
+      "name": "性格测试与能力测评",
+      "questionCount": 91
+    },
+    {
+      "id": "category-33d9a536f1",
+      "name": "图形推理",
+      "questionCount": 4
+    }
+  ],
+  "shards": [
+    {
+      "id": "481240-b9a11137-28e0e2c538",
+      "name": "24北森言语理解（可搜带解析462页）",
+      "questionCount": 37,
+      "path": "data/shards/481240-b9a11137-28e0e2c538.json",
+      "sourcePath": "北森题库/24北森/核心看/24北森言语理解（可搜带解析462页）.docx"
+    },
+    {
+      "id": "6554223-fe10c2ff-a4bf8f21b8",
+      "name": "北森图形推理题（可搜带解析104页）",
+      "questionCount": 1,
+      "path": "data/shards/6554223-fe10c2ff-a4bf8f21b8.json",
+      "sourcePath": "北森题库/24北森/核心看/北森图形推理题（可搜带解析104页）.docx"
+    },
+    {
+      "id": "10495216-88a8d164-8555eb5325",
+      "name": "2024北森测评题库（通用版） ",
+      "questionCount": 291,
+      "path": "data/shards/10495216-88a8d164-8555eb5325.json",
+      "sourcePath": "北森题库/24北森/核心看/2024北森测评题库（通用版） .docx"
+    },
+    {
+      "id": "17602177-9846b4bb-bbc1bcc6f2",
+      "name": "2024北森整理可搜带解析（言语理解、资料分析、图形推理.）2000+题量  ",
+      "questionCount": 275,
+      "path": "data/shards/17602177-9846b4bb-bbc1bcc6f2.json",
+      "sourcePath": "北森题库/24北森/核心看/2024北森整理可搜带解析（言语理解、资料分析、图形推理.）2000+题量  .docx"
+    },
+    {
+      "id": "54641698-de73293c-37d5bc1a0c",
+      "name": "24北森图表分析（可搜带解析427页）",
+      "questionCount": 193,
+      "path": "data/shards/54641698-de73293c-37d5bc1a0c.json",
+      "sourcePath": "北森题库/24北森/核心看/24北森图表分析（可搜带解析427页）.docx"
+    },
+    {
+      "id": "05dcbdbd-abdaac5516",
+      "name": "1-EPI综合能力题库----常识题精选600道",
+      "questionCount": 600,
+      "path": "data/shards/05dcbdbd-abdaac5516.json",
+      "sourcePath": "北森题库/EPI能力测试(2000题带答案解析)/1-EPI综合能力题库----常识题精选600道.pdf"
+    },
+    {
+      "id": "76779bc9-c2926a4770",
+      "name": "2-EPI综合能力题库----数字推理题精选300道详解",
+      "questionCount": 334,
+      "path": "data/shards/76779bc9-c2926a4770.json",
+      "sourcePath": "北森题库/EPI能力测试(2000题带答案解析)/2-EPI综合能力题库----数字推理题精选300道详解.pdf"
+    },
+    {
+      "id": "0800c2fc-aa6f9321bc",
+      "name": "3-EPI综合能力题库----数学运算、应用题精选400道详解",
+      "questionCount": 409,
+      "path": "data/shards/0800c2fc-aa6f9321bc.json",
+      "sourcePath": "北森题库/EPI能力测试(2000题带答案解析)/3-EPI综合能力题库----数学运算、应用题精选400道详解.pdf"
+    },
+    {
+      "id": "7a3bc1b5-45117bc1f8",
+      "name": "4-EPI综合能力题库----言语理解与表达试题精选350道详解",
+      "questionCount": 387,
+      "path": "data/shards/7a3bc1b5-45117bc1f8.json",
+      "sourcePath": "北森题库/EPI能力测试(2000题带答案解析)/4-EPI综合能力题库----言语理解与表达试题精选350道详解.pdf"
+    },
+    {
+      "id": "1faa57d8-fafb028eb2",
+      "name": "6-EPI综合能力题库----逻辑推理题精选300道详解",
+      "questionCount": 345,
+      "path": "data/shards/1faa57d8-fafb028eb2.json",
+      "sourcePath": "北森题库/EPI能力测试(2000题带答案解析)/6-EPI综合能力题库----逻辑推理题精选300道详解.pdf"
+    },
+    {
+      "id": "智鼎重点2-套题1-808fdc88",
+      "name": "智鼎重点2 / 套题1",
+      "questionCount": 31,
+      "path": "data/shards/智鼎重点2-套题1-808fdc88.json",
+      "sourcePath": "智鼎重点2/套题1"
+    },
+    {
+      "id": "智鼎重点2-套题2-cd1af1d1",
+      "name": "智鼎重点2 / 套题2",
+      "questionCount": 75,
+      "path": "data/shards/智鼎重点2-套题2-cd1af1d1.json",
+      "sourcePath": "智鼎重点2/套题2"
+    },
+    {
+      "id": "智鼎重点2-套题3-a43621fb",
+      "name": "智鼎重点2 / 套题3",
+      "questionCount": 26,
+      "path": "data/shards/智鼎重点2-套题3-a43621fb.json",
+      "sourcePath": "智鼎重点2/套题3"
+    },
+    {
+      "id": "智鼎重点2-套题4-63a4bf58",
+      "name": "智鼎重点2 / 套题4",
+      "questionCount": 28,
+      "path": "data/shards/智鼎重点2-套题4-63a4bf58.json",
+      "sourcePath": "智鼎重点2/套题4"
+    },
+    {
+      "id": "智鼎重点2-套题5-4bc2f5c9",
+      "name": "智鼎重点2 / 套题5",
+      "questionCount": 28,
+      "path": "data/shards/智鼎重点2-套题5-4bc2f5c9.json",
+      "sourcePath": "智鼎重点2/套题5"
+    },
+    {
+      "id": "智鼎重点2-套题6-9f744132",
+      "name": "智鼎重点2 / 套题6",
+      "questionCount": 34,
+      "path": "data/shards/智鼎重点2-套题6-9f744132.json",
+      "sourcePath": "智鼎重点2/套题6"
+    },
+    {
+      "id": "智鼎重点2-套题7-9805711b",
+      "name": "智鼎重点2 / 套题7",
+      "questionCount": 16,
+      "path": "data/shards/智鼎重点2-套题7-9805711b.json",
+      "sourcePath": "智鼎重点2/套题7"
+    },
+    {
+      "id": "智鼎重点2-套题8-7bebe54e",
+      "name": "智鼎重点2 / 套题8",
+      "questionCount": 29,
+      "path": "data/shards/智鼎重点2-套题8-7bebe54e.json",
+      "sourcePath": "智鼎重点2/套题8"
+    },
+    {
+      "id": "智鼎重点2-套题9-e37b921d",
+      "name": "智鼎重点2 / 套题9",
+      "questionCount": 29,
+      "path": "data/shards/智鼎重点2-套题9-e37b921d.json",
+      "sourcePath": "智鼎重点2/套题9"
+    },
+    {
+      "id": "智鼎重点2-套题10-8ac65195",
+      "name": "智鼎重点2 / 套题10",
+      "questionCount": 26,
+      "path": "data/shards/智鼎重点2-套题10-8ac65195.json",
+      "sourcePath": "智鼎重点2/套题10"
+    },
+    {
+      "id": "智鼎重点3-套题1-0272eed2",
+      "name": "智鼎重点3 / 套题1",
+      "questionCount": 28,
+      "path": "data/shards/智鼎重点3-套题1-0272eed2.json",
+      "sourcePath": "智鼎重点3/套题1"
+    },
+    {
+      "id": "智鼎重点3-套题2-784aa53b",
+      "name": "智鼎重点3 / 套题2",
+      "questionCount": 28,
+      "path": "data/shards/智鼎重点3-套题2-784aa53b.json",
+      "sourcePath": "智鼎重点3/套题2"
+    },
+    {
+      "id": "智鼎重点3-套题3-2885d213",
+      "name": "智鼎重点3 / 套题3",
+      "questionCount": 28,
+      "path": "data/shards/智鼎重点3-套题3-2885d213.json",
+      "sourcePath": "智鼎重点3/套题3"
+    },
+    {
+      "id": "智鼎重点3-套题4-89b870f8",
+      "name": "智鼎重点3 / 套题4",
+      "questionCount": 25,
+      "path": "data/shards/智鼎重点3-套题4-89b870f8.json",
+      "sourcePath": "智鼎重点3/套题4"
+    },
+    {
+      "id": "智鼎重点3-套题5-00d99ce4",
+      "name": "智鼎重点3 / 套题5",
+      "questionCount": 28,
+      "path": "data/shards/智鼎重点3-套题5-00d99ce4.json",
+      "sourcePath": "智鼎重点3/套题5"
+    },
+    {
+      "id": "智鼎重点3-套题6-7adf5b4d",
+      "name": "智鼎重点3 / 套题6",
+      "questionCount": 29,
+      "path": "data/shards/智鼎重点3-套题6-7adf5b4d.json",
+      "sourcePath": "智鼎重点3/套题6"
+    }
+  ]
+}

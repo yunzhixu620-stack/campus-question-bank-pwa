@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#12a9ae" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="校招题库" />
+    <title>题库刷题原型</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="phone-shell" data-view="home">
+      <header class="app-topbar">
+        <button class="icon-button" type="button" aria-label="返回">
+          <span class="chevron-left"></span>
+        </button>
+        <div class="topbar-center">
+          <strong class="topbar-title">题库详情</strong>
+          <span class="network-status" id="network-status">在线</span>
+        </div>
+        <button class="icon-button" type="button" aria-label="更多">
+          <span class="dot-menu"></span>
+        </button>
+      </header>
+
+      <section class="view view-home" id="view-home">
+        <div class="overview-panel">
+          <div class="title-row">
+            <div>
+              <h1>校招测评练习题库</h1>
+              <p>北森、智鼎、互联网校招题库统一练习</p>
+            </div>
+            <div class="title-actions">
+              <button class="user-button" id="user-switch" type="button">用户 A</button>
+              <button class="search-button" data-target="search" type="button">搜题</button>
+            </div>
+          </div>
+
+          <div class="stats-grid">
+            <div>
+              <strong id="total-count">10842</strong>
+              <span>题目总数</span>
+            </div>
+            <div>
+              <strong id="done-count">126</strong>
+              <span>已练题目</span>
+            </div>
+            <div>
+              <strong id="today-count">62</strong>
+              <span>今日抽样</span>
+            </div>
+          </div>
+
+          <div class="quick-grid">
+            <button class="quick-card primary" data-target="practice" data-session="random" type="button">
+              <span class="quick-mark">R</span>
+              <strong>随机练习</strong>
+              <small>默认每次 30 题</small>
+            </button>
+            <button class="quick-card" data-target="mistakes" type="button">
+              <span class="quick-mark warn">M</span>
+              <strong>错题本</strong>
+              <small>今日新增 3 题</small>
+            </button>
+            <button class="quick-card" data-target="favorites" type="button">
+              <span class="quick-mark star">F</span>
+              <strong>收藏夹</strong>
+              <small>重点题 18 题</small>
+            </button>
+            <button class="quick-card" data-target="recent" type="button">
+              <span class="quick-mark slate">H</span>
+              <strong>最近练习</strong>
+              <small>继续上次进度</small>
+            </button>
+            <button class="quick-card" data-target="exam" type="button">
+              <span class="quick-mark exam">E</span>
+              <strong>模拟计时</strong>
+              <small>计时、交卷、答题卡</small>
+            </button>
+            <button class="quick-card" data-target="practice" data-session="memory" data-mode="memory" type="button">
+              <span class="quick-mark memory">B</span>
+              <strong>闪卡背题</strong>
+              <small>题目答案高频轮播</small>
+            </button>
+          </div>
+        </div>
+
+        <section class="section-block">
+          <div class="section-heading">
+            <h2>今日计划</h2>
+            <button class="small-link" id="plan-toggle" type="button">按模块抽样</button>
+          </div>
+          <div class="daily-plan">
+            <div class="plan-tabs" role="tablist" aria-label="每日抽样模式">
+              <button class="active" id="plan-day" type="button">按天刷题</button>
+              <button id="plan-extra" type="button">自由加练</button>
+            </div>
+            <div class="plan-meter">
+              <span id="plan-meter-fill" style="width: 0%"></span>
+            </div>
+            <div class="plan-copy">
+              <strong id="plan-count">0 题</strong>
+              <span id="plan-description">按剩余题量和模块权重抽样，包含错题复习 8 题</span>
+            </div>
+            <div class="sample-tags" id="sample-tags">
+              <span>加载题库中</span>
+            </div>
+            <div class="plan-settings">
+              <label for="plan-days">刷完天数</label>
+              <input id="plan-days" type="number" min="1" max="365" inputmode="numeric" value="30" />
+              <button id="plan-start" data-target="practice" data-session="daily" type="button">开始今日计划</button>
+            </div>
+            <div class="extra-practice" id="extra-practice">
+              <button data-target="practice" data-session="extra" data-size="30" type="button">加练 30 题</button>
+              <button data-target="practice" data-session="extra" data-size="40" type="button">加练 40 题</button>
+              <button data-target="practice" data-session="extra" data-size="50" type="button">加练 50 题</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading">
+            <h2>章节概览</h2>
+            <button class="small-link" type="button">全部</button>
+          </div>
+          <div class="chapter-list" id="chapter-list"></div>
+        </section>
+      </section>
+
+      <section class="view view-search" id="view-search">
+        <div class="list-head">
+          <h1>搜题</h1>
+          <p>支持题干、选项、解析、分类、来源和 OCR 文本搜索</p>
+        </div>
+        <div class="search-panel">
+          <input id="search-input" type="search" autocomplete="off" placeholder="输入关键词，比如 增长率、秦岭、E-mail" />
+          <select id="search-category" aria-label="按分类筛选">
+            <option value="">全部分类</option>
+          </select>
+          <button id="clear-search" type="button">清空</button>
+        </div>
+        <div class="search-summary" id="search-count">输入关键词开始搜索</div>
+        <div class="record-list search-results" id="search-results"></div>
+      </section>
+
+      <section class="view view-practice" id="view-practice">
+        <div class="practice-head">
+          <div>
+            <span id="practice-meta">第 2 / 30 题</span>
+            <h1 id="practice-title">随机练习</h1>
+          </div>
+          <button class="mini-button" id="open-sheet-top" type="button">草稿</button>
+        </div>
+
+        <div class="mode-switch" role="tablist" aria-label="练习模式">
+          <button class="active" id="mode-practice" type="button">练习模式</button>
+          <button id="mode-memory" type="button">闪卡背题</button>
+          <button data-target="exam" type="button">模拟计时</button>
+        </div>
+
+        <div class="thin-progress">
+          <span style="width: 18%"></span>
+        </div>
+
+        <article class="memory-panel" id="memory-panel">
+          <div class="memory-card" id="memory-card" data-side="front">
+            <small id="memory-label">题目卡</small>
+            <p id="memory-front"></p>
+            <strong id="memory-back"></strong>
+          </div>
+          <div class="memory-controls">
+            <button id="memory-flip" type="button">翻到答案</button>
+            <button id="memory-auto" type="button">自动轮播</button>
+          </div>
+        </article>
+
+        <article class="question-card">
+          <div class="question-kicker">
+            <span id="question-type">资料分析</span>
+            <span id="question-score">1 分</span>
+          </div>
+          <figure class="question-image" id="question-image">
+            <img id="question-real-image" alt="题目图表" loading="lazy" />
+            <div class="bar-chart">
+              <span style="height: 42%"></span>
+              <span style="height: 58%"></span>
+              <span style="height: 76%"></span>
+              <span style="height: 90%"></span>
+            </div>
+            <figcaption id="question-image-caption">图片题会保留整题截图或题干图表，可点开放大</figcaption>
+          </figure>
+          <p class="question-text" id="question-text">
+            过去四年，A 手机与 B 手机的新用户增长情况如下。下列说法正确的是哪一项？
+          </p>
+          <div class="option-list" id="option-list"></div>
+          <button class="answer-toggle" id="answer-toggle" type="button">查看答案解析</button>
+        </article>
+
+        <article class="analysis-card" id="analysis-card">
+          <h2>答案解析</h2>
+          <p><strong>标准答案：</strong><span id="answer-text">A</span></p>
+          <p id="analysis-text">
+            A 项累计值明显高于 B 项；B、C 项比较的是增长速度，需要用相邻年份差值和基数计算，不能只看柱状高度。
+          </p>
+        </article>
+
+        <div class="practice-actions">
+          <button id="mark-favorite" type="button">收藏</button>
+          <button id="mark-wrong" type="button">记错题</button>
+          <button id="next-question" class="primary-action" type="button">下一题</button>
+        </div>
+      </section>
+
+      <section class="view view-list" id="view-mistakes">
+        <div class="list-head">
+          <h1>错题本</h1>
+          <p>按错误次数、最近出错、久未复习排序</p>
+        </div>
+        <div class="record-list" id="mistake-list"></div>
+      </section>
+
+      <section class="view view-list" id="view-favorites">
+        <div class="list-head">
+          <h1>收藏夹</h1>
+          <p>保存高频、易混、临考前需要背的题</p>
+        </div>
+        <div class="record-list" id="favorite-list"></div>
+      </section>
+
+      <section class="view view-list" id="view-recent">
+        <div class="list-head">
+          <h1>最近练习</h1>
+          <p>记录最近打开的套题、模块和每日任务</p>
+        </div>
+        <div class="record-list" id="recent-list"></div>
+      </section>
+
+      <section class="view view-exam" id="view-exam">
+        <div class="exam-head">
+          <div>
+            <h1>模拟计时</h1>
+            <p>不限时版本，先记录用时、交卷、分数和答题卡</p>
+          </div>
+          <div class="timer-box">
+            <span>用时</span>
+            <strong id="exam-timer">00:00</strong>
+          </div>
+        </div>
+        <button class="mini-button exam-reset" id="new-exam" type="button">重新组卷</button>
+        <article class="exam-card">
+          <div class="question-kicker">
+            <span id="exam-meta">第 1 / 30 题</span>
+            <span id="exam-type">单选题</span>
+          </div>
+          <figure class="question-image" id="exam-question-image">
+            <img id="exam-real-image" alt="模拟题图" loading="lazy" />
+            <figcaption id="exam-image-caption">题图，点按放大</figcaption>
+          </figure>
+          <p class="question-text" id="exam-question-text">模拟模式会从当前模块或每日计划中组卷，答题后可统一交卷查看分数。</p>
+          <div class="option-list compact" id="exam-option-list"></div>
+          <div class="exam-actions">
+            <button id="exam-prev" type="button">上一题</button>
+            <button id="exam-next" type="button">下一题</button>
+          </div>
+        </article>
+        <section class="answer-sheet">
+          <div class="section-heading">
+            <h2>答题卡</h2>
+            <button class="small-link" id="submit-exam" type="button">交卷</button>
+          </div>
+          <div class="sheet-grid" id="answer-sheet-grid"></div>
+          <div class="score-card" id="score-card">
+            <strong>得分 24 / 30</strong>
+            <span>正确率 80%，错题会自动进入错题本</span>
+          </div>
+        </section>
+      </section>
+
+      <section class="view view-sheet" id="view-sheet">
+        <div class="sheet-head">
+          <div>
+            <h1>草稿纸</h1>
+            <p>计算题可直接手写，下面有简易计算器</p>
+          </div>
+          <button class="mini-button" id="clear-canvas" type="button">清空</button>
+        </div>
+        <canvas id="scratch-canvas" width="720" height="520" aria-label="草稿纸"></canvas>
+        <div class="calculator">
+          <input id="calc-display" inputmode="decimal" autocomplete="off" value="" aria-label="计算器输入" />
+          <div class="calc-grid" id="calc-grid"></div>
+        </div>
+      </section>
+
+      <nav class="bottom-nav" aria-label="主导航">
+        <button class="active" data-target="home" type="button">首页</button>
+        <button data-target="practice" type="button">练习</button>
+        <button data-target="mistakes" type="button">错题</button>
+        <button data-target="favorites" type="button">收藏</button>
+        <button data-target="exam" type="button">模拟</button>
+        <button data-target="sheet" type="button">草稿</button>
+      </nav>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1150 @@
+[
+  {
+    "id": "q-img-5234396f707953202b",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "1.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/1.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/1.png",
+        "originalFile": "1.png",
+        "questionNumber": "1"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/1.png",
+        "originalFile": "1.png",
+        "questionNumber": "1"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 1 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/001-59e4030ae8.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-6b1530837b210089c8",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "2.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/2.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/2.png",
+        "originalFile": "2.png",
+        "questionNumber": "2"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/2.png",
+        "originalFile": "2.png",
+        "questionNumber": "2"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 2 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/002-ecf65bd3c6.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-b1156c4fd0f26d5217",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "3.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/3.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/3.png",
+        "originalFile": "3.png",
+        "questionNumber": "3"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/3.png",
+        "originalFile": "3.png",
+        "questionNumber": "3"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 3 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/003-738e026434.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-b42ce90de6b7d1bf06",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "4.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/4.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/4.png",
+        "originalFile": "4.png",
+        "questionNumber": "4"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/4.png",
+        "originalFile": "4.png",
+        "questionNumber": "4"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 4 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/004-f8427b1eb2.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-252cbc287ae809265f",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "5.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/5.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/5.png",
+        "originalFile": "5.png",
+        "questionNumber": "5"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/5.png",
+        "originalFile": "5.png",
+        "questionNumber": "5"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 5 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/005-4f3454af27.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-7c9fd3584b3a685edd",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "6.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/6.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/6.png",
+        "originalFile": "6.png",
+        "questionNumber": "6"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/6.png",
+        "originalFile": "6.png",
+        "questionNumber": "6"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 6 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/006-98f814fa71.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-b73bd63eb5c29951db",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "7.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/7.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/7.png",
+        "originalFile": "7.png",
+        "questionNumber": "7"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/7.png",
+        "originalFile": "7.png",
+        "questionNumber": "7"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 7 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/007-c2f40fd332.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-d5bbf869f47e9dabf3",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "8.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/8.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/8.png",
+        "originalFile": "8.png",
+        "questionNumber": "8"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/8.png",
+        "originalFile": "8.png",
+        "questionNumber": "8"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 8 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/008-ea03235692.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-91fc74fad396178109",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "9.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/9.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/9.png",
+        "originalFile": "9.png",
+        "questionNumber": "9"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/9.png",
+        "originalFile": "9.png",
+        "questionNumber": "9"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 9 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/009-fc436a782c.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-579e0fa79dd59a38bb",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "10.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/10.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/10.png",
+        "originalFile": "10.png",
+        "questionNumber": "10"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/10.png",
+        "originalFile": "10.png",
+        "questionNumber": "10"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 10 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/010-97e420997a.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-a0314de9b0cbacb36f",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "11.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/11.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/11.png",
+        "originalFile": "11.png",
+        "questionNumber": "11"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/11.png",
+        "originalFile": "11.png",
+        "questionNumber": "11"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 11 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/011-d683732e42.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-affa1aa338f5f6113f",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "12.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/12.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/12.png",
+        "originalFile": "12.png",
+        "questionNumber": "12"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/12.png",
+        "originalFile": "12.png",
+        "questionNumber": "12"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 12 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/012-6dc0074c02.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-569743a5f54e5d7906",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "13.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/13.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/13.png",
+        "originalFile": "13.png",
+        "questionNumber": "13"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/13.png",
+        "originalFile": "13.png",
+        "questionNumber": "13"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 13 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/013-6df315aaad.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-48182018dc99c9dca1",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "14.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/14.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/14.png",
+        "originalFile": "14.png",
+        "questionNumber": "14"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/14.png",
+        "originalFile": "14.png",
+        "questionNumber": "14"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 14 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/014-c5e06ef149.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-8ad9ef6b537d6eec11",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "15.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/15.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/15.png",
+        "originalFile": "15.png",
+        "questionNumber": "15"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/15.png",
+        "originalFile": "15.png",
+        "questionNumber": "15"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 15 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/015-b72372ecd4.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-32b21d27ca86f7b11d",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "16.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/16.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/16.png",
+        "originalFile": "16.png",
+        "questionNumber": "16"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/16.png",
+        "originalFile": "16.png",
+        "questionNumber": "16"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 16 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/016-089b7f3f77.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-2d62add12a3a3b80dd",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "17.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/17.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/17.png",
+        "originalFile": "17.png",
+        "questionNumber": "17"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/17.png",
+        "originalFile": "17.png",
+        "questionNumber": "17"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 17 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/017-548ede992f.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-6b609401b0b6afa3ab",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "18.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/18.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/18.png",
+        "originalFile": "18.png",
+        "questionNumber": "18"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/18.png",
+        "originalFile": "18.png",
+        "questionNumber": "18"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 18 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/018-679b3d6a41.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-a07b9a4a61f8906062",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "19.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/19.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/19.png",
+        "originalFile": "19.png",
+        "questionNumber": "19"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/19.png",
+        "originalFile": "19.png",
+        "questionNumber": "19"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 19 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/019-0d012c7823.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-946de5fb8912db6793",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "20.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/20.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/20.png",
+        "originalFile": "20.png",
+        "questionNumber": "20"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/20.png",
+        "originalFile": "20.png",
+        "questionNumber": "20"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 20 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/020-f3b952198f.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-8df4c7a5cb3a6e7cb7",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "21.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/21.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/21.png",
+        "originalFile": "21.png",
+        "questionNumber": "21"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/21.png",
+        "originalFile": "21.png",
+        "questionNumber": "21"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 21 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/021-2b4815f6d8.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-213b40e730b855c182",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "22.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/22.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/22.png",
+        "originalFile": "22.png",
+        "questionNumber": "22"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/22.png",
+        "originalFile": "22.png",
+        "questionNumber": "22"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 22 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/022-14f8e9fc0d.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-ec3d19d77177209882",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "23.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/23.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/23.png",
+        "originalFile": "23.png",
+        "questionNumber": "23"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/23.png",
+        "originalFile": "23.png",
+        "questionNumber": "23"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 23 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/023-00d683bc9a.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-da659e57fbfd210c49",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "24.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/24.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/24.png",
+        "originalFile": "24.png",
+        "questionNumber": "24"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/24.png",
+        "originalFile": "24.png",
+        "questionNumber": "24"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 24 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/024-7f5ee31b10.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-2ea6de66792b3442e4",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "25.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/25.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/25.png",
+        "originalFile": "25.png",
+        "questionNumber": "25"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/25.png",
+        "originalFile": "25.png",
+        "questionNumber": "25"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 25 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/025-fae09b5dd1.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-363faa978e850ff1c2",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "26.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/26.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/26.png",
+        "originalFile": "26.png",
+        "questionNumber": "26"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/26.png",
+        "originalFile": "26.png",
+        "questionNumber": "26"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 26 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/026-a5370dfe18.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-ef8853ddf92c1bd167",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "27.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/27.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/27.png",
+        "originalFile": "27.png",
+        "questionNumber": "27"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/27.png",
+        "originalFile": "27.png",
+        "questionNumber": "27"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 27 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/027-13f898ab46.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  },
+  {
+    "id": "q-img-44383f2948bcb2b1b1",
+    "source": "智鼎题库",
+    "library": "智鼎题库",
+    "category": "图片套题",
+    "subCategory": "智鼎重点3/套题2",
+    "setName": "智鼎重点3 / 套题2",
+    "originalFile": "28.png",
+    "originalPath": "智鼎题库/图片真题/智鼎重点3/套题2/28.png",
+    "sourceRefs": [
+      {
+        "archive": "智鼎题库.zip",
+        "path": "智鼎题库/图片真题/智鼎重点3/套题2/28.png",
+        "originalFile": "28.png",
+        "questionNumber": "28"
+      },
+      {
+        "archive": "林木互联网校招笔试题库.zip",
+        "path": "林木互联网校招笔试题库/智鼎题库/图片真题/智鼎重点3/套题2/28.png",
+        "originalFile": "28.png",
+        "questionNumber": "28"
+      }
+    ],
+    "questionType": "image-only",
+    "question": "智鼎重点3 / 套题2 第 28 题（整题截图）",
+    "options": [],
+    "answer": [],
+    "analysis": "本题为整题截图题，题干、选项和已勾选答案以图片为准；解析和 OCR 文本待后续高置信导入补充。",
+    "images": [
+      "assets/questions/智鼎重点3-套题2-784aa53b/028-ad223563f3.png"
+    ],
+    "ocrText": "",
+    "tags": [
+      "图片题",
+      "整题截图",
+      "待OCR",
+      "智鼎重点3 / 套题2"
+    ],
+    "importConfidence": 0.45,
+    "needsOcr": true
+  }
+]
