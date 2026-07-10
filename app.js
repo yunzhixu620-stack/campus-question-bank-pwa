@@ -3,6 +3,8 @@ const bottomNav = document.querySelector(".bottom-nav");
 const DB_NAME = "campus-question-bank-prototype";
 const DB_VERSION = 1;
 const currentUserKey = "campus-question-bank-current-user";
+const PLAN_VERSION = 2;
+const APP_HISTORY_MARKER = "campus-question-bank";
 
 const chapters = [
   { mark: "图", title: "图形推理", meta: "北森 / 智鼎 / 林木 · 1743 题 · 已练 42", progress: 8 },
@@ -87,6 +89,8 @@ let questionIndexById = new Map();
 const VALID_VIEWS = new Set(["home", "search", "practice", "mistakes", "favorites", "recent", "exam", "sheet"]);
 let sheetReturnView = "home";
 let dataLoadInFlight = null;
+let historyReady = false;
+let practiceConfirmReturnOverlay = null;
 const users = [
   { id: "user-a", name: "用户 A" },
   { id: "user-b", name: "用户 B" },
@@ -296,6 +300,9 @@ function defaultUserState(user) {
     prefs: {
       planMode: "day",
       planDays: 30,
+      planScheduleDays: null,
+      planStartDate: null,
+      planTargetDate: null,
       defaultBatchSize: 30,
       extraBatchSizes: [30, 40, 50],
     },
@@ -343,18 +350,29 @@ function openAppDb() {
 }
 
 async function readUserState(user) {
+  let localState = null;
+  const raw = localStorage.getItem(`${DB_NAME}:${user.id}`);
+  if (raw) {
+    try {
+      localState = JSON.parse(raw);
+    } catch {
+      localState = null;
+    }
+  }
   try {
     const db = await openAppDb();
-    const state = await new Promise((resolve, reject) => {
+    const databaseState = await new Promise((resolve, reject) => {
       const transaction = db.transaction("userStates", "readonly");
       const request = transaction.objectStore("userStates").get(user.id);
       request.onsuccess = () => resolve(request.result || null);
       request.onerror = () => reject(request.error);
     });
-    if (state) return normalizeUserState(state, user);
+    const localUpdatedAt = localState?.updatedAt ? new Date(localState.updatedAt).getTime() : 0;
+    const databaseUpdatedAt = databaseState?.updatedAt ? new Date(databaseState.updatedAt).getTime() : 0;
+    const newestState = localUpdatedAt >= databaseUpdatedAt ? localState : databaseState;
+    if (newestState) return normalizeUserState(newestState, user);
   } catch {
-    const raw = localStorage.getItem(`${DB_NAME}:${user.id}`);
-    if (raw) return normalizeUserState(JSON.parse(raw), user);
+    if (localState) return normalizeUserState(localState, user);
   }
   return defaultUserState(user);
 }
@@ -458,6 +476,54 @@ function todayKey() {
   const month = String(now.getMonth() + 1).padStart(2, "0");
   const day = String(now.getDate()).padStart(2, "0");
   return `${now.getFullYear()}-${month}-${day}`;
+}
+
+function dateFromKey(value) {
+  const [year, month, day] = String(value || "")
+    .split("-")
+    .map(Number);
+  if (!year || !month || !day) return null;
+  return new Date(year, month - 1, day);
+}
+
+function dateKeyFromDate(value) {
+  const month = String(value.getMonth() + 1).padStart(2, "0");
+  const day = String(value.getDate()).padStart(2, "0");
+  return `${value.getFullYear()}-${month}-${day}`;
+}
+
+function addDaysToKey(value, amount) {
+  const date = dateFromKey(value) || new Date();
+  date.setDate(date.getDate() + amount);
+  return dateKeyFromDate(date);
+}
+
+function inclusiveDaysBetween(startKey, endKey) {
+  const start = dateFromKey(startKey);
+  const end = dateFromKey(endKey);
+  if (!start || !end) return 1;
+  return Math.max(1, Math.floor((end.getTime() - start.getTime()) / 86400000) + 1);
+}
+
+function ensurePlanSchedule(days) {
+  const prefs = currentUserState.prefs;
+  const today = todayKey();
+  const scheduleChanged =
+    prefs.planScheduleDays !== days ||
+    !dateFromKey(prefs.planStartDate) ||
+    !dateFromKey(prefs.planTargetDate);
+  if (scheduleChanged) {
+    prefs.planScheduleDays = days;
+    prefs.planStartDate = today;
+    prefs.planTargetDate = addDaysToKey(today, days - 1);
+    currentUserState.dailyPlans = {};
+  }
+  return {
+    startDate: prefs.planStartDate,
+    targetDate: prefs.planTargetDate,
+    remainingDays: inclusiveDaysBetween(today, prefs.planTargetDate),
+    changed: scheduleChanged,
+  };
 }
 
 function clampNumber(value, min, max, fallback) {
@@ -583,9 +649,12 @@ function dailyPlanPreview() {
   currentUserState.dailyPlans ||= {};
   const date = todayKey();
   const days = clampNumber(currentUserState.prefs?.planDays, 1, 365, 30);
+  const schedule = ensurePlanSchedule(days);
   const existing = currentUserState.dailyPlans[date];
   if (
+    existing?.planVersion === PLAN_VERSION &&
     existing?.days === days &&
+    existing?.targetDate === schedule.targetDate &&
     Array.isArray(existing.questionIds) &&
     existing.questionIds.length &&
     existing.questionIds.every((id) => questionIndexById.has(id) && practiceEligibleQuestion(getQuestionById(id)))
@@ -602,6 +671,9 @@ function dailyPlanPreview() {
       reviewIds: [],
       newCount: 0,
       reviewCount: 0,
+      remainingDays: schedule.remainingDays,
+      targetDate: schedule.targetDate,
+      planVersion: PLAN_VERSION,
       tags: ["暂无可正常练习题"],
       createdAt: new Date().toISOString(),
     };
@@ -611,7 +683,7 @@ function dailyPlanPreview() {
   }
   const doneCount = practiceQuestions.filter((question) => isQuestionDone(question.id)).length;
   const remainingCount = Math.max(0, practiceQuestions.length - doneCount);
-  const newTarget = Math.max(1, Math.ceil(remainingCount / days));
+  const newTarget = remainingCount ? Math.max(1, Math.ceil(remainingCount / schedule.remainingDays)) : 0;
   const reviewTarget = Math.min(currentUserState.mistakes?.length || 0, Math.max(0, Math.round(newTarget * 0.15)));
   const reviewIds = reviewQuestionIds(reviewTarget);
   const excludedIds = new Set(reviewIds);
@@ -631,6 +703,9 @@ function dailyPlanPreview() {
     reviewIds,
     newCount: newIds.length,
     reviewCount: reviewIds.length,
+    remainingDays: schedule.remainingDays,
+    targetDate: schedule.targetDate,
+    planVersion: PLAN_VERSION,
     tags: summarizeQuestionIds(questionIds, reviewIds),
     createdAt: new Date().toISOString(),
   };
@@ -669,6 +744,8 @@ function startSession(title, questionIds, type = "practice", meta = "") {
     seconds: 0,
     answers: {},
     marked: {},
+    submitted: false,
+    result: null,
     createdAt: new Date().toISOString(),
   };
   currentUserState.activeSession = activeSession;
@@ -680,7 +757,14 @@ function startSession(title, questionIds, type = "practice", meta = "") {
 
 function startSessionFromTarget(target) {
   const sessionType = target.dataset.session;
-  if (!sessionType || !currentUserState) return;
+  if (!currentUserState) return;
+  if (!sessionType) {
+    if (target.dataset.target === "practice" && !activeSession?.questionIds?.length) {
+      const size = currentUserState.prefs?.defaultBatchSize || 30;
+      startSession("随机练习", buildExtraSession(size), "random", "默认抽样");
+    }
+    return;
+  }
   if (sessionType === "daily") {
     const plan = dailyPlanPreview();
     const remainingIds = plan.questionIds.filter((id) => !isQuestionPracticedToday(id));
@@ -724,13 +808,8 @@ function advanceQuestion() {
       activeSession.index += 1;
       setCurrentQuestionById(activeSession.questionIds[activeSession.index]);
     } else {
-      const finishedTitle = activeSession.title;
-      const finishedCount = activeSession.questionIds.length;
-      activeSession.completedAt = new Date().toISOString();
-      recordRecent(`${finishedTitle}已完成`, `${finishedCount} 题 · 可重新抽样`, "完成", activeSession.questionIds[activeSession.index]);
-      activeSession = null;
-      currentUserState.activeSession = null;
-      currentQuestion = nextPracticeQuestionIndex(currentQuestion);
+      finishPracticeSession();
+      return;
     }
   } else {
     currentQuestion = nextPracticeQuestionIndex(currentQuestion);
@@ -757,7 +836,7 @@ function startPracticeTimer() {
   practiceTimer = setInterval(() => {
     const view = shell.dataset.view;
     const activePracticeView = view === "practice" || (view === "sheet" && sheetReturnView === "practice");
-    if (!activeSession || !activePracticeView) return;
+    if (!activeSession || activeSession.submitted || !activePracticeView) return;
     activeSession.seconds = (activeSession.seconds || 0) + 1;
     document.querySelector("#practice-timer").textContent = formatSeconds(activeSession.seconds);
     if (activeSession.seconds % 5 === 0) {
@@ -797,10 +876,73 @@ function updateSheetCloseButton() {
   closeButton.textContent = sheetReturnView === "practice" ? "返回练习" : sheetReturnView === "exam" ? "返回模拟" : "关闭";
 }
 
+function appHistoryState(view = shell.dataset.view || "home", overlay = null, root = false) {
+  return {
+    app: APP_HISTORY_MARKER,
+    view,
+    overlay,
+    sheetReturnView,
+    root,
+  };
+}
+
+function syncPracticeOverlay(overlay = null) {
+  const answerCard = document.querySelector("#practice-sheet-backdrop");
+  const confirm = document.querySelector("#practice-submit-confirm");
+  const result = document.querySelector("#practice-result-backdrop");
+  const answerCardVisible = overlay === "answer-card";
+  const confirmVisible = overlay === "practice-confirm";
+  const resultVisible = overlay === "practice-result";
+  answerCard.classList.toggle("visible", answerCardVisible);
+  answerCard.setAttribute("aria-hidden", String(!answerCardVisible));
+  confirm.classList.toggle("visible", confirmVisible);
+  confirm.setAttribute("aria-hidden", String(!confirmVisible));
+  result.classList.toggle("visible", resultVisible);
+  result.setAttribute("aria-hidden", String(!resultVisible));
+}
+
+function setOverlayHistory(overlay, { replace = false } = {}) {
+  if (!historyReady) {
+    syncPracticeOverlay(overlay);
+    return;
+  }
+  const method = replace ? "replaceState" : "pushState";
+  history[method](appHistoryState(shell.dataset.view || "practice", overlay), "", location.href);
+  syncPracticeOverlay(overlay);
+}
+
+function navigateBack(fallback = "home") {
+  if (!historyReady || history.state?.app !== APP_HISTORY_MARKER || history.state?.root) {
+    goTo(fallback, { replace: true });
+    return;
+  }
+  history.back();
+}
+
+function initializeAppHistory(view) {
+  history.replaceState(appHistoryState("home", null, true), "", location.href);
+  if (view !== "home") {
+    history.pushState(appHistoryState(view), "", location.href);
+  }
+  historyReady = true;
+  window.addEventListener("popstate", (event) => {
+    const state = event.state;
+    if (state?.app !== APP_HISTORY_MARKER) return;
+    sheetReturnView = state.sheetReturnView || "home";
+    syncPracticeOverlay(null);
+    goTo(state.view || "home", { history: false, returnTo: sheetReturnView });
+    if (state.overlay) {
+      syncPracticeOverlay(state.overlay);
+      if (state.overlay === "answer-card") renderPracticeSheet();
+      if (state.overlay === "practice-result") renderPracticeResult();
+    }
+  });
+}
+
 function closeSheet() {
   const fallback = activeSession?.questionIds?.length ? "practice" : examSession ? "exam" : "home";
   const target = sheetReturnView && sheetReturnView !== "sheet" ? sheetReturnView : fallback;
-  goTo(target);
+  navigateBack(target);
 }
 
 function goTo(view, options = {}) {
@@ -810,6 +952,7 @@ function goTo(view, options = {}) {
     sheetReturnView = options.returnTo || (fromView !== "sheet" ? fromView : sheetReturnView) || "home";
   }
   shell.dataset.view = view;
+  if (view !== "practice") syncPracticeOverlay(null);
   if (currentUserState) {
     currentUserState.lastView = view;
     void writeUserState();
@@ -838,6 +981,10 @@ function goTo(view, options = {}) {
   if (view === "sheet") {
     updateSheetCloseButton();
     resizeCanvasBackingStore();
+  }
+  if (historyReady && options.history !== false) {
+    const method = options.replace ? "replaceState" : "pushState";
+    history[method](appHistoryState(view), "", location.href);
   }
 }
 
@@ -1028,6 +1175,7 @@ function renderQuestion() {
   const sessionTotal = activeSession?.questionIds?.length || 30;
   const sessionIndex = activeSession?.questionIds?.length ? (activeSession.index || 0) + 1 : (currentQuestion % sessionTotal) + 1;
   const selectedAnswer = activeSession?.answers?.[question.id] || "";
+  const sessionSubmitted = Boolean(activeSession?.submitted);
   document.querySelector("#practice-count").textContent = `${sessionIndex}/${sessionTotal}`;
   document.querySelector("#practice-timer").textContent = formatSeconds(activeSession?.seconds || 0);
   document.querySelector("#practice-title").textContent = activeSession?.title || "随机练习";
@@ -1051,8 +1199,8 @@ function renderQuestion() {
       : "题图，点按放大"
     : "图片题会保留整题截图或题干图表，可点开放大";
   document.querySelector("#memory-panel").classList.toggle("visible", memoryMode);
-  document.querySelector("#analysis-card").classList.toggle("visible", memoryMode);
-  document.querySelector("#answer-toggle").textContent = memoryMode ? "答案显示" : "看解析";
+  document.querySelector("#analysis-card").classList.toggle("visible", memoryMode || sessionSubmitted);
+  document.querySelector("#answer-toggle").textContent = memoryMode || sessionSubmitted ? "收起解析" : "看解析";
   document.querySelector("#mark-favorite").textContent = progress.favorite ? "已收藏" : "收藏";
   document.querySelector("#mark-wrong").textContent = progress.wrong ? "已记入" : "记错题";
   if (question.options?.length) {
@@ -1063,9 +1211,10 @@ function renderQuestion() {
           const answered = Boolean(selectedAnswer);
           const isCorrect = letter === firstAnswer(question);
           const isSelected = selectedAnswer === letter;
-          const reveal = memoryMode || answered;
+          const reveal = memoryMode || answered || sessionSubmitted;
+          const locked = memoryMode || answered || sessionSubmitted;
           return `
-      <button class="option-button ${reveal && isCorrect ? "correct" : ""} ${isSelected ? "selected" : ""} ${reveal && isSelected && !isCorrect ? "wrong" : ""}" data-letter="${letter}" type="button">
+      <button class="option-button ${reveal && isCorrect ? "correct" : ""} ${isSelected ? "selected" : ""} ${reveal && isSelected && !isCorrect ? "wrong" : ""}" data-letter="${letter}" type="button" ${locked ? "disabled" : ""}>
         <strong>${letters[index]}</strong>
         <span>${escapeHtml(option)}</span>
       </button>
@@ -1092,19 +1241,25 @@ function renderPracticeNav() {
   const index = activeSession?.questionIds?.length ? activeSession.index || 0 : currentQuestion;
   const total = activeSession?.questionIds?.length || questions.length;
   prevButton.disabled = index <= 0;
-  prevButton.textContent = index <= 0 ? "无" : "上一题";
-  nextButton.textContent = index >= total - 1 ? "完成" : "下一题";
+  prevButton.textContent = "上一题";
+  nextButton.textContent = index >= total - 1 ? (activeSession?.submitted ? "查看结果" : "完成") : "下一题";
 }
 
-function practiceSheetOpen() {
-  document.querySelector("#practice-sheet-backdrop").classList.add("visible");
-  document.querySelector("#practice-sheet-backdrop").setAttribute("aria-hidden", "false");
+function practiceSheetOpen(options = {}) {
   renderPracticeSheet();
+  if (options.history === false) {
+    syncPracticeOverlay("answer-card");
+    return;
+  }
+  setOverlayHistory("answer-card");
 }
 
-function practiceSheetClose() {
-  document.querySelector("#practice-sheet-backdrop").classList.remove("visible");
-  document.querySelector("#practice-sheet-backdrop").setAttribute("aria-hidden", "true");
+function practiceSheetClose(options = {}) {
+  if (options.history === false) {
+    syncPracticeOverlay(null);
+    return;
+  }
+  navigateBack("practice");
 }
 
 function isPracticeMarked(questionId) {
@@ -1117,13 +1272,22 @@ function renderPracticeSheet() {
   if (!grid) return;
   const ids = activeSession?.questionIds?.length ? activeSession.questionIds : [currentQuestionObject()?.id].filter(Boolean);
   const activeIndex = activeSession?.questionIds?.length ? activeSession.index || 0 : 0;
+  const submitted = Boolean(activeSession?.submitted);
   grid.innerHTML = ids
     .map((id, index) => {
-      const answered = Boolean(activeSession?.answers?.[id]);
+      const chosen = activeSession?.answers?.[id] || "";
+      const answered = Boolean(chosen);
       const marked = isPracticeMarked(id);
-      return `<button class="${answered ? "done" : ""} ${marked ? "marked" : ""} ${index === activeIndex ? "current" : ""}" data-practice-index="${index}" type="button">${index + 1}</button>`;
+      const correct = submitted && chosen && chosen === firstAnswer(getQuestionById(id));
+      const wrong = submitted && chosen && !correct;
+      return `<button class="${answered ? "done" : ""} ${marked ? "marked" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""} ${index === activeIndex ? "current" : ""}" data-practice-index="${index}" type="button">${index + 1}</button>`;
     })
     .join("");
+  const submitButton = document.querySelector("#submit-practice-session");
+  submitButton.textContent = submitted ? "查看练习结果" : "提交并查看结果";
+  document.querySelector("#practice-submit-result").textContent = submitted
+    ? `已提交：正确 ${activeSession.result?.correct || 0}/${activeSession.result?.total || ids.length}`
+    : "";
 }
 
 function goToPracticeIndex(index) {
@@ -1136,41 +1300,138 @@ function goToPracticeIndex(index) {
   void writeUserState();
 }
 
+function practiceSessionStats() {
+  const ids = activeSession?.questionIds || [];
+  const wrongIds = [];
+  const unansweredIds = [];
+  let correct = 0;
+  ids.forEach((id) => {
+    const question = getQuestionById(id);
+    const chosen = activeSession?.answers?.[id] || "";
+    if (!chosen) {
+      unansweredIds.push(id);
+      return;
+    }
+    if (question && chosen === firstAnswer(question)) {
+      correct += 1;
+    } else {
+      wrongIds.push(id);
+    }
+  });
+  return {
+    total: ids.length,
+    answered: ids.length - unansweredIds.length,
+    correct,
+    wrong: wrongIds.length,
+    unanswered: unansweredIds.length,
+    wrongIds,
+    unansweredIds,
+  };
+}
+
+function renderPracticeResult() {
+  if (!activeSession?.submitted) return;
+  const stats = activeSession.result || practiceSessionStats();
+  const percent = stats.total ? Math.round((stats.correct / stats.total) * 100) : 0;
+  document.querySelector("#practice-result-score").textContent = `${stats.correct} / ${stats.total}`;
+  document.querySelector("#practice-result-summary").textContent = `正确率 ${percent}% · 用时 ${formatSeconds(activeSession.seconds || 0)}`;
+  document.querySelector("#practice-result-correct").textContent = String(stats.correct);
+  document.querySelector("#practice-result-wrong").textContent = String(stats.wrong);
+  document.querySelector("#practice-result-unanswered").textContent = String(stats.unanswered);
+  document.querySelector("#practice-result-review").disabled = !stats.wrongIds?.length;
+}
+
+function showPracticeResult({ replace } = {}) {
+  if (!activeSession?.submitted) return;
+  renderPracticeResult();
+  const shouldReplace = replace ?? Boolean(history.state?.overlay);
+  setOverlayHistory("practice-result", { replace: shouldReplace });
+}
+
+function finalizePracticeSession() {
+  if (!activeSession?.questionIds?.length || activeSession.submitted) {
+    showPracticeResult();
+    return;
+  }
+  const stats = practiceSessionStats();
+  activeSession.submitted = true;
+  activeSession.submittedAt = new Date().toISOString();
+  activeSession.completedAt = activeSession.submittedAt;
+  activeSession.result = stats;
+  currentUserState.activeSession = activeSession;
+  stopPracticeTimer();
+  recordRecent(
+    `${activeSession.title || "练习"}已提交`,
+    `正确 ${stats.correct}/${stats.total} · 用时 ${formatSeconds(activeSession.seconds || 0)}`,
+    "提交",
+    activeSession.questionIds[activeSession.index || 0],
+  );
+  document.querySelector("#practice-submit-result").textContent = `已提交：正确 ${stats.correct}/${stats.total}`;
+  renderQuestion();
+  renderPracticeSheet();
+  void writeUserState();
+  showPracticeResult({ replace: Boolean(history.state?.overlay) });
+}
+
 function finishPracticeSession() {
   if (!activeSession?.questionIds?.length) return;
-  const total = activeSession.questionIds.length;
-  let answered = 0;
-  let correct = 0;
-  activeSession.questionIds.forEach((id) => {
-    const question = getQuestionById(id);
-    const chosen = activeSession.answers?.[id] || "";
-    if (chosen) answered += 1;
-    if (chosen && question && chosen === firstAnswer(question)) correct += 1;
-  });
-  const result = document.querySelector("#practice-submit-result");
-  result.textContent = `已答 ${answered}/${total}，正确 ${correct}，未答 ${total - answered}。`;
-  recordRecent(`${activeSession.title || "练习"}已提交`, `正确 ${correct}/${total} · 用时 ${formatSeconds(activeSession.seconds || 0)}`, "提交", activeSession.questionIds[activeSession.index || 0]);
+  if (activeSession.submitted) {
+    showPracticeResult();
+    return;
+  }
+  const stats = practiceSessionStats();
+  if (!stats.unanswered) {
+    finalizePracticeSession();
+    return;
+  }
+  practiceConfirmReturnOverlay = history.state?.overlay === "answer-card" ? "answer-card" : null;
+  document.querySelector("#practice-confirm-message").textContent = `还有 ${stats.unanswered} 题未作答，提交后答案将锁定，是否继续？`;
+  setOverlayHistory("practice-confirm", { replace: Boolean(practiceConfirmReturnOverlay) });
+}
+
+function cancelPracticeSubmit() {
+  if (practiceConfirmReturnOverlay === "answer-card") {
+    practiceConfirmReturnOverlay = null;
+    setOverlayHistory("answer-card", { replace: true });
+    return;
+  }
+  practiceConfirmReturnOverlay = null;
+  navigateBack("practice");
+}
+
+function reviewPracticeMistakes() {
+  const stats = activeSession?.result || practiceSessionStats();
+  const firstWrongId = stats.wrongIds?.[0];
+  if (!firstWrongId || !activeSession?.questionIds?.length) return;
+  activeSession.index = Math.max(0, activeSession.questionIds.indexOf(firstWrongId));
+  setCurrentQuestionById(firstWrongId);
+  syncPracticeOverlay(null);
+  if (historyReady) history.replaceState(appHistoryState("practice"), "", location.href);
+  renderQuestion();
   void writeUserState();
+}
+
+function leavePracticeResult() {
+  syncPracticeOverlay(null);
+  goTo("home", { replace: true });
 }
 
 function chooseOption(button) {
   const question = currentQuestionObject();
-  if (!question?.options?.length || !firstAnswer(question)) return;
+  if (
+    !question?.options?.length ||
+    !firstAnswer(question) ||
+    !activeSession?.questionIds?.length ||
+    activeSession.submitted ||
+    activeSession.answers?.[question.id]
+  )
+    return;
   const chosen = button.dataset.letter;
   const isAnswerCorrect = chosen === firstAnswer(question);
-  if (activeSession?.questionIds?.length) {
-    activeSession.answers ||= {};
-    activeSession.answers[question.id] = chosen;
-    activeSession.updatedAt = new Date().toISOString();
-    currentUserState.activeSession = activeSession;
-  }
-  document.querySelectorAll(".option-button").forEach((option) => {
-    const isCorrect = option.dataset.letter === firstAnswer(question);
-    const isChosen = option === button;
-    option.classList.toggle("correct", isCorrect);
-    option.classList.toggle("wrong", isChosen && !isCorrect);
-  });
-  document.querySelector("#analysis-card").classList.add("visible");
+  activeSession.answers ||= {};
+  activeSession.answers[question.id] = chosen;
+  activeSession.updatedAt = new Date().toISOString();
+  currentUserState.activeSession = activeSession;
   void updateQuestionProgress(question.id, (progress) => {
     progress.answeredCount += 1;
     progress.lastAnswer = chosen;
@@ -1268,7 +1529,7 @@ function updateDailyPlanUI() {
   document.querySelector("#plan-description").textContent =
     currentUserState.prefs.planMode === "extra"
       ? "自由加练会优先抽未做题，不破坏今日计划，但答题仍计入总进度"
-      : `剩余题量按 ${plan.days} 天平均分配：新题 ${plan.newCount}，错题复习 ${plan.reviewCount}`;
+      : `目标 ${plan.targetDate || "未设置"}，剩余 ${plan.remainingDays || plan.days} 天：新题 ${plan.newCount}，错题复习 ${plan.reviewCount}`;
   document.querySelector("#sample-tags").innerHTML = (plan.tags?.length ? plan.tags : ["暂无可抽题目"])
     .map((tag) => `<span>${escapeHtml(tag)}</span>`)
     .join("");
@@ -1670,11 +1931,8 @@ function bindEvents() {
       closeSheet();
       return;
     }
-    if (view === "practice" && activeSession?.questionIds?.length) {
-      goTo("home");
-      return;
-    }
-    goTo("home");
+    if (view === "home") return;
+    navigateBack("home");
   });
   document.querySelector("#user-switch").addEventListener("click", (event) => {
     event.currentTarget.disabled = true;
@@ -1712,7 +1970,7 @@ function bindEvents() {
   document.querySelector("#prev-question").addEventListener("click", () => {
     previousQuestion();
   });
-  document.querySelector("#practice-back").addEventListener("click", () => goTo("home"));
+  document.querySelector("#practice-back").addEventListener("click", () => navigateBack("home"));
   document.querySelector("#open-practice-sheet").addEventListener("click", practiceSheetOpen);
   document.querySelector("#close-practice-sheet").addEventListener("click", practiceSheetClose);
   document.querySelector("#practice-sheet-backdrop").addEventListener("click", (event) => {
@@ -1723,6 +1981,13 @@ function bindEvents() {
     if (button) goToPracticeIndex(button.dataset.practiceIndex);
   });
   document.querySelector("#submit-practice-session").addEventListener("click", finishPracticeSession);
+  document.querySelector("#practice-confirm-cancel").addEventListener("click", cancelPracticeSubmit);
+  document.querySelector("#practice-confirm-submit").addEventListener("click", () => {
+    practiceConfirmReturnOverlay = null;
+    finalizePracticeSession();
+  });
+  document.querySelector("#practice-result-review").addEventListener("click", reviewPracticeMistakes);
+  document.querySelector("#practice-result-home").addEventListener("click", leavePracticeResult);
   document.querySelector("#mark-favorite").addEventListener("click", (event) => {
     const question = currentQuestionObject();
     const progress = getQuestionProgress(question.id);
@@ -1846,6 +2111,23 @@ async function initApp() {
   window.addEventListener("offline", updateNetworkStatus);
   await loadQuestionData({ showLoading: true });
   await loadCurrentUser(currentUserIndex);
+  const savedView = currentUserState?.lastView || "home";
+  const restoredView =
+    savedView === "practice" && activeSession?.questionIds?.length
+      ? "practice"
+      : savedView === "exam" && examSession?.questionIds?.length
+        ? "exam"
+        : savedView === "sheet"
+          ? activeSession?.questionIds?.length
+            ? "practice"
+            : examSession?.questionIds?.length
+              ? "exam"
+              : "home"
+          : VALID_VIEWS.has(savedView)
+            ? savedView
+            : "home";
+  goTo(restoredView, { history: false });
+  initializeAppHistory(restoredView);
 }
 
 initApp();

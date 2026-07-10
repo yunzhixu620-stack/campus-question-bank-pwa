@@ -246,6 +246,35 @@
             <p class="practice-submit-result" id="practice-submit-result"></p>
           </section>
         </div>
+
+        <div class="flow-dialog-backdrop" id="practice-submit-confirm" aria-hidden="true">
+          <section class="flow-dialog" role="dialog" aria-modal="true" aria-labelledby="practice-confirm-title">
+            <h2 id="practice-confirm-title">确认提交</h2>
+            <p id="practice-confirm-message">仍有未作答题目，提交后答案将锁定。</p>
+            <div class="flow-dialog-actions">
+              <button id="practice-confirm-cancel" type="button">继续答题</button>
+              <button class="primary-action" id="practice-confirm-submit" type="button">确认提交</button>
+            </div>
+          </section>
+        </div>
+
+        <div class="practice-result-backdrop" id="practice-result-backdrop" aria-hidden="true">
+          <section class="practice-result-panel" role="dialog" aria-modal="true" aria-labelledby="practice-result-title">
+            <span class="result-kicker">本次练习</span>
+            <h2 id="practice-result-title">练习完成</h2>
+            <strong class="practice-result-score" id="practice-result-score">0 / 30</strong>
+            <p id="practice-result-summary">正确率 0%</p>
+            <div class="practice-result-stats">
+              <span><strong id="practice-result-correct">0</strong>正确</span>
+              <span><strong id="practice-result-wrong">0</strong>错误</span>
+              <span><strong id="practice-result-unanswered">0</strong>未答</span>
+            </div>
+            <div class="practice-result-actions">
+              <button id="practice-result-review" type="button">查看错题</button>
+              <button class="primary-action" id="practice-result-home" type="button">返回首页</button>
+            </div>
+          </section>
+        </div>
       </section>
 
       <section class="view view-list" id="view-mistakes">
