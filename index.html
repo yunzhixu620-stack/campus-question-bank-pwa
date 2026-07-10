@@ -117,7 +117,7 @@
             </button>
             <button class="quick-card" data-target="practice" data-session="memory" data-mode="memory" type="button">
               <span class="quick-mark memory">背</span>
-              <strong>闪卡背题</strong>
+              <strong>间隔背题</strong>
               <small>错题优先</small>
             </button>
           </div>
@@ -129,6 +129,18 @@
             <button class="small-link" type="button">全部</button>
           </div>
           <div class="chapter-list" id="chapter-list"></div>
+        </section>
+
+        <section class="section-block progress-transfer">
+          <div class="section-heading">
+            <h2>进度备份</h2>
+            <span id="progress-transfer-status">仅保存在本机</span>
+          </div>
+          <div class="progress-transfer-actions">
+            <button id="export-progress" type="button">导出进度</button>
+            <button id="import-progress" type="button">导入进度</button>
+            <input id="import-progress-file" type="file" accept="application/json,.json" hidden />
+          </div>
         </section>
       </section>
 
@@ -183,7 +195,7 @@
 
         <div class="mode-switch compact-mode practice-mode-switch" role="tablist" aria-label="练习模式">
           <button class="active" id="mode-practice" type="button">练习模式</button>
-          <button id="mode-memory" type="button">闪卡背题</button>
+          <button id="mode-memory" type="button">间隔背题</button>
           <button data-target="exam" type="button">模拟计时</button>
         </div>
 
@@ -194,8 +206,12 @@
             <strong id="memory-back"></strong>
           </div>
           <div class="memory-controls">
-            <button id="memory-flip" type="button">翻到答案</button>
-            <button id="memory-auto" type="button">自动轮播</button>
+            <button id="memory-flip" type="button">显示答案</button>
+          </div>
+          <div class="memory-ratings" id="memory-ratings" hidden>
+            <button class="forgot" data-memory-rating="forgot" type="button"><strong>不会</strong><small>10 分钟</small></button>
+            <button class="fuzzy" data-memory-rating="fuzzy" type="button"><strong>模糊</strong><small>1 天</small></button>
+            <button class="known" data-memory-rating="known" type="button"><strong>认识</strong><small id="memory-known-interval">3 天</small></button>
           </div>
         </article>
 

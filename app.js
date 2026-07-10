@@ -77,7 +77,6 @@ let currentQuestion = 0;
 let activeSession = null;
 let memoryMode = false;
 let memorySide = "front";
-let memoryAutoTimer = null;
 let examTimer = null;
 let practiceTimer = null;
 let examSeconds = 0;
@@ -459,23 +458,104 @@ async function readUserState(user) {
   return defaultUserState(user);
 }
 
+async function persistUserState(state) {
+  if (!state?.userId) return;
+  localStorage.setItem(`${DB_NAME}:${state.userId}`, JSON.stringify(state));
+  try {
+    const db = await openAppDb();
+    await new Promise((resolve, reject) => {
+      const transaction = db.transaction("userStates", "readwrite");
+      transaction.objectStore("userStates").put(state);
+      transaction.oncomplete = () => resolve();
+      transaction.onerror = () => reject(transaction.error);
+    });
+  } catch {
+    // localStorage fallback above already saved the state for this device.
+  }
+}
+
 async function writeUserState() {
   if (!currentUserState) return;
   currentUserState.currentQuestion = currentQuestion;
   currentUserState.activeSession = activeSession;
   currentUserState.examSession = examSession;
   currentUserState.updatedAt = new Date().toISOString();
-  localStorage.setItem(`${DB_NAME}:${currentUserState.userId}`, JSON.stringify(currentUserState));
+  await persistUserState(currentUserState);
+}
+
+function setProgressTransferStatus(message) {
+  const status = document.querySelector("#progress-transfer-status");
+  if (status) status.textContent = message;
+}
+
+async function exportProgress() {
+  if (!currentUserState) return;
+  setProgressTransferStatus("正在准备");
+  await writeUserState();
+  const states = [];
+  for (const user of users) {
+    states.push(await readUserState(user));
+  }
+  const payload = {
+    format: "campus-question-bank-progress",
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    questionBankTotal: questionDataIndex?.totalQuestions || questions.length,
+    currentUserId: currentUserState.userId,
+    users: states,
+  };
+  const content = JSON.stringify(payload, null, 2);
+  const filename = `题库进度-${todayKey()}.json`;
+  const file = new File([content], filename, { type: "application/json" });
+  if (navigator.canShare?.({ files: [file] })) {
+    try {
+      await navigator.share({ title: "题库进度备份", files: [file] });
+      setProgressTransferStatus("已导出");
+      return;
+    } catch (error) {
+      if (error?.name === "AbortError") {
+        setProgressTransferStatus("已取消");
+        return;
+      }
+    }
+  }
+  const url = URL.createObjectURL(file);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  link.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  setProgressTransferStatus("已导出");
+}
+
+async function importProgressFile(file) {
+  if (!file) return;
+  if (file.size > 10 * 1024 * 1024) {
+    setProgressTransferStatus("文件过大");
+    return;
+  }
+  setProgressTransferStatus("正在校验");
   try {
-    const db = await openAppDb();
-    await new Promise((resolve, reject) => {
-      const transaction = db.transaction("userStates", "readwrite");
-      transaction.objectStore("userStates").put(currentUserState);
-      transaction.oncomplete = () => resolve();
-      transaction.onerror = () => reject(transaction.error);
-    });
+    const payload = JSON.parse(await file.text());
+    if (payload?.format !== "campus-question-bank-progress" || payload?.version !== 1 || !Array.isArray(payload.users)) {
+      throw new Error("invalid-format");
+    }
+    const knownUserIds = new Set(users.map((user) => user.id));
+    const incomingStates = payload.users.filter((state) => state && knownUserIds.has(state.userId));
+    if (!incomingStates.length) throw new Error("no-users");
+    if (!window.confirm(`将覆盖本机 ${incomingStates.length} 个用户的题库进度，是否继续？`)) {
+      setProgressTransferStatus("已取消");
+      return;
+    }
+    for (const state of incomingStates) {
+      const user = users.find((item) => item.id === state.userId);
+      await persistUserState({ ...normalizeUserState(state, user), updatedAt: new Date().toISOString() });
+    }
+    const importedIndex = users.findIndex((user) => user.id === payload.currentUserId);
+    await loadCurrentUser(importedIndex >= 0 ? importedIndex : currentUserIndex);
+    setProgressTransferStatus(`已导入 ${incomingStates.length} 个用户`);
   } catch {
-    // localStorage fallback above already saved the state for this device.
+    setProgressTransferStatus("文件格式不正确");
   }
 }
 
@@ -531,6 +611,10 @@ function getQuestionProgress(questionId = questionKey()) {
     wrongCount: 0,
     correctStreak: 0,
     memoryViews: 0,
+    memoryRepetitions: 0,
+    memoryIntervalDays: 0,
+    memoryEase: 2.3,
+    memoryLapses: 0,
   };
   return currentUserState.progress[questionId];
 }
@@ -723,6 +807,35 @@ function reviewQuestionIds(limit) {
   return uniqueIds(scored.map((item) => item.id)).slice(0, limit);
 }
 
+function memoryQuestionIds(limit = 30) {
+  const count = clampNumber(limit, 1, 100, 30);
+  const now = Date.now();
+  const due = [];
+  const unseen = [];
+  const future = [];
+  availablePracticeQuestionIds().forEach((id) => {
+    const progress = currentUserState?.progress?.[id] || {};
+    const dueAt = progress.memoryNextReviewAt ? new Date(progress.memoryNextReviewAt).getTime() : 0;
+    if (!progress.memoryViews && !progress.memoryRepetitions) {
+      unseen.push(id);
+      return;
+    }
+    const row = { id, dueAt: Number.isFinite(dueAt) ? dueAt : 0, lapses: progress.memoryLapses || 0 };
+    if (!row.dueAt || row.dueAt <= now) due.push(row);
+    else future.push(row);
+  });
+  due.sort((left, right) => left.dueAt - right.dueAt || right.lapses - left.lapses);
+  future.sort((left, right) => left.dueAt - right.dueAt || right.lapses - left.lapses);
+  const selected = due.slice(0, count).map((row) => row.id);
+  if (selected.length < count) {
+    selected.push(...sampleBalancedByCategory(count - selected.length, unseen, new Set(selected)));
+  }
+  if (selected.length < count) {
+    selected.push(...future.map((row) => row.id).filter((id) => !selected.includes(id)).slice(0, count - selected.length));
+  }
+  return uniqueIds(selected).slice(0, count);
+}
+
 function summarizeQuestionIds(questionIds, reviewIds = []) {
   const reviewSet = new Set(reviewIds);
   const counts = new Map();
@@ -876,9 +989,8 @@ function startSessionFromTarget(target) {
     return;
   }
   if (sessionType === "memory") {
-    const ids = reviewQuestionIds(10);
-    const fallback = buildExtraSession(currentUserState.prefs?.defaultBatchSize || 30);
-    startSession("闪卡背题", ids.length ? uniqueIds([...ids, ...fallback]).slice(0, 30) : fallback, "memory", "错题优先");
+    const ids = memoryQuestionIds(currentUserState.prefs?.defaultBatchSize || 30);
+    startSession("间隔背题", ids, "memory", "到期卡片优先");
     return;
   }
   if (sessionType === "category") {
@@ -907,7 +1019,8 @@ function advanceQuestion() {
       activeSession.index += 1;
       setCurrentQuestionById(activeSession.questionIds[activeSession.index]);
     } else {
-      finishPracticeSession();
+      if (activeSession.type === "memory") completeMemorySession();
+      else finishPracticeSession();
       return;
     }
   } else {
@@ -1399,8 +1512,10 @@ function renderQuestion() {
       : "题图，点按放大"
     : "图片题会保留整题截图或题干图表，可点开放大";
   document.querySelector("#memory-panel").classList.toggle("visible", memoryMode);
-  document.querySelector("#analysis-card").classList.toggle("visible", memoryMode || sessionSubmitted);
-  document.querySelector("#answer-toggle").textContent = memoryMode || sessionSubmitted ? "收起解析" : "看解析";
+  const memoryAnswerVisible = memoryMode && memorySide === "back";
+  document.querySelector(".question-card").classList.toggle("memory-question-card", memoryMode);
+  document.querySelector("#analysis-card").classList.toggle("visible", memoryAnswerVisible || sessionSubmitted);
+  document.querySelector("#answer-toggle").textContent = memoryAnswerVisible || sessionSubmitted ? "收起解析" : "看解析";
   document.querySelector("#mark-favorite").textContent = progress.favorite ? "已收藏" : "收藏";
   document.querySelector("#mark-wrong").textContent = progress.wrong ? "已记入" : "记错题";
   if (question.options?.length) {
@@ -1411,7 +1526,7 @@ function renderQuestion() {
           const answered = Boolean(selectedAnswer);
           const isCorrect = letter === firstAnswer(question);
           const isSelected = selectedAnswer === letter;
-          const reveal = memoryMode || answered || sessionSubmitted;
+          const reveal = memoryAnswerVisible || answered || sessionSubmitted;
           const locked = memoryMode || answered || sessionSubmitted;
           return `
       <button class="option-button ${reveal && isCorrect ? "correct" : ""} ${isSelected ? "selected" : ""} ${reveal && isSelected && !isCorrect ? "wrong" : ""}" data-letter="${letter}" type="button" ${locked ? "disabled" : ""}>
@@ -1664,10 +1779,18 @@ function chooseOption(button) {
 function setMode(nextMemoryMode) {
   memoryMode = nextMemoryMode;
   memorySide = "front";
-  stopMemoryAuto();
   document.querySelector("#mode-practice").classList.toggle("active", !memoryMode);
   document.querySelector("#mode-memory").classList.toggle("active", memoryMode);
   renderQuestion();
+}
+
+function nextKnownMemoryInterval(progress = {}) {
+  const repetitions = progress.memoryRepetitions || 0;
+  const interval = progress.memoryIntervalDays || 0;
+  const ease = Math.max(1.3, progress.memoryEase || 2.3);
+  if (repetitions <= 0) return 1;
+  if (repetitions === 1) return 3;
+  return Math.min(180, Math.max(3, Math.round(interval * ease)));
 }
 
 function renderMemoryCard() {
@@ -1676,46 +1799,92 @@ function renderMemoryCard() {
   const card = document.querySelector("#memory-card");
   const answer = firstAnswer(question);
   const answerOption = question.options[["A", "B", "C", "D"].indexOf(answer)] || "";
+  const answerVisible = memorySide === "back";
+  const progress = getQuestionProgress(question.id);
   card.dataset.side = memorySide;
-  document.querySelector("#memory-label").textContent = memorySide === "front" ? "题目卡" : "答案卡";
+  document.querySelector("#memory-label").textContent = answerVisible ? "答案与解析" : "先回忆";
   document.querySelector("#memory-front").textContent = question.text;
   document.querySelector("#memory-back").textContent = answer ? `答案 ${answer}：${answerOption}` : "答案见整题截图中的勾选项";
-  document.querySelector("#memory-flip").textContent = memorySide === "front" ? "翻到答案" : "回到题目";
+  document.querySelector("#memory-flip").textContent = "显示答案";
+  document.querySelector(".memory-controls").hidden = answerVisible;
+  document.querySelector("#memory-ratings").hidden = !answerVisible;
+  document.querySelector("#memory-known-interval").textContent = `${nextKnownMemoryInterval(progress)} 天`;
 }
 
 function flipMemoryCard() {
-  memorySide = memorySide === "front" ? "back" : "front";
-  renderMemoryCard();
-  if (memorySide === "back") {
-    void updateQuestionProgress(questionKey(), (progress) => {
-      progress.memoryViews += 1;
-      progress.lastMemoryAt = new Date().toISOString();
-      progress.nextReviewAt = new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString();
-    });
-  }
+  if (!memoryMode || memorySide === "back") return;
+  memorySide = "back";
+  void updateQuestionProgress(questionKey(), (progress) => {
+    progress.memoryViews = (progress.memoryViews || 0) + 1;
+    progress.lastMemoryAt = new Date().toISOString();
+  });
+  renderQuestion();
 }
 
-function stopMemoryAuto() {
-  if (memoryAutoTimer) {
-    clearInterval(memoryAutoTimer);
-    memoryAutoTimer = null;
-  }
-  document.querySelector("#memory-auto").textContent = "自动轮播";
+function completeMemorySession() {
+  if (!activeSession?.questionIds?.length) return;
+  const completedSession = activeSession;
+  const ratings = completedSession.memoryRatings || {};
+  const ratingCounts = Object.values(ratings).reduce(
+    (counts, rating) => ({ ...counts, [rating]: (counts[rating] || 0) + 1 }),
+    {},
+  );
+  recordRecent(
+    `${completedSession.title || "间隔背题"}已完成`,
+    `认识 ${ratingCounts.known || 0} · 模糊 ${ratingCounts.fuzzy || 0} · 不会 ${ratingCounts.forgot || 0}`,
+    "背题",
+    completedSession.questionIds[completedSession.questionIds.length - 1],
+  );
+  activeSession = null;
+  currentUserState.activeSession = null;
+  memoryMode = false;
+  memorySide = "front";
+  document.querySelector("#mode-practice").classList.add("active");
+  document.querySelector("#mode-memory").classList.remove("active");
+  void writeUserState();
+  goTo("home", { replace: true });
 }
 
-function toggleMemoryAuto() {
-  if (memoryAutoTimer) {
-    stopMemoryAuto();
+async function rateMemory(rating) {
+  const question = currentQuestionObject();
+  if (!memoryMode || memorySide !== "back" || !question || !activeSession?.questionIds?.length) return;
+  const now = Date.now();
+  await updateQuestionProgress(question.id, (progress) => {
+    progress.memoryEase = Math.max(1.3, progress.memoryEase || 2.3);
+    if (rating === "forgot") {
+      progress.memoryRepetitions = 0;
+      progress.memoryIntervalDays = 0;
+      progress.memoryEase = Math.max(1.3, progress.memoryEase - 0.2);
+      progress.memoryLapses = (progress.memoryLapses || 0) + 1;
+      progress.memoryNextReviewAt = new Date(now + 10 * 60 * 1000).toISOString();
+    } else if (rating === "fuzzy") {
+      progress.memoryRepetitions = Math.max(1, progress.memoryRepetitions || 0);
+      progress.memoryIntervalDays = Math.min(90, Math.max(1, Math.round((progress.memoryIntervalDays || 1) * 1.2)));
+      progress.memoryEase = Math.max(1.3, progress.memoryEase - 0.12);
+      progress.memoryNextReviewAt = new Date(now + progress.memoryIntervalDays * 24 * 60 * 60 * 1000).toISOString();
+    } else {
+      progress.memoryIntervalDays = nextKnownMemoryInterval(progress);
+      progress.memoryRepetitions = (progress.memoryRepetitions || 0) + 1;
+      progress.memoryEase = Math.min(2.8, progress.memoryEase + 0.08);
+      progress.memoryNextReviewAt = new Date(now + progress.memoryIntervalDays * 24 * 60 * 60 * 1000).toISOString();
+    }
+    progress.memoryLastRating = rating;
+    progress.lastMemoryAt = new Date(now).toISOString();
+  });
+  activeSession.memoryRatings ||= {};
+  activeSession.memoryRatings[question.id] = rating;
+  if ((activeSession.index || 0) >= activeSession.questionIds.length - 1) {
+    completeMemorySession();
     return;
   }
-  document.querySelector("#memory-auto").textContent = "停止轮播";
-  memoryAutoTimer = setInterval(() => {
-    if (memorySide === "back") {
-      advanceQuestion();
-      return;
-    }
-    flipMemoryCard();
-  }, 2200);
+  activeSession.index += 1;
+  setCurrentQuestionById(activeSession.questionIds[activeSession.index]);
+  memorySide = "front";
+  currentUserState.activeSession = activeSession;
+  await writeUserState();
+  renderQuestion();
+  viewScrollPositions.set("practice", 0);
+  window.scrollTo(0, 0);
 }
 
 function updateDailyPlanUI() {
@@ -2197,7 +2366,18 @@ function bindEvents() {
   document.querySelector("#mode-practice").addEventListener("click", () => setMode(false));
   document.querySelector("#mode-memory").addEventListener("click", () => setMode(true));
   document.querySelector("#memory-flip").addEventListener("click", flipMemoryCard);
-  document.querySelector("#memory-auto").addEventListener("click", toggleMemoryAuto);
+  document.querySelectorAll("[data-memory-rating]").forEach((button) => {
+    button.addEventListener("click", () => void rateMemory(button.dataset.memoryRating));
+  });
+  document.querySelector("#export-progress").addEventListener("click", () => void exportProgress());
+  document.querySelector("#import-progress").addEventListener("click", () => document.querySelector("#import-progress-file").click());
+  document.querySelector("#import-progress-file").addEventListener("change", (event) => {
+    const input = event.currentTarget;
+    const [file] = input.files || [];
+    void importProgressFile(file).finally(() => {
+      input.value = "";
+    });
+  });
   document.querySelector("#plan-day").addEventListener("click", () => setPlanMode("day"));
   document.querySelector("#plan-extra").addEventListener("click", () => setPlanMode("extra"));
   document.querySelector("#plan-days").addEventListener("change", (event) => {

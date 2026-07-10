@@ -840,18 +840,75 @@ h1 {
 }
 
 .memory-controls {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
+  display: block;
   margin-top: 12px;
 }
 
 .memory-controls button {
+  width: 100%;
   min-height: 42px;
   border-radius: var(--radius);
   background: #e9edff;
   color: var(--blue);
   font-weight: 800;
+}
+
+.memory-controls[hidden] {
+  display: none;
+}
+
+.memory-question-card #question-text {
+  display: none;
+}
+
+.memory-ratings {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.memory-ratings[hidden] {
+  display: none;
+}
+
+.memory-ratings button {
+  min-width: 0;
+  min-height: 54px;
+  padding: 7px 4px;
+  border: 1px solid #d9e1ea;
+  border-radius: var(--radius);
+  background: #f7f9fb;
+  color: var(--ink);
+}
+
+.memory-ratings button strong,
+.memory-ratings button small {
+  display: block;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.memory-ratings button small {
+  margin-top: 2px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.memory-ratings .forgot {
+  border-color: #f0c9c9;
+  color: #a33c3c;
+}
+
+.memory-ratings .fuzzy {
+  border-color: #e7d4a0;
+  color: #81631e;
+}
+
+.memory-ratings .known {
+  border-color: #a8d8c8;
+  color: #176b49;
 }
 
 .question-kicker {
@@ -1860,6 +1917,26 @@ h1 {
 
 .home-plan-section .sample-tags {
   margin-top: 10px;
+}
+
+.progress-transfer .section-heading span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.progress-transfer-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.progress-transfer-actions button {
+  min-height: 44px;
+  border: 1px solid #d8e1e9;
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 800;
 }
 
 .mode-quick-grid {
