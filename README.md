@@ -4,7 +4,7 @@
 
 线上地址：[yunzhixu620-stack.github.io/campus-question-bank-pwa](https://yunzhixu620-stack.github.io/campus-question-bank-pwa/)
 
-开发或导题前先阅读 [PROJECT_RULES.md](PROJECT_RULES.md)。其中记录了题目准入、截图/OCR、每日计划、本地记忆、模拟考试、草稿纸、导入状态和发布检查的完整规则。
+开发或导题前先阅读 [PROJECT_RULES.md](PROJECT_RULES.md) 和 [SOURCE_IMPORT_AUDIT.md](SOURCE_IMPORT_AUDIT.md)。前者记录产品规则，后者记录三份原始压缩包的逐文件核对结论。
 
 ## 当前数据
 
@@ -15,7 +15,7 @@
 - 数据分片：115 个，启动时仅加载目录和当前流程需要的分片
 - 来源清单：`data/source-import-status.json`
 
-不能把当前数据称为“全部导入完成”。扫描 PDF、旧 DOC、混合 PDF、疑似重复文件和答案外露文件都在来源清单中保留明确状态。
+不能把当前数据称为“全部导入完成”。原始 ZIP 文件清单已 100% 对账，但仍有 25 份唯一题库文件没有完成可靠结构化；扫描 PDF、旧 DOC、混合 PDF、疑似重复文件和答案外露文件都在来源清单中保留明确状态。
 
 ## 已有功能
 
@@ -29,6 +29,13 @@
 - IndexedDB 本地记忆，支持 5 个本地用户档案
 - 全用户进度 JSON 导出/导入
 - Service Worker 离线外壳和按需题库缓存
+
+## 离线范围
+
+- 首次联网打开后，应用外壳、题库目录和已经打开的数据分片会被缓存。
+- 已经加载过的当前练习可以断网刷新并继续，IndexedDB 中的本机进度不受影响。
+- 尚未加载的数据分片不能在断网时临时抽取，因此当前不是“整套题库一次下载后永久离线”的模式。
+- 手机端使用 `touch-action: manipulation` 抑制双击放大造成的布局跳动，同时保留正常滚动和双指缩放。
 
 ## 验证与发布
 

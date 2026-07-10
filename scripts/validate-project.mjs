@@ -206,10 +206,23 @@ if (sourceStatus) {
   if (sourceStatus.questionTotal !== questions.length) fail("Source ledger question total is stale.");
   if (sourceStatus.sourceTotal !== sourceStatus.sources?.length) fail("Source ledger source total is stale.");
   const statusCounts = {};
-  for (const source of sourceStatus.sources || []) statusCounts[source.status] = (statusCounts[source.status] || 0) + 1;
+  const sourceQuestionCounts = { questions: 0, practice: 0, review: 0, reference: 0 };
+  for (const source of sourceStatus.sources || []) {
+    statusCounts[source.status] = (statusCounts[source.status] || 0) + 1;
+    const classified = (source.practice || 0) + (source.review || 0) + (source.reference || 0);
+    if ((source.questions || 0) !== classified) fail(`Source ledger classification is incomplete: ${source.path}`);
+    sourceQuestionCounts.questions += source.questions || 0;
+    sourceQuestionCounts.practice += source.practice || 0;
+    sourceQuestionCounts.review += source.review || 0;
+    sourceQuestionCounts.reference += source.reference || 0;
+  }
   for (const key of new Set([...Object.keys(statusCounts), ...Object.keys(sourceStatus.statusCounts || {})])) {
     if ((statusCounts[key] || 0) !== (sourceStatus.statusCounts?.[key] || 0)) fail(`Source ledger status count is stale: ${key}`);
   }
+  if (sourceQuestionCounts.questions !== questions.length) fail("Source ledger does not account for every question.");
+  if (sourceQuestionCounts.practice !== counts.practice) fail("Source ledger practice total does not match question classification.");
+  if (sourceQuestionCounts.review !== counts.review) fail("Source ledger review total does not match question classification.");
+  if (sourceQuestionCounts.reference !== counts.reference) fail("Source ledger reference total does not match question classification.");
 }
 
 for (const shard of index.shards || []) {

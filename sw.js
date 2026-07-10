@@ -1,7 +1,7 @@
 const CACHE_PREFIX = "campus-question-bank";
-const CORE_CACHE = `${CACHE_PREFIX}-core-v15`;
-const DATA_CACHE = `${CACHE_PREFIX}-data-v15`;
-const IMAGE_CACHE = `${CACHE_PREFIX}-images-v15`;
+const CORE_CACHE = `${CACHE_PREFIX}-core-v16`;
+const DATA_CACHE = `${CACHE_PREFIX}-data-v16`;
+const IMAGE_CACHE = `${CACHE_PREFIX}-images-v16`;
 const CORE_ASSETS = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.json", "./icon.svg"];
 
 function sameOrigin(request) {
