@@ -89,6 +89,11 @@ let questionIndexById = new Map();
 const VALID_VIEWS = new Set(["home", "search", "practice", "mistakes", "favorites", "recent", "exam", "sheet"]);
 let sheetReturnView = "home";
 let dataLoadInFlight = null;
+let questionDataIndex = null;
+let allQuestionDataLoaded = false;
+let retryQuestionLoad = null;
+const loadedQuestionChunks = new Set();
+const questionChunkPromises = new Map();
 let historyReady = false;
 let practiceConfirmReturnOverlay = null;
 let examConfirmReturnOverlay = null;
@@ -182,6 +187,7 @@ function firstAnswer(question) {
 
 function referenceOnlyQuestion(question) {
   return Boolean(
+    question?.referenceOnly === true ||
     question?.practiceMode === "reference-only" ||
       question?.answerRevealed ||
       question?.questionType === "image-only" ||
@@ -198,7 +204,9 @@ function reviewOnlyQuestion(question) {
 }
 
 function practiceEligibleQuestion(question) {
-  return Boolean(question?.options?.length >= 2 && firstAnswer(question) && !referenceOnlyQuestion(question) && !reviewOnlyQuestion(question));
+  if (referenceOnlyQuestion(question) || reviewOnlyQuestion(question)) return false;
+  if (question?.practiceEligible === true) return true;
+  return Boolean(question?.options?.length >= 2 && firstAnswer(question));
 }
 
 function normalizeQuestion(rawQuestion) {
@@ -214,6 +222,32 @@ function normalizeQuestion(rawQuestion) {
     options: (rawQuestion.options || []).map((option) => (typeof option === "string" ? option : option.text || "")),
     image: Boolean(rawQuestion.image || rawQuestion.images?.length),
     images: imageItems.map((image) => (typeof image === "string" ? image : image.src || image.url || image.path || "")).filter(Boolean),
+  };
+}
+
+function normalizeCatalogQuestion(rawQuestion) {
+  return {
+    ...rawQuestion,
+    text: rawQuestion.textPreview || "",
+    question: rawQuestion.textPreview || "",
+    options: [],
+    answer: "",
+    analysis: "",
+    images: [],
+    image: Boolean(rawQuestion.imageCount),
+    catalogOnly: true,
+  };
+}
+
+function mergeLoadedQuestion(rawQuestion, chunkPath) {
+  const index = questionIndexById.get(rawQuestion.id);
+  if (!Number.isInteger(index)) return;
+  const catalogQuestion = questions[index];
+  questions[index] = {
+    ...catalogQuestion,
+    ...normalizeQuestion(rawQuestion),
+    dataChunk: catalogQuestion.dataChunk || chunkPath,
+    catalogOnly: false,
   };
 }
 
@@ -253,37 +287,77 @@ async function fetchJsonWithTimeout(url, options = {}) {
 async function loadQuestionData({ showLoading = false } = {}) {
   if (dataLoadInFlight) return dataLoadInFlight;
   dataLoadInFlight = (async () => {
-  try {
-    if (showLoading) setAppStatus("正在加载题库数据，网络慢时可能需要几秒。", "info");
-    const index = await fetchJsonWithTimeout("./data/index.json", { timeout: 20000 });
-    const shardPaths = (index.libraries || []).flatMap((library) => library.shards || []);
-    const shardResults = await Promise.allSettled(shardPaths.map((shardPath) => fetchJsonWithTimeout(`./${shardPath}`, { timeout: 30000 })));
-    const loadedQuestions = shardResults
-      .filter((result) => result.status === "fulfilled" && Array.isArray(result.value))
-      .flatMap((result) => result.value.map(normalizeQuestion));
-    const failedCount = shardResults.filter((result) => result.status === "rejected").length;
-    if (loadedQuestions.length) {
-      questions = loadedQuestions;
+    try {
+      if (showLoading) setAppStatus("正在加载题库目录。", "info");
+      const index = await fetchJsonWithTimeout("./data/index.json", { timeout: 15000 });
+      if (!index.catalog) throw new Error("Question catalog is missing.");
+      const catalog = await fetchJsonWithTimeout(`./${index.catalog}`, { timeout: 20000 });
+      if (!Array.isArray(catalog) || !catalog.length) throw new Error("Question catalog is empty.");
+      questionDataIndex = index;
+      questions = catalog.map(normalizeCatalogQuestion);
       rebuildQuestionIndex();
       document.querySelector("#total-count").textContent = String(index.totalQuestions || questions.length);
-      document.querySelector("#practice-title").textContent = index.libraries?.[0]?.name || "真实题库样本";
-      if (failedCount) {
-        setAppStatus(`题库已部分加载：${loadedQuestions.length} 题可用，${failedCount} 个分片暂时失败。`, "warning", "重试");
-      } else {
-        setAppStatus("");
-      }
+      document.querySelector("#practice-title").textContent = index.libraries?.[0]?.name || "校招题库";
+      retryQuestionLoad = null;
+      setAppStatus("");
       return true;
+    } catch (error) {
+      retryQuestionLoad = () => loadQuestionData({ showLoading: true });
+      setAppStatus(`题库目录加载失败：${error.name === "AbortError" ? "网络超时" : "请检查网络后重试"}。`, "error", "重试");
+      return false;
+    } finally {
+      dataLoadInFlight = null;
     }
-    setAppStatus("题库数据暂时没有加载成功，当前只显示内置示例题。", "error", "重试");
-    return false;
-  } catch (error) {
-    setAppStatus(`题库加载失败：${error.name === "AbortError" ? "网络超时" : "请检查网络后重试"}。`, "error", "重试");
-    return false;
-  } finally {
-    dataLoadInFlight = null;
-  }
   })();
   return dataLoadInFlight;
+}
+
+async function loadQuestionChunk(chunkPath) {
+  if (!chunkPath || loadedQuestionChunks.has(chunkPath)) return true;
+  if (questionChunkPromises.has(chunkPath)) return questionChunkPromises.get(chunkPath);
+  const promise = (async () => {
+    try {
+      const chunk = await fetchJsonWithTimeout(`./${chunkPath}`, { timeout: 25000, cache: "default" });
+      if (!Array.isArray(chunk)) throw new Error(`Invalid question chunk: ${chunkPath}`);
+      chunk.forEach((question) => mergeLoadedQuestion(question, chunkPath));
+      loadedQuestionChunks.add(chunkPath);
+      return true;
+    } catch (error) {
+      questionChunkPromises.delete(chunkPath);
+      throw error;
+    }
+  })();
+  questionChunkPromises.set(chunkPath, promise);
+  return promise;
+}
+
+async function loadQuestionChunks(chunkPaths, message = "正在准备题目") {
+  const pendingPaths = [...new Set(chunkPaths)].filter((chunkPath) => chunkPath && !loadedQuestionChunks.has(chunkPath));
+  if (!pendingPaths.length) return true;
+  setAppStatus(`${message}，首次打开可能需要几秒。`, "info");
+  const results = await Promise.allSettled(pendingPaths.map(loadQuestionChunk));
+  const failedPaths = pendingPaths.filter((_, index) => results[index].status === "rejected");
+  if (failedPaths.length) {
+    retryQuestionLoad = () => loadQuestionChunks(failedPaths, message);
+    setAppStatus(`有 ${failedPaths.length} 个题目数据块加载失败。`, "error", "重试");
+    return false;
+  }
+  retryQuestionLoad = null;
+  setAppStatus("");
+  allQuestionDataLoaded = Boolean(
+    questionDataIndex?.questionChunks?.length && loadedQuestionChunks.size >= questionDataIndex.questionChunks.length,
+  );
+  return true;
+}
+
+async function ensureQuestionsLoaded(questionIds, message = "正在准备本次练习") {
+  const chunkPaths = uniqueIds(questionIds).map((id) => getQuestionById(id)?.dataChunk).filter(Boolean);
+  return loadQuestionChunks(chunkPaths, message);
+}
+
+async function ensureAllQuestionDataLoaded() {
+  if (allQuestionDataLoaded) return true;
+  return loadQuestionChunks(questionDataIndex?.questionChunks || [], "正在加载搜题全文");
 }
 
 function defaultUserState(user) {
@@ -562,6 +636,22 @@ function uniqueIds(ids) {
   return [...new Set(ids.filter((id) => questionIndexById.has(id)))];
 }
 
+function sampleIdsFromFewChunks(ids, count) {
+  if (!count) return [];
+  const groups = new Map();
+  uniqueIds(ids).forEach((id) => {
+    const chunk = getQuestionById(id)?.dataChunk || "inline";
+    if (!groups.has(chunk)) groups.set(chunk, []);
+    groups.get(chunk).push(id);
+  });
+  const selected = [];
+  shuffled([...groups.values()]).some((chunkIds) => {
+    selected.push(...shuffled(chunkIds).slice(0, count - selected.length));
+    return selected.length >= count;
+  });
+  return selected.slice(0, count);
+}
+
 function availableQuestionIds(filter = () => true) {
   return questions.filter(filter).map((question) => question.id);
 }
@@ -601,10 +691,10 @@ function sampleBalancedByCategory(count, candidateIds, excludedIds = new Set()) 
       used += 1;
     });
 
-  const selected = quotaRows.flatMap((row) => row.ids.slice(0, row.quota));
+  const selected = quotaRows.flatMap((row) => sampleIdsFromFewChunks(row.ids, row.quota));
   if (selected.length < count) {
     const selectedSet = new Set(selected);
-    selected.push(...shuffled(candidates.filter((id) => !selectedSet.has(id))).slice(0, count - selected.length));
+    selected.push(...sampleIdsFromFewChunks(candidates.filter((id) => !selectedSet.has(id)), count - selected.length));
   }
   return shuffled(selected.slice(0, count));
 }
@@ -2005,16 +2095,32 @@ function stopDrawing() {
 }
 
 function bindEvents() {
-  document.body.addEventListener("click", (event) => {
+  document.body.addEventListener("click", async (event) => {
     const target = event.target.closest("[data-target]");
     if (!target) return;
-    startSessionFromTarget(target);
-    if (target.dataset.mode === "memory") {
-      setMode(true);
-    } else if (target.dataset.target === "practice") {
-      setMode(false);
+    event.preventDefault();
+    const wasDisabled = target.disabled;
+    target.disabled = true;
+    try {
+      startSessionFromTarget(target);
+      if (target.dataset.mode === "memory") {
+        setMode(true);
+      } else if (target.dataset.target === "practice") {
+        setMode(false);
+      }
+      let ready = true;
+      if (target.dataset.target === "practice" && activeSession?.questionIds?.length) {
+        ready = await ensureQuestionsLoaded(activeSession.questionIds);
+      } else if (target.dataset.target === "exam") {
+        ensureExamSession();
+        ready = await ensureQuestionsLoaded(examSession?.questionIds || [], "正在准备模拟试卷");
+      } else if (target.dataset.target === "search") {
+        ready = await ensureAllQuestionDataLoaded();
+      }
+      if (ready) goTo(target.dataset.target);
+    } finally {
+      target.disabled = wasDisabled;
     }
-    goTo(target.dataset.target);
   });
 
   document.querySelector("#mode-practice").addEventListener("click", () => setMode(false));
@@ -2048,8 +2154,11 @@ function bindEvents() {
   });
   document.querySelector("#app-status-action").addEventListener("click", async () => {
     setAppStatus("正在重新加载题库数据。", "info");
-    const loaded = await loadQuestionData({ showLoading: false });
-    if (loaded) renderAllDynamicSections();
+    const loaded = retryQuestionLoad ? await retryQuestionLoad() : await loadQuestionData({ showLoading: false });
+    if (loaded) {
+      renderAllDynamicSections();
+      if (shell.dataset.view === "exam") renderExam();
+    }
   });
   document.querySelector("#topbar-back").addEventListener("click", () => {
     const view = shell.dataset.view;
@@ -2069,9 +2178,11 @@ function bindEvents() {
   document.querySelector("#submit-exam").addEventListener("click", () => {
     requestExamSubmit();
   });
-  document.querySelector("#new-exam").addEventListener("click", () => {
+  document.querySelector("#new-exam").addEventListener("click", async () => {
     stopExamTimer();
     createExamSession();
+    const ready = await ensureQuestionsLoaded(examSession?.questionIds || [], "正在准备模拟试卷");
+    if (!ready) return;
     renderExam();
     startExamTimer();
   });
@@ -2300,6 +2411,13 @@ async function initApp() {
           : VALID_VIEWS.has(savedView)
             ? savedView
             : "home";
+  if (restoredView === "practice" && activeSession?.questionIds?.length) {
+    await ensureQuestionsLoaded(activeSession.questionIds);
+  } else if (restoredView === "exam" && examSession?.questionIds?.length) {
+    await ensureQuestionsLoaded(examSession.questionIds, "正在恢复模拟试卷");
+  } else if (restoredView === "search") {
+    await ensureAllQuestionDataLoaded();
+  }
   goTo(restoredView, { history: false });
   initializeAppHistory(restoredView);
 }

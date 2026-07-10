@@ -1,7 +1,7 @@
 const CACHE_PREFIX = "campus-question-bank";
-const CORE_CACHE = `${CACHE_PREFIX}-core-v10`;
-const DATA_CACHE = `${CACHE_PREFIX}-data-v10`;
-const IMAGE_CACHE = `${CACHE_PREFIX}-images-v10`;
+const CORE_CACHE = `${CACHE_PREFIX}-core-v11`;
+const DATA_CACHE = `${CACHE_PREFIX}-data-v11`;
+const IMAGE_CACHE = `${CACHE_PREFIX}-images-v11`;
 const CORE_ASSETS = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.json", "./icon.svg"];
 
 function sameOrigin(request) {
@@ -10,6 +10,10 @@ function sameOrigin(request) {
 
 function isDataRequest(url) {
   return url.pathname.includes("/data/") && url.pathname.endsWith(".json");
+}
+
+function isQuestionChunk(url) {
+  return url.pathname.includes("/data/chunks/") && url.pathname.endsWith(".json");
 }
 
 function isQuestionImage(url) {
@@ -66,6 +70,11 @@ self.addEventListener("fetch", (event) => {
 
   if (request.mode === "navigate") {
     event.respondWith(networkFirst(request, CORE_CACHE, "./index.html"));
+    return;
+  }
+
+  if (isQuestionChunk(url)) {
+    event.respondWith(cacheFirst(request, DATA_CACHE));
     return;
   }
 
