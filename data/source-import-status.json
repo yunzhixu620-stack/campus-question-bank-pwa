@@ -76,8 +76,8 @@
       "status": "imported",
       "reason": "已进入可练习题库；低置信度题单独保留在待复核区",
       "questions": 275,
-      "practice": 224,
-      "review": 47,
+      "practice": 206,
+      "review": 65,
       "reference": 0
     },
     {
@@ -115,8 +115,8 @@
       "status": "imported",
       "reason": "已进入可练习题库；低置信度题单独保留在待复核区",
       "questions": 291,
-      "practice": 238,
-      "review": 48,
+      "practice": 218,
+      "review": 68,
       "reference": 0
     },
     {
@@ -141,8 +141,8 @@
       "status": "imported",
       "reason": "已进入可练习题库；低置信度题单独保留在待复核区",
       "questions": 193,
-      "practice": 177,
-      "review": 11,
+      "practice": 176,
+      "review": 12,
       "reference": 0
     },
     {
@@ -219,8 +219,8 @@
       "status": "imported",
       "reason": "已进入可练习题库；低置信度题单独保留在待复核区",
       "questions": 600,
-      "practice": 600,
-      "review": 0,
+      "practice": 598,
+      "review": 2,
       "reference": 0
     },
     {
@@ -232,8 +232,8 @@
       "status": "imported",
       "reason": "已进入可练习题库；低置信度题单独保留在待复核区",
       "questions": 334,
-      "practice": 332,
-      "review": 2,
+      "practice": 329,
+      "review": 5,
       "reference": 0
     },
     {
@@ -245,8 +245,8 @@
       "status": "imported",
       "reason": "已进入可练习题库；低置信度题单独保留在待复核区",
       "questions": 409,
-      "practice": 400,
-      "review": 9,
+      "practice": 399,
+      "review": 10,
       "reference": 0
     },
     {
@@ -258,8 +258,8 @@
       "status": "imported",
       "reason": "已进入可练习题库；低置信度题单独保留在待复核区",
       "questions": 387,
-      "practice": 386,
-      "review": 1,
+      "practice": 381,
+      "review": 6,
       "reference": 0
     },
     {
@@ -284,8 +284,8 @@
       "status": "imported",
       "reason": "已进入可练习题库；低置信度题单独保留在待复核区",
       "questions": 345,
-      "practice": 345,
-      "review": 0,
+      "practice": 344,
+      "review": 1,
       "reference": 0
     },
     {

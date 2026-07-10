@@ -2447,9 +2447,10 @@ function bindEvents() {
     navigateBack("home");
   });
   document.querySelector("#user-switch").addEventListener("click", (event) => {
-    event.currentTarget.disabled = true;
+    const button = event.currentTarget;
+    button.disabled = true;
     loadCurrentUser((currentUserIndex + 1) % users.length).finally(() => {
-      event.currentTarget.disabled = false;
+      button.disabled = false;
     });
   });
   document.querySelector("#submit-exam").addEventListener("click", () => {
