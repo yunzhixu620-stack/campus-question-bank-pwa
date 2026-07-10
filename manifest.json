@@ -1,7 +1,7 @@
 {
   "name": "校招测评练习题库",
   "short_name": "校招题库",
-  "description": "手机端刷题、错题、收藏、闪卡背题和草稿纸原型。",
+  "description": "手机端校招测评刷题、错题复习、收藏、闪卡和草稿工具。",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

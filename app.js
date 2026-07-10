@@ -91,6 +91,8 @@ let sheetReturnView = "home";
 let dataLoadInFlight = null;
 let historyReady = false;
 let practiceConfirmReturnOverlay = null;
+let examConfirmReturnOverlay = null;
+const viewScrollPositions = new Map();
 const users = [
   { id: "user-a", name: "用户 A" },
   { id: "user-b", name: "用户 B" },
@@ -749,6 +751,7 @@ function startSession(title, questionIds, type = "practice", meta = "") {
     createdAt: new Date().toISOString(),
   };
   currentUserState.activeSession = activeSession;
+  viewScrollPositions.set("practice", 0);
   setCurrentQuestionById(ids[0]);
   recordRecent(title, `${ids.length} 题${meta ? ` · ${meta}` : ""}`, type === "daily" ? "今日" : "练习", ids[0]);
   void writeUserState();
@@ -817,6 +820,8 @@ function advanceQuestion() {
   memorySide = "front";
   void writeUserState();
   renderQuestion();
+  viewScrollPositions.set("practice", 0);
+  window.scrollTo(0, 0);
 }
 
 function previousQuestion() {
@@ -829,6 +834,8 @@ function previousQuestion() {
   memorySide = "front";
   void writeUserState();
   renderQuestion();
+  viewScrollPositions.set("practice", 0);
+  window.scrollTo(0, 0);
 }
 
 function startPracticeTimer() {
@@ -874,6 +881,10 @@ function updateSheetCloseButton() {
   const closeButton = document.querySelector("#sheet-close");
   if (!closeButton) return;
   closeButton.textContent = sheetReturnView === "practice" ? "返回练习" : sheetReturnView === "exam" ? "返回模拟" : "关闭";
+  const context = document.querySelector("#sheet-context");
+  if (context) {
+    context.textContent = sheetReturnView === "practice" ? "草稿会保留到本次练习结束" : sheetReturnView === "exam" ? "模拟计时继续运行" : "临时计算与手写草稿";
+  }
 }
 
 function appHistoryState(view = shell.dataset.view || "home", overlay = null, root = false) {
@@ -901,14 +912,30 @@ function syncPracticeOverlay(overlay = null) {
   result.setAttribute("aria-hidden", String(!resultVisible));
 }
 
+function syncExamOverlay(overlay = null) {
+  const answerCard = document.querySelector("#exam-sheet-backdrop");
+  const confirm = document.querySelector("#exam-submit-confirm");
+  const answerCardVisible = overlay === "exam-answer-card";
+  const confirmVisible = overlay === "exam-confirm";
+  answerCard.classList.toggle("visible", answerCardVisible);
+  answerCard.setAttribute("aria-hidden", String(!answerCardVisible));
+  confirm.classList.toggle("visible", confirmVisible);
+  confirm.setAttribute("aria-hidden", String(!confirmVisible));
+}
+
+function syncAppOverlay(overlay = null) {
+  syncPracticeOverlay(overlay);
+  syncExamOverlay(overlay);
+}
+
 function setOverlayHistory(overlay, { replace = false } = {}) {
   if (!historyReady) {
-    syncPracticeOverlay(overlay);
+    syncAppOverlay(overlay);
     return;
   }
   const method = replace ? "replaceState" : "pushState";
   history[method](appHistoryState(shell.dataset.view || "practice", overlay), "", location.href);
-  syncPracticeOverlay(overlay);
+  syncAppOverlay(overlay);
 }
 
 function navigateBack(fallback = "home") {
@@ -929,12 +956,13 @@ function initializeAppHistory(view) {
     const state = event.state;
     if (state?.app !== APP_HISTORY_MARKER) return;
     sheetReturnView = state.sheetReturnView || "home";
-    syncPracticeOverlay(null);
+    syncAppOverlay(null);
     goTo(state.view || "home", { history: false, returnTo: sheetReturnView });
     if (state.overlay) {
-      syncPracticeOverlay(state.overlay);
+      syncAppOverlay(state.overlay);
       if (state.overlay === "answer-card") renderPracticeSheet();
       if (state.overlay === "practice-result") renderPracticeResult();
+      if (state.overlay === "exam-answer-card") renderAnswerSheet();
     }
   });
 }
@@ -948,11 +976,13 @@ function closeSheet() {
 function goTo(view, options = {}) {
   view = VALID_VIEWS.has(view) ? view : "home";
   const fromView = shell.dataset.view || "home";
+  if (fromView !== view) viewScrollPositions.set(fromView, window.scrollY);
   if (view === "sheet") {
     sheetReturnView = options.returnTo || (fromView !== "sheet" ? fromView : sheetReturnView) || "home";
   }
   shell.dataset.view = view;
   if (view !== "practice") syncPracticeOverlay(null);
+  if (view !== "exam") syncExamOverlay(null);
   if (currentUserState) {
     currentUserState.lastView = view;
     void writeUserState();
@@ -978,13 +1008,20 @@ function goTo(view, options = {}) {
     renderSearchResults();
     setTimeout(() => document.querySelector("#search-input")?.focus(), 50);
   }
+  if (view === "home" && currentUserState) {
+    updateHomeStats();
+  }
   if (view === "sheet") {
     updateSheetCloseButton();
-    resizeCanvasBackingStore();
+    setSheetTool(activeSheetTool);
   }
   if (historyReady && options.history !== false) {
     const method = options.replace ? "replaceState" : "pushState";
     history[method](appHistoryState(view), "", location.href);
+  }
+  if (fromView !== view) {
+    const nextScroll = options.scrollTop ?? viewScrollPositions.get(view) ?? 0;
+    requestAnimationFrame(() => window.scrollTo(0, nextScroll));
   }
 }
 
@@ -1296,6 +1333,8 @@ function goToPracticeIndex(index) {
   setCurrentQuestionById(activeSession.questionIds[activeSession.index]);
   memorySide = "front";
   renderQuestion();
+  viewScrollPositions.set("practice", 0);
+  window.scrollTo(0, 0);
   practiceSheetClose();
   void writeUserState();
 }
@@ -1622,6 +1661,8 @@ function renderExam() {
 
   document.querySelector("#exam-timer").textContent = formatSeconds(session.seconds || examSeconds);
   document.querySelector("#exam-meta").textContent = `第 ${session.index + 1} / ${session.questionIds.length} 题`;
+  document.querySelector("#exam-progress-count").textContent = `${session.index + 1}/${session.questionIds.length}`;
+  document.querySelector("#exam-progress-fill").style.width = `${Math.round(((session.index + 1) / session.questionIds.length) * 100)}%`;
   document.querySelector("#exam-type").textContent = question.type || "单选题";
   document.querySelector("#exam-question-text").textContent = question.text;
   examImage.classList.remove("expanded");
@@ -1647,6 +1688,10 @@ function renderExam() {
     .join("");
   document.querySelector("#submit-exam").textContent = submitted ? "已交卷" : "交卷";
   document.querySelector("#submit-exam").disabled = submitted;
+  const examPrev = document.querySelector("#exam-prev");
+  const examNext = document.querySelector("#exam-next");
+  examPrev.disabled = session.index <= 0;
+  examNext.textContent = session.index >= session.questionIds.length - 1 ? "打开答题卡" : "下一题";
   renderAnswerSheet();
   renderExamScore();
 }
@@ -1667,6 +1712,10 @@ function renderAnswerSheet() {
       return `<button class="${answer ? "done" : ""} ${index === examSession.index ? "current" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}" data-exam-index="${index}" type="button">${index + 1}</button>`;
     })
     .join("");
+  const answered = examSession.questionIds.filter((id) => examSession.answers?.[id]).length;
+  document.querySelector("#exam-sheet-summary").textContent = examSession.submitted
+    ? `已交卷 · 作答 ${answered}/${examSession.questionIds.length}`
+    : `已答 ${answered} / ${examSession.questionIds.length}`;
 }
 
 function renderExamScore() {
@@ -1716,6 +1765,8 @@ function moveExam(delta) {
   if (!examSession?.questionIds?.length) return;
   examSession.index = Math.max(0, Math.min(examSession.questionIds.length - 1, (examSession.index || 0) + delta));
   renderExam();
+  viewScrollPositions.set("exam", 0);
+  window.scrollTo(0, 0);
   void writeUserState();
 }
 
@@ -1723,7 +1774,49 @@ function goToExamIndex(index) {
   if (!examSession?.questionIds?.length) return;
   examSession.index = Math.max(0, Math.min(examSession.questionIds.length - 1, Number(index) || 0));
   renderExam();
+  viewScrollPositions.set("exam", 0);
+  window.scrollTo(0, 0);
+  if (history.state?.overlay === "exam-answer-card") navigateBack("exam");
   void writeUserState();
+}
+
+function openExamAnswerSheet(options = {}) {
+  renderAnswerSheet();
+  renderExamScore();
+  if (options.history === false) {
+    syncExamOverlay("exam-answer-card");
+    return;
+  }
+  setOverlayHistory("exam-answer-card");
+}
+
+function closeExamAnswerSheet() {
+  navigateBack("exam");
+}
+
+function requestExamSubmit() {
+  if (!examSession?.questionIds?.length) return;
+  if (examSession.submitted) {
+    openExamAnswerSheet();
+    return;
+  }
+  const answered = examSession.questionIds.filter((id) => examSession.answers?.[id]).length;
+  const unanswered = examSession.questionIds.length - answered;
+  examConfirmReturnOverlay = history.state?.overlay === "exam-answer-card" ? "exam-answer-card" : null;
+  document.querySelector("#exam-confirm-message").textContent = unanswered
+    ? `还有 ${unanswered} 题未作答，交卷后不能修改答案。`
+    : `已完成 ${answered} 题，交卷后不能修改答案。`;
+  setOverlayHistory("exam-confirm", { replace: Boolean(examConfirmReturnOverlay) });
+}
+
+function cancelExamSubmit() {
+  if (examConfirmReturnOverlay === "exam-answer-card") {
+    examConfirmReturnOverlay = null;
+    setOverlayHistory("exam-answer-card", { replace: true });
+    return;
+  }
+  examConfirmReturnOverlay = null;
+  navigateBack("exam");
 }
 
 function recordExamQuestionResult(question, chosen, isCorrect) {
@@ -1784,6 +1877,7 @@ async function submitExam() {
   updateHomeStats();
   renderExam();
   await writeUserState();
+  setOverlayHistory("exam-answer-card", { replace: Boolean(history.state?.overlay) });
 }
 
 function setupCalculator() {
@@ -1831,18 +1925,49 @@ const canvas = document.querySelector("#scratch-canvas");
 const ctx = canvas.getContext("2d");
 let drawing = false;
 let lastPoint = null;
+let eraserMode = false;
+let activeSheetTool = "scratch";
+let canvasHistory = [];
+
+function configureCanvasContext() {
+  const scale = window.devicePixelRatio || 1;
+  ctx.lineWidth = (eraserMode ? 18 : 3) * scale;
+  ctx.lineCap = "round";
+  ctx.lineJoin = "round";
+  ctx.strokeStyle = "#1f2937";
+  ctx.globalCompositeOperation = eraserMode ? "destination-out" : "source-over";
+}
+
+function captureCanvasState() {
+  if (!canvas.width || !canvas.height) return;
+  canvasHistory.push(ctx.getImageData(0, 0, canvas.width, canvas.height));
+  canvasHistory = canvasHistory.slice(-20);
+  document.querySelector("#undo-canvas").disabled = canvasHistory.length <= 1;
+}
+
+function setSheetTool(tool) {
+  activeSheetTool = tool === "calculator" ? "calculator" : "scratch";
+  const scratchActive = activeSheetTool === "scratch";
+  document.querySelector("#tool-tab-scratch").classList.toggle("active", scratchActive);
+  document.querySelector("#tool-tab-calculator").classList.toggle("active", !scratchActive);
+  document.querySelector("#scratch-tool-panel").classList.toggle("active", scratchActive);
+  document.querySelector("#calculator-tool-panel").classList.toggle("active", !scratchActive);
+  viewScrollPositions.set("sheet", 0);
+  window.scrollTo(0, 0);
+  if (scratchActive) requestAnimationFrame(resizeCanvasBackingStore);
+}
 
 function resizeCanvasBackingStore() {
   const rect = canvas.getBoundingClientRect();
+  if (!rect.width || !rect.height) return;
   const scale = window.devicePixelRatio || 1;
   const previous = ctx.getImageData(0, 0, canvas.width, canvas.height);
   canvas.width = Math.max(1, Math.floor(rect.width * scale));
   canvas.height = Math.max(1, Math.floor(rect.height * scale));
   ctx.putImageData(previous, 0, 0);
-  ctx.lineWidth = 3 * scale;
-  ctx.lineCap = "round";
-  ctx.lineJoin = "round";
-  ctx.strokeStyle = "#1f2937";
+  configureCanvasContext();
+  canvasHistory = [ctx.getImageData(0, 0, canvas.width, canvas.height)];
+  document.querySelector("#undo-canvas").disabled = true;
 }
 
 function getCanvasPoint(event) {
@@ -1874,6 +1999,7 @@ function draw(event) {
 }
 
 function stopDrawing() {
+  if (drawing) captureCanvasState();
   drawing = false;
   lastPoint = null;
 }
@@ -1941,7 +2067,7 @@ function bindEvents() {
     });
   });
   document.querySelector("#submit-exam").addEventListener("click", () => {
-    void submitExam();
+    requestExamSubmit();
   });
   document.querySelector("#new-exam").addEventListener("click", () => {
     stopExamTimer();
@@ -1950,7 +2076,25 @@ function bindEvents() {
     startExamTimer();
   });
   document.querySelector("#exam-prev").addEventListener("click", () => moveExam(-1));
-  document.querySelector("#exam-next").addEventListener("click", () => moveExam(1));
+  document.querySelector("#exam-next").addEventListener("click", () => {
+    if (examSession?.index >= examSession?.questionIds?.length - 1) {
+      openExamAnswerSheet();
+      return;
+    }
+    moveExam(1);
+  });
+  document.querySelector("#exam-back").addEventListener("click", () => navigateBack("home"));
+  document.querySelector("#open-exam-answer-sheet").addEventListener("click", openExamAnswerSheet);
+  document.querySelector("#close-exam-answer-sheet").addEventListener("click", closeExamAnswerSheet);
+  document.querySelector("#open-exam-scratch").addEventListener("click", () => goTo("sheet", { returnTo: "exam" }));
+  document.querySelector("#exam-submit-confirm").addEventListener("click", (event) => {
+    if (event.target.id === "exam-submit-confirm") cancelExamSubmit();
+  });
+  document.querySelector("#exam-confirm-cancel").addEventListener("click", cancelExamSubmit);
+  document.querySelector("#exam-confirm-submit").addEventListener("click", () => {
+    examConfirmReturnOverlay = null;
+    void submitExam();
+  });
   document.querySelector("#exam-option-list").addEventListener("click", (event) => {
     const button = event.target.closest(".option-button");
     if (button) chooseExamOption(button);
@@ -2030,12 +2174,31 @@ function bindEvents() {
   });
   document.querySelector("#sheet-close").addEventListener("click", closeSheet);
   document.querySelector("#open-sheet-top").addEventListener("click", () => goTo("sheet", { returnTo: "practice" }));
+  document.querySelector("#tool-tab-scratch").addEventListener("click", () => setSheetTool("scratch"));
+  document.querySelector("#tool-tab-calculator").addEventListener("click", () => setSheetTool("calculator"));
+  document.querySelector("#undo-canvas").addEventListener("click", () => {
+    if (canvasHistory.length <= 1) return;
+    canvasHistory.pop();
+    const previous = canvasHistory[canvasHistory.length - 1];
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.putImageData(previous, 0, 0);
+    configureCanvasContext();
+    document.querySelector("#undo-canvas").disabled = canvasHistory.length <= 1;
+  });
+  document.querySelector("#eraser-toggle").addEventListener("click", (event) => {
+    eraserMode = !eraserMode;
+    event.currentTarget.classList.toggle("active", eraserMode);
+    event.currentTarget.textContent = eraserMode ? "画笔" : "橡皮";
+    configureCanvasContext();
+  });
   document.querySelector("#option-list").addEventListener("click", (event) => {
     const button = event.target.closest(".option-button");
     if (button) chooseOption(button);
   });
   document.querySelector("#clear-canvas").addEventListener("click", () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    configureCanvasContext();
+    captureCanvasState();
   });
   document.querySelector("#question-image").addEventListener("click", (event) => {
     if (!event.currentTarget.classList.contains("has-real-image")) return;
@@ -2051,6 +2214,7 @@ function bindEvents() {
   canvas.addEventListener("touchstart", startDrawing, { passive: false });
   canvas.addEventListener("touchmove", draw, { passive: false });
   canvas.addEventListener("touchend", stopDrawing);
+  canvas.addEventListener("touchcancel", stopDrawing);
   window.addEventListener("resize", resizeCanvasBackingStore);
 }
 
@@ -2062,9 +2226,19 @@ function updateHomeStats() {
   const mistakeCount = currentUserState?.mistakes?.length || 0;
   const favoriteCount = currentUserState?.favorites?.length || 0;
   const recentCount = currentUserState?.recent?.length || 0;
-  document.querySelector('[data-target="mistakes"] small').textContent = `已记录 ${mistakeCount} 题`;
-  document.querySelector('[data-target="favorites"] small').textContent = `重点题 ${favoriteCount} 题`;
-  document.querySelector('[data-target="recent"] small').textContent = recentCount ? `最近 ${recentCount} 条记录` : "继续上次进度";
+  const mistakeMeta = document.querySelector('[data-target="mistakes"] small');
+  const favoriteMeta = document.querySelector('[data-target="favorites"] small');
+  const recentMeta = document.querySelector('[data-target="recent"] small');
+  if (mistakeMeta) mistakeMeta.textContent = `已记录 ${mistakeCount} 题`;
+  if (favoriteMeta) favoriteMeta.textContent = `重点题 ${favoriteCount} 题`;
+  if (recentMeta) recentMeta.textContent = recentCount ? `最近 ${recentCount} 条记录` : "继续上次进度";
+  const resume = document.querySelector("#resume-practice");
+  const canResume = Boolean(activeSession?.questionIds?.length && !activeSession.submitted);
+  resume.hidden = !canResume;
+  if (canResume) {
+    document.querySelector("#resume-practice-title").textContent = activeSession.title || "继续练习";
+    document.querySelector("#resume-practice-progress").textContent = `${(activeSession.index || 0) + 1} / ${activeSession.questionIds.length}`;
+  }
   updateDailyPlanUI();
 }
 
