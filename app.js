@@ -98,6 +98,7 @@ let historyReady = false;
 let practiceConfirmReturnOverlay = null;
 let examConfirmReturnOverlay = null;
 const viewScrollPositions = new Map();
+let searchInputTimer = null;
 const users = [
   { id: "user-a", name: "用户 A" },
   { id: "user-b", name: "用户 B" },
@@ -381,6 +382,11 @@ function defaultUserState(user) {
       planTargetDate: null,
       defaultBatchSize: 30,
       extraBatchSizes: [30, 40, 50],
+      lastSearchQuery: "",
+      lastSearchLibrary: "",
+      lastSearchFolder: "",
+      lastSearchSet: "",
+      lastSearchCategory: "",
     },
     updatedAt: new Date().toISOString(),
   };
@@ -1214,12 +1220,16 @@ function questionSearchText(question) {
     .join(" ");
 }
 
-function searchQuestions(query, category) {
+function searchQuestions(query, filters) {
   const normalizedQuery = normalizeForSearch(query);
-  if (!normalizedQuery && !category) return [];
+  const hasFilter = Object.values(filters).some(Boolean);
+  if (!normalizedQuery && !hasFilter) return [];
   return questions
     .map((question) => {
-      if (category && question.category !== category) return null;
+      if (filters.library && question.library !== filters.library) return null;
+      if (filters.folder && question.subCategory !== filters.folder) return null;
+      if (filters.setName && question.setName !== filters.setName) return null;
+      if (filters.category && question.category !== filters.category) return null;
       const haystack = questionSearchText(question);
       const compactHaystack = normalizeForSearch(haystack);
       if (normalizedQuery && !compactHaystack.includes(normalizedQuery)) return null;
@@ -1239,53 +1249,116 @@ function searchQuestions(query, category) {
     .map((item) => item.question);
 }
 
-function renderSearchCategoryOptions() {
-  const select = document.querySelector("#search-category");
-  const current = select.value;
-  const categories = [...new Set(questions.map((question) => question.category || "未分类"))].sort((a, b) =>
-    a.localeCompare(b, "zh-Hans-CN"),
-  );
-  select.innerHTML = `<option value="">全部分类</option>${categories
-    .map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`)
+function searchFilters() {
+  return {
+    library: document.querySelector("#search-library").value,
+    folder: document.querySelector("#search-folder").value,
+    setName: document.querySelector("#search-set").value,
+    category: document.querySelector("#search-category").value,
+  };
+}
+
+function renderFilterSelect(selector, label, values, preferredValue) {
+  const select = document.querySelector(selector);
+  const sortedValues = [...new Set(values.filter(Boolean))].sort((left, right) => left.localeCompare(right, "zh-Hans-CN"));
+  select.innerHTML = `<option value="">${label}</option>${sortedValues
+    .map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`)
     .join("")}`;
-  if (categories.includes(current)) select.value = current;
+  select.value = sortedValues.includes(preferredValue) ? preferredValue : "";
+  return select.value;
+}
+
+function renderSearchCategoryOptions(preferred = {}) {
+  const saved = currentUserState?.prefs || {};
+  const currentLibrary = preferred.library ?? (document.querySelector("#search-library").value || saved.lastSearchLibrary || "");
+  const library = renderFilterSelect(
+    "#search-library",
+    "全部题库",
+    questions.map((question) => question.library || question.source),
+    currentLibrary,
+  );
+  const libraryQuestions = library ? questions.filter((question) => question.library === library) : questions;
+  const currentFolder = preferred.folder ?? (document.querySelector("#search-folder").value || saved.lastSearchFolder || "");
+  const folder = renderFilterSelect(
+    "#search-folder",
+    "全部目录",
+    libraryQuestions.map((question) => question.subCategory),
+    currentFolder,
+  );
+  const folderQuestions = folder ? libraryQuestions.filter((question) => question.subCategory === folder) : libraryQuestions;
+  const currentSet = preferred.setName ?? (document.querySelector("#search-set").value || saved.lastSearchSet || "");
+  const setName = renderFilterSelect(
+    "#search-set",
+    "全部套题",
+    folderQuestions.map((question) => question.setName),
+    currentSet,
+  );
+  const setQuestions = setName ? folderQuestions.filter((question) => question.setName === setName) : folderQuestions;
+  const currentCategory = preferred.category ?? (document.querySelector("#search-category").value || saved.lastSearchCategory || "");
+  renderFilterSelect(
+    "#search-category",
+    "全部模块",
+    setQuestions.map((question) => question.category || "未分类"),
+    currentCategory,
+  );
 }
 
 function renderSearchResults() {
   const input = document.querySelector("#search-input");
-  const category = document.querySelector("#search-category").value;
+  const filters = searchFilters();
   const query = input.value.trim();
   const resultList = document.querySelector("#search-results");
   const count = document.querySelector("#search-count");
   if (currentUserState) {
     currentUserState.prefs.lastSearchQuery = query;
-    currentUserState.prefs.lastSearchCategory = category;
+    currentUserState.prefs.lastSearchLibrary = filters.library;
+    currentUserState.prefs.lastSearchFolder = filters.folder;
+    currentUserState.prefs.lastSearchSet = filters.setName;
+    currentUserState.prefs.lastSearchCategory = filters.category;
   }
-  if (!query && !category) {
-    count.textContent = "输入关键词开始搜索，也可以先选择分类";
+  if (!query && !Object.values(filters).some(Boolean)) {
+    count.textContent = "选择题库、目录、套题或模块，也可以输入关键词";
     resultList.innerHTML = "";
     return;
   }
-  const results = searchQuestions(query, category);
-  count.textContent = results.length ? `显示前 ${results.length} 条结果` : "没有匹配结果";
+  const results = searchQuestions(query, filters);
+  count.textContent = results.length ? `显示前 ${results.length} 条题目` : "没有匹配题目";
   resultList.innerHTML = results
     .map((question) => {
       const hasOcrHit = query && normalizeForSearch(question.ocrText || "").includes(normalizeForSearch(query));
       const isReviewOnly = reviewOnlyQuestion(question);
       const isReferenceOnly = referenceOnlyQuestion(question);
-      const pill = isReviewOnly ? "待复核" : isReferenceOnly ? "仅资料" : hasOcrHit ? "OCR" : question.images?.length ? "图片" : "文字";
-      const preview = hasOcrHit ? question.ocrText : question.analysis || question.options?.join(" ") || "";
+      const pill = isReviewOnly
+        ? "待复核"
+        : isReferenceOnly
+          ? "仅资料"
+          : hasOcrHit
+            ? "OCR"
+            : question.images?.length || question.imageCount
+              ? "图片"
+              : "可练";
+      const preview = hasOcrHit ? question.ocrText : question.analysis || question.options?.join(" ") || question.setName || question.subCategory || "";
       return `
         <button class="record-item" data-target="practice" data-session="single" data-question-id="${escapeHtml(question.id)}" type="button">
           <span class="record-copy">
             <strong>${highlightSnippet(question.text, query, 68)}</strong>
-            <p>${escapeHtml(question.category)} · ${escapeHtml(question.source)} · ${highlightSnippet(preview, query, 72)}</p>
+            <p>${escapeHtml(question.library || question.source)} · ${escapeHtml(question.category)} · ${highlightSnippet(preview, query, 72)}</p>
           </span>
           <span class="record-pill">${pill}</span>
         </button>
       `;
     })
     .join("");
+}
+
+async function prepareSearchResults() {
+  const query = document.querySelector("#search-input").value.trim();
+  if (query && !allQuestionDataLoaded) {
+    const ready = await ensureAllQuestionDataLoaded();
+    if (!ready) return;
+  }
+  renderSearchResults();
+  void writeUserState();
 }
 
 function renderQuestion() {
@@ -2114,8 +2187,6 @@ function bindEvents() {
       } else if (target.dataset.target === "exam") {
         ensureExamSession();
         ready = await ensureQuestionsLoaded(examSession?.questionIds || [], "正在准备模拟试卷");
-      } else if (target.dataset.target === "search") {
-        ready = await ensureAllQuestionDataLoaded();
       }
       if (ready) goTo(target.dataset.target);
     } finally {
@@ -2140,7 +2211,33 @@ function bindEvents() {
     void writeUserState();
   });
   document.querySelector("#search-input").addEventListener("input", () => {
+    clearTimeout(searchInputTimer);
+    searchInputTimer = setTimeout(() => void prepareSearchResults(), 220);
+  });
+  document.querySelector("#search-library").addEventListener("change", (event) => {
+    renderSearchCategoryOptions({ library: event.currentTarget.value, folder: "", setName: "", category: "" });
     renderSearchResults();
+    void writeUserState();
+  });
+  document.querySelector("#search-folder").addEventListener("change", (event) => {
+    renderSearchCategoryOptions({
+      library: document.querySelector("#search-library").value,
+      folder: event.currentTarget.value,
+      setName: "",
+      category: "",
+    });
+    renderSearchResults();
+    void writeUserState();
+  });
+  document.querySelector("#search-set").addEventListener("change", (event) => {
+    renderSearchCategoryOptions({
+      library: document.querySelector("#search-library").value,
+      folder: document.querySelector("#search-folder").value,
+      setName: event.currentTarget.value,
+      category: "",
+    });
+    renderSearchResults();
+    void writeUserState();
   });
   document.querySelector("#search-category").addEventListener("change", () => {
     renderSearchResults();
@@ -2148,7 +2245,7 @@ function bindEvents() {
   });
   document.querySelector("#clear-search").addEventListener("click", () => {
     document.querySelector("#search-input").value = "";
-    document.querySelector("#search-category").value = "";
+    renderSearchCategoryOptions({ library: "", folder: "", setName: "", category: "" });
     renderSearchResults();
     void writeUserState();
   });
@@ -2358,9 +2455,13 @@ function renderAllDynamicSections() {
   setRecordListsFromState();
   updateHomeStats();
   renderQuestion();
-  renderSearchCategoryOptions();
+  renderSearchCategoryOptions({
+    library: currentUserState?.prefs?.lastSearchLibrary || "",
+    folder: currentUserState?.prefs?.lastSearchFolder || "",
+    setName: currentUserState?.prefs?.lastSearchSet || "",
+    category: currentUserState?.prefs?.lastSearchCategory || "",
+  });
   document.querySelector("#search-input").value = currentUserState?.prefs?.lastSearchQuery || "";
-  document.querySelector("#search-category").value = currentUserState?.prefs?.lastSearchCategory || "";
   renderSearchResults();
   setPlanMode(currentUserState?.prefs?.planMode || "day");
 }
@@ -2415,7 +2516,7 @@ async function initApp() {
     await ensureQuestionsLoaded(activeSession.questionIds);
   } else if (restoredView === "exam" && examSession?.questionIds?.length) {
     await ensureQuestionsLoaded(examSession.questionIds, "正在恢复模拟试卷");
-  } else if (restoredView === "search") {
+  } else if (restoredView === "search" && currentUserState?.prefs?.lastSearchQuery) {
     await ensureAllQuestionDataLoaded();
   }
   goTo(restoredView, { history: false });

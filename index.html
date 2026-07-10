@@ -139,9 +139,20 @@
         </div>
         <div class="search-panel">
           <input id="search-input" type="search" autocomplete="off" placeholder="输入关键词，比如 增长率、秦岭、E-mail" />
-          <select id="search-category" aria-label="按分类筛选">
-            <option value="">全部分类</option>
-          </select>
+          <div class="search-filter-grid">
+            <select id="search-library" aria-label="按题库来源筛选">
+              <option value="">全部题库</option>
+            </select>
+            <select id="search-folder" aria-label="按压缩包目录筛选">
+              <option value="">全部目录</option>
+            </select>
+            <select id="search-set" aria-label="按套题筛选">
+              <option value="">全部套题</option>
+            </select>
+            <select id="search-category" aria-label="按模块筛选">
+              <option value="">全部模块</option>
+            </select>
+          </div>
           <button id="clear-search" type="button">清空</button>
         </div>
         <div class="search-summary" id="search-count">输入关键词开始搜索</div>
