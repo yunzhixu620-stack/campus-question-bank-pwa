@@ -1806,6 +1806,149 @@ h1 {
   }
 }
 
+/* Mobile app shell: three primary destinations and in-context answer tools. */
+html,
+body,
+button,
+a,
+input,
+select {
+  touch-action: manipulation;
+}
+
+.phone-shell[data-view="records"] #view-records {
+  display: block;
+}
+
+.bottom-nav {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bottom-nav button {
+  min-width: 0;
+  font-size: 14px;
+}
+
+.practice-mode-switch[hidden] {
+  display: none !important;
+}
+
+.record-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin: 14px 0 12px;
+  padding: 4px;
+  border-radius: 8px;
+  background: #eef2f5;
+}
+
+.record-tabs button {
+  min-height: 40px;
+  border-radius: 6px;
+  background: transparent;
+  color: #65707e;
+  font-weight: 800;
+}
+
+.record-tabs button.active {
+  background: #fff;
+  color: var(--teal-dark);
+  box-shadow: 0 2px 8px rgba(29, 42, 62, 0.08);
+}
+
+.record-panel {
+  display: none;
+}
+
+.record-panel.active {
+  display: block;
+}
+
+.view-sheet {
+  display: none !important;
+}
+
+.view-sheet.tool-sheet-visible {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex !important;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 0;
+  background: rgba(18, 24, 34, 0.42);
+  overscroll-behavior: contain;
+}
+
+.tool-sheet-panel {
+  width: 100%;
+  max-height: 88dvh;
+  overflow: auto;
+  padding: 14px 14px calc(14px + env(safe-area-inset-bottom));
+  border-radius: 8px 8px 0 0;
+  background: #fff;
+  box-shadow: 0 -16px 40px rgba(16, 24, 40, 0.2);
+}
+
+.tool-sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.tool-sheet-head h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.tool-sheet-head p {
+  margin: 3px 0 0;
+  color: #6b7482;
+  font-size: 12px;
+}
+
+.tool-sheet-head .icon-button {
+  flex: 0 0 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  background: #f1f4f7;
+  color: #28303d;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.tool-sheet-visible #scratch-canvas {
+  height: clamp(260px, 44dvh, 460px);
+}
+
+.phone-shell[data-view="practice"] .question-card {
+  padding: 16px 14px;
+}
+
+.phone-shell[data-view="practice"] .question-text {
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+.phone-shell[data-view="practice"] .option-button {
+  min-height: 54px;
+  padding: 11px 12px;
+}
+
+.phone-shell[data-view="practice"] .option-button span {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.question-image figcaption {
+  display: none;
+}
+
 /* Mobile app layout v2 */
 .phone-shell[data-view="home"] .app-topbar,
 .phone-shell[data-view="exam"] .app-topbar,

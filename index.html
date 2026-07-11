@@ -2,7 +2,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
     <meta name="theme-color" content="#12a9ae" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="校招题库" />
@@ -193,7 +193,7 @@
           <em id="practice-title">随机练习</em>
         </div>
 
-        <div class="mode-switch compact-mode practice-mode-switch" role="tablist" aria-label="练习模式">
+        <div class="mode-switch compact-mode practice-mode-switch" role="tablist" aria-label="练习模式" hidden>
           <button class="active" id="mode-practice" type="button">练习模式</button>
           <button id="mode-memory" type="button">间隔背题</button>
           <button data-target="exam" type="button">模拟计时</button>
@@ -302,28 +302,25 @@
         </div>
       </section>
 
-      <section class="view view-list" id="view-mistakes">
+      <section class="view view-list view-records" id="view-records">
         <div class="list-head">
-          <h1>错题本</h1>
-          <p>按错误次数、最近出错、久未复习排序</p>
+          <h1>练习记录</h1>
+          <p>复习错题、收藏重点，并继续最近练习</p>
         </div>
-        <div class="record-list" id="mistake-list"></div>
-      </section>
-
-      <section class="view view-list" id="view-favorites">
-        <div class="list-head">
-          <h1>收藏夹</h1>
-          <p>保存高频、易混、临考前需要背的题</p>
+        <div class="record-tabs" role="tablist" aria-label="练习记录分类">
+          <button class="active" data-record-tab="mistakes" type="button">错题</button>
+          <button data-record-tab="favorites" type="button">收藏</button>
+          <button data-record-tab="recent" type="button">最近</button>
         </div>
-        <div class="record-list" id="favorite-list"></div>
-      </section>
-
-      <section class="view view-list" id="view-recent">
-        <div class="list-head">
-          <h1>最近练习</h1>
-          <p>记录最近打开的套题、模块和每日任务</p>
+        <div class="record-panel active" data-record-panel="mistakes">
+          <div class="record-list" id="mistake-list"></div>
         </div>
-        <div class="record-list" id="recent-list"></div>
+        <div class="record-panel" data-record-panel="favorites">
+          <div class="record-list" id="favorite-list"></div>
+        </div>
+        <div class="record-panel" data-record-panel="recent">
+          <div class="record-list" id="recent-list"></div>
+        </div>
       </section>
 
       <section class="view view-exam" id="view-exam">
@@ -397,41 +394,41 @@
         </div>
       </section>
 
-      <section class="view view-sheet" id="view-sheet">
-        <div class="sheet-head tool-sheet-head">
-          <button class="sheet-back-button" id="sheet-close" type="button">关闭</button>
-          <div>
-            <h1>答题工具</h1>
-            <p id="sheet-context">草稿会保留到本次练习结束</p>
+      <section class="view view-sheet" id="view-sheet" aria-hidden="true">
+        <div class="tool-sheet-panel" role="dialog" aria-modal="true" aria-labelledby="tool-sheet-title">
+          <div class="sheet-head tool-sheet-head">
+            <div>
+              <h1 id="tool-sheet-title">答题工具</h1>
+              <p id="sheet-context">草稿会保留到本次练习结束</p>
+            </div>
+            <button class="icon-button" id="sheet-close" type="button" aria-label="关闭答题工具">×</button>
           </div>
-        </div>
 
-        <div class="tool-tabs" role="tablist" aria-label="答题工具">
-          <button class="active" id="tool-tab-scratch" type="button">白板</button>
-          <button id="tool-tab-calculator" type="button">计算器</button>
-        </div>
-
-        <div class="scratch-tool-panel active" id="scratch-tool-panel">
-          <div class="canvas-toolbar">
-            <button id="undo-canvas" type="button">撤销</button>
-            <button id="eraser-toggle" type="button">橡皮</button>
-            <button id="clear-canvas" type="button">清空</button>
+          <div class="tool-tabs" role="tablist" aria-label="答题工具">
+            <button class="active" id="tool-tab-scratch" type="button">白板</button>
+            <button id="tool-tab-calculator" type="button">计算器</button>
           </div>
-          <canvas id="scratch-canvas" width="720" height="520" aria-label="草稿纸"></canvas>
-        </div>
 
-        <div class="calculator calculator-tool-panel" id="calculator-tool-panel">
-          <input id="calc-display" inputmode="decimal" autocomplete="off" value="" aria-label="计算器输入" />
-          <div class="calc-grid" id="calc-grid"></div>
+          <div class="scratch-tool-panel active" id="scratch-tool-panel">
+            <div class="canvas-toolbar">
+              <button id="undo-canvas" type="button">撤销</button>
+              <button id="eraser-toggle" type="button">橡皮</button>
+              <button id="clear-canvas" type="button">清空</button>
+            </div>
+            <canvas id="scratch-canvas" width="720" height="520" aria-label="草稿纸"></canvas>
+          </div>
+
+          <div class="calculator calculator-tool-panel" id="calculator-tool-panel">
+            <input id="calc-display" inputmode="decimal" autocomplete="off" value="" aria-label="计算器输入" />
+            <div class="calc-grid" id="calc-grid"></div>
+          </div>
         </div>
       </section>
 
       <nav class="bottom-nav" aria-label="主导航">
         <button class="active" data-target="home" type="button">首页</button>
         <button data-target="search" type="button">题库</button>
-        <button class="nav-practice" data-target="practice" type="button">练习</button>
-        <button data-target="mistakes" type="button">错题</button>
-        <button data-target="favorites" type="button">收藏</button>
+        <button data-target="records" type="button">记录</button>
       </nav>
     </main>
 

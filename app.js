@@ -85,8 +85,9 @@ let currentUserIndex = 0;
 let currentUserState = null;
 let dbPromise = null;
 let questionIndexById = new Map();
-const VALID_VIEWS = new Set(["home", "search", "practice", "mistakes", "favorites", "recent", "exam", "sheet"]);
+const VALID_VIEWS = new Set(["home", "search", "records", "practice", "exam"]);
 let sheetReturnView = "home";
+let activeRecordTab = "mistakes";
 let dataLoadInFlight = null;
 let questionDataIndex = null;
 let allQuestionDataLoaded = false;
@@ -1086,10 +1087,19 @@ function setRecordListsFromState() {
   renderRecords("recent", "#recent-list");
 }
 
+function setRecordTab(tab) {
+  activeRecordTab = ["mistakes", "favorites", "recent"].includes(tab) ? tab : "mistakes";
+  document.querySelectorAll("[data-record-tab]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.recordTab === activeRecordTab);
+  });
+  document.querySelectorAll("[data-record-panel]").forEach((panel) => {
+    panel.classList.toggle("active", panel.dataset.recordPanel === activeRecordTab);
+  });
+}
+
 function updateSheetCloseButton() {
   const closeButton = document.querySelector("#sheet-close");
   if (!closeButton) return;
-  closeButton.textContent = sheetReturnView === "practice" ? "返回练习" : sheetReturnView === "exam" ? "返回模拟" : "关闭";
   const context = document.querySelector("#sheet-context");
   if (context) {
     context.textContent = sheetReturnView === "practice" ? "草稿会保留到本次练习结束" : sheetReturnView === "exam" ? "模拟计时继续运行" : "临时计算与手写草稿";
@@ -1135,6 +1145,10 @@ function syncExamOverlay(overlay = null) {
 function syncAppOverlay(overlay = null) {
   syncPracticeOverlay(overlay);
   syncExamOverlay(overlay);
+  const toolSheet = document.querySelector("#view-sheet");
+  const visible = overlay === "tool-sheet";
+  toolSheet.classList.toggle("tool-sheet-visible", visible);
+  toolSheet.setAttribute("aria-hidden", String(!visible));
 }
 
 function setOverlayHistory(overlay, { replace = false } = {}) {
@@ -1177,18 +1191,32 @@ function initializeAppHistory(view) {
 }
 
 function closeSheet() {
-  const fallback = activeSession?.questionIds?.length ? "practice" : examSession ? "exam" : "home";
-  const target = sheetReturnView && sheetReturnView !== "sheet" ? sheetReturnView : fallback;
-  navigateBack(target);
+  if (history.state?.overlay === "tool-sheet") {
+    navigateBack(sheetReturnView || "home");
+    return;
+  }
+  syncAppOverlay(null);
+}
+
+function openToolSheet(returnTo) {
+  sheetReturnView = returnTo || shell.dataset.view || "practice";
+  updateSheetCloseButton();
+  setSheetTool(activeSheetTool);
+  setOverlayHistory("tool-sheet");
 }
 
 function goTo(view, options = {}) {
+  if (["mistakes", "favorites", "recent"].includes(view)) {
+    activeRecordTab = view;
+    view = "records";
+  }
+  if (view === "sheet") {
+    openToolSheet(options.returnTo || shell.dataset.view || "practice");
+    return;
+  }
   view = VALID_VIEWS.has(view) ? view : "home";
   const fromView = shell.dataset.view || "home";
   if (fromView !== view) viewScrollPositions.set(fromView, window.scrollY);
-  if (view === "sheet") {
-    sheetReturnView = options.returnTo || (fromView !== "sheet" ? fromView : sheetReturnView) || "home";
-  }
   shell.dataset.view = view;
   if (view !== "practice") syncPracticeOverlay(null);
   if (view !== "exam") syncExamOverlay(null);
@@ -1220,9 +1248,9 @@ function goTo(view, options = {}) {
   if (view === "home" && currentUserState) {
     updateHomeStats();
   }
-  if (view === "sheet") {
-    updateSheetCloseButton();
-    setSheetTool(activeSheetTool);
+  if (view === "records") {
+    setRecordListsFromState();
+    setRecordTab(activeRecordTab);
   }
   if (historyReady && options.history !== false) {
     const method = options.replace ? "replaceState" : "pushState";
@@ -2369,6 +2397,9 @@ function bindEvents() {
   document.querySelectorAll("[data-memory-rating]").forEach((button) => {
     button.addEventListener("click", () => void rateMemory(button.dataset.memoryRating));
   });
+  document.querySelectorAll("[data-record-tab]").forEach((button) => {
+    button.addEventListener("click", () => setRecordTab(button.dataset.recordTab));
+  });
   document.querySelector("#export-progress").addEventListener("click", () => void exportProgress());
   document.querySelector("#import-progress").addEventListener("click", () => document.querySelector("#import-progress-file").click());
   document.querySelector("#import-progress-file").addEventListener("change", (event) => {
@@ -2475,7 +2506,7 @@ function bindEvents() {
   document.querySelector("#exam-back").addEventListener("click", () => navigateBack("home"));
   document.querySelector("#open-exam-answer-sheet").addEventListener("click", openExamAnswerSheet);
   document.querySelector("#close-exam-answer-sheet").addEventListener("click", closeExamAnswerSheet);
-  document.querySelector("#open-exam-scratch").addEventListener("click", () => goTo("sheet", { returnTo: "exam" }));
+  document.querySelector("#open-exam-scratch").addEventListener("click", () => openToolSheet("exam"));
   document.querySelector("#exam-submit-confirm").addEventListener("click", (event) => {
     if (event.target.id === "exam-submit-confirm") cancelExamSubmit();
   });
@@ -2562,7 +2593,10 @@ function bindEvents() {
     void writeUserState();
   });
   document.querySelector("#sheet-close").addEventListener("click", closeSheet);
-  document.querySelector("#open-sheet-top").addEventListener("click", () => goTo("sheet", { returnTo: "practice" }));
+  document.querySelector("#view-sheet").addEventListener("click", (event) => {
+    if (event.target.id === "view-sheet") closeSheet();
+  });
+  document.querySelector("#open-sheet-top").addEventListener("click", () => openToolSheet("practice"));
   document.querySelector("#tool-tab-scratch").addEventListener("click", () => setSheetTool("scratch"));
   document.querySelector("#tool-tab-calculator").addEventListener("click", () => setSheetTool("calculator"));
   document.querySelector("#undo-canvas").addEventListener("click", () => {

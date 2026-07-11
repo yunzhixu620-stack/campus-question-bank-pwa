@@ -16449,5 +16449,3411 @@
     ],
     "questionPreview": "平均每人处理一份资料要 1.5X3=4.5 分钟，270 秒。设给 1 号窗口分配 x 人，则 1 号窗口 270 秒处理 x 份资料， 每一份资料是（270/x）秒。同理，2 号窗口每人处理一份资料要 50 秒，给 2 号窗口分配（10-x）人，则 2 号窗 口处理一份资料要 50/(10-x) 秒。若要工作效率最高，两个窗口处理一份资料的时间应相等，即 ",
     "analysisPreview": "该月有 31 天，即有四周加 3 天，四周有 8 个休息日，还有一个休息日，来自多余的三 天，将这三天看做月初，则可知这个月的1 日必为星期日，否则会出现更多的休息日，于是可知这个月的6 号 为星期五。因此，本题选 A。"
+  },
+  {
+    "id": "q-remaining-cd88c22e7e1879842e",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2008年民政事业基本建设投资总额中，国家投资所占比重约为：( )",
+    "analysisPreview": "国家投资占全国民政事业总投资的比重≈39.9%，与40%较为接近。因此，答案选择B选项。",
+    "pdfPage": 47
+  },
+  {
+    "id": "q-remaining-5aab4016ad54cd08a6",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2003~2006年，民政事业基本建设投资额年增长率最高的是：( )",
+    "analysisPreview": "由图可以看出，2003年到2006年的增长率分别为－0.3%、－2.7%、8.2%和6.0%，2005年的增长率最大。因 此，答案 选择B选项。",
+    "pdfPage": 47
+  },
+  {
+    "id": "q-remaining-517d36635f0ceeaa8d",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2000~2008年，全国民政事业基本建设累计完成投资总额为多少亿元？( )",
+    "analysisPreview": "2000年完成投资额≈24.64，2000年到2008年全国民政事业基本建设累计完成投资总额＝24.64＋30.8＋ 30.1 ＋30＋29.2＋31.6＋33.5＋47.7＋66.6≈30×9＋（ －5＋1＋0＋0－1＋2＋4＋18＋37）＝270＋56＝326，与324.2 较为接近。因此，答案选择B选项。",
+    "pdfPage": 47
+  },
+  {
+    "id": "q-remaining-f8d414baa54e893fa1",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "根据2007年民政事业基本建设投资金额从高到低排序，以下正确的是：( )",
+    "analysisPreview": "2007年，优抚安置事业单位的投资金额＜5.33，救助类单位的投资金额＝1.3，收养性单位的投资金额≈ 22.8，其他事业单位的投资金额≈6，因此由高到低排序应为：收养性单位、其他事业单位、优抚安置事业单位、救 助类单位。因此，答案选择D选项。",
+    "pdfPage": 48
+  },
+  {
+    "id": "q-remaining-b408702561c9971812",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列说法与资料相符的是：",
+    "analysisPreview": "A选项考核平均数计算。 养个民政事业基本建设投资项目的平均投资额＜200。A选项正确。B选项考核基期比重的计 算。B选项错误。C选项考核读数后简单计算。33.5＋47.7＋66.6＝148.8＜30.8＋30.1＋30＋29.2＋31.6＝30×5＋ （0.8＋0.1＋0－0.8＋1.6）＝151.7。C选项错误。D选项考核增长率的比较。2004到2008年",
+    "pdfPage": 48
+  },
+  {
+    "id": "q-remaining-d41214021eee3113a5",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "表中最靠近赤道的四个城市，其年均降水量的均值为：( )",
+    "analysisPreview": "解法一：赤道为零度纬度，纬度越小越靠近赤道，图表中最靠近赤道的四个城市为雅加达、新加坡、胡志 明市、 马尼拉， 四城市年均降水量的均值＝（1802＋2150＋1861＋1875）÷4＝1800＋（2＋350＋61＋75）÷4＝1922。 因此，答案选择C选项。解法二：本题选项差异较大，观察可知四个城市将适量均大于1800，排除A、B选项。而D选 项大于200",
+    "pdfPage": 49
+  },
+  {
+    "id": "q-remaining-7400fb5b6a84ed8d39",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "表中最冷月与最暖月温度差在20度以上的城市有多少个？( )",
+    "analysisPreview": "北京的温差＝25.9＋4.3＞20，香港温差＝28.8－15.8＜20，鄂木斯克温差＝19.7＋17.3＞20，海参崴温 差＝19.5＋13.1＞20， 东京温差＝27.1－5.2＞20， 新德里温差＝33.4－14.3＜20， 其他城市温差较小 ，明显小于20 ， 温差大于20的有北京、鄂木斯克、海参崴、东京，共4个。因此，答案选择C选项。",
+    "pdfPage": 49
+  },
+  {
+    "id": "q-remaining-a7590056146959614d",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "表中纬度第二高的城市，其日照最长月的平均日照时间约为日照最短月平均日照时间的几倍？ ( )",
+    "analysisPreview": "纬度第二高的城市为海参崴，日照最长月的平均日照时间为7.0，日照最短月平均日照时间为3.9，两者比值 ＝1.8。 因此，本题选B。",
+    "pdfPage": 49
+  },
+  {
+    "id": "q-remaining-6758d620ddbc7292b5",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "表中海拔高度位居第三的城市，其最湿月平均降水量约占全年平均降水量的：( )",
+    "analysisPreview": "海拔第三位的城市为北京， 最湿月均降水量＝182， 全年平均降水量＝578，比 重 ＝31.25%，与31.5%较为接近。 因此， 本题选D。",
+    "pdfPage": 49
+  },
+  {
+    "id": "q-remaining-7591be2ef9fc78ea17",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列说法与资料相符的是：( )",
+    "analysisPreview": "A选项考核直接读数。新加坡年降水量与雅加达的差值＝2150－1802=348＜12×30＝360。A项错误。B选项 考核直接读数。 表中印度三城市纬度由高到低分别为新德里、 加尔各 答 、孟买， 年均温度分别为25.1、26.9、27.5， 纬度越高，温度越低。B选项正确。C选项考核直接读数。海参威最短月平均日照3.9，7月份共31天，所以日照总时 长位3.",
+    "pdfPage": 50
+  },
+  {
+    "id": "q-remaining-43dd97e44c5a66b50b",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2008年底，我国宽带网民数约占网民总人数的：( )",
+    "analysisPreview": "",
+    "pdfPage": 50
+  },
+  {
+    "id": "q-remaining-af43cca17ee3297afb",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2008年底，我国平均每万网民拥有的国际出口带宽约是1997年的多少倍？( )",
+    "analysisPreview": "",
+    "pdfPage": 50
+  },
+  {
+    "id": "q-remaining-3d02b9980e1a702272",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列说法与资料相符的是：( )",
+    "analysisPreview": "A选项考核直接读数，2005年我国电子商务交易额为12992亿元人民币，相当于国内生产总值的7.1%，则国 内生产总值＞18，即超过18万亿。A选项正确。B选项考核直接读数。2008年我国互联网普及率达到22.6%，超过全球 平均水平， 所以全球平均水平一定低于22.6%。B选项错误。C选项考核平均数计算。2008年我国平均每网页拥有网站， 直除法首位为5，",
+    "pdfPage": 50
+  },
+  {
+    "id": "q-remaining-00535e38290dd91360",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "若我国手机网民全部使用网络媒体，则2008年底，非手机网民中使用网络媒体的比例约为：( )",
+    "analysisPreview": "手机网民用户＝1.2，非手机网民用户＝2.98－ 1.2＝1.78，网络媒体用户数＝2.98×78.5%，非手机用户 中使用网络媒体的比例直除法可得首位为6。因此，答案选择C选项。",
+    "pdfPage": 51
+  },
+  {
+    "id": "q-remaining-16ecca448dbba38f40",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列说法与资料相符的是：( )",
+    "analysisPreview": "A选项考核直接读数。2008年底，我国网络购物用户数为7400万，手机网民数为1.2亿，网络购物用户数小 于手机网民数。A选项错误。B选项考核直接读数后简单计算。2008年底，我国使用网络媒体与电子邮件的人数差＝ 2.98×（78.5%－56.8%）＝2.98×21.7%≈2.98×0.2＋2.98×0.02＝0.596＋0.0596＝0.06556≈0.6",
+    "pdfPage": 51
+  },
+  {
+    "id": "q-remaining-d106f84a739c59377e",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "全国港口2008年7月货运养吐总量的同比增长率约为：( )",
+    "analysisPreview": "2008年7月货运养吐量＝36516+13944＝50460，2007年7月货运养吐量＝32631+11376＝44007，增长率＝ 14.7%。因此，答案选择B选项",
+    "pdfPage": 52
+  },
+  {
+    "id": "q-remaining-2ec1f2ecfc8c28e621",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "与2005年同期相比，上海港2008年7月货运 养吐量占沿海港口合计养吐量的比重约：( )",
+    "analysisPreview": "2008年7月与2005年7月相比， 上海港占沿海港口货物 养吐量的比重差值＝－3.8%。 因此， 答案选择B选项。",
+    "pdfPage": 52
+  },
+  {
+    "id": "q-remaining-f035dcc2c387e18ccd",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2006~2008年间，表中港口有几个在7月出现过货运 养吐量比上年同期下降的局面？( )",
+    "analysisPreview": "7月出现货运养吐量比上年同期下降的有2006年7月的南京港和2008年7月的秦皇岛港两个港口，共两个。 因此，答案选择B选项。",
+    "pdfPage": 52
+  },
+  {
+    "id": "q-remaining-b686528698b5f56cbf",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "与2006年7月相比，2007年同期哪个港口货运吞吐量的同比增长率与沿海港口合计 养吐量的同比增长率最为接近？ ( )",
+    "analysisPreview": "2007年沿海港口合计 养吐量增长率＝≈1.18，大连港的增长率≈1.10，青岛港≈1.18，上海港≈1.05，深 圳港＝≈1.05。青岛港最接近。因此，答案选择B选项。",
+    "pdfPage": 53
+  },
+  {
+    "id": "q-remaining-27b589a9954bf52c81",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列说法与材料相符的是：( )",
+    "analysisPreview": "A选项考核直接读数。沿海港口合计养吐量2008年7月的同比增长额＝36516－32631=3885，2007年7月为 32631－27660=4971，2008年增长额低于2007年。A选项错误。B选项考核比重比较。比例并不是逐年降低，B选项错 误。C选项考核比重比较。2005年天津港占全国比重≈6.15%，2008年的比重≈6.14%，2008年比2005",
+    "pdfPage": 53
+  },
+  {
+    "id": "q-remaining-981cfc041310cae9a1",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2007年广东省产业转移工业园实现工业总产值为( )亿元。",
+    "analysisPreview": "2007年广东省产业转移工业园实现工业总产值，因选项具有一定差距，因此将分母4.67估算为4.7，首位 为6，排除D；第二位为4，排除B、C。所以本题正确答案为A。",
+    "pdfPage": 53
+  },
+  {
+    "id": "q-remaining-e9bfc4c77393b731a0",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "截至2008年底，广东省产业转移工业园已动工建设项目的个数占入园项目总数的比重以及已投资占总投资额的比 重分别是( )。",
+    "analysisPreview": "截至2008年底，广东省产业转移工业园已动工建设项目的个数占入园 项目总数的比重为＞61.1%，排除C、 D；已投资占总投资额的比重为＜1/2，排除B。所以本题正确答案为A。",
+    "pdfPage": 54
+  },
+  {
+    "id": "q-remaining-479d7d6b29d57d4e1e",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "根据材料，以下判断正确的是( )。",
+    "analysisPreview": "由“而珠江三角地区外围的清远的皮鞋生产大幅度增加，从0.9%上升到11.7%”可知D项正确。A、B、C材 料中均未提及，排除。所以本题正确答案为D。",
+    "pdfPage": 54
+  },
+  {
+    "id": "q-remaining-77fff6aaf97e6df252",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "根据资料，下列各项正确的是( )。",
+    "analysisPreview": "A项材料中并未提及， 排除；由“ 至2008年底， 广东省29个产业转移园总投资1156亿元” 可知B错误，排 除 ； C项材料中并未提及，排除；从“园区用工约16.42万人，其中吸纳本地劳动力9.96万人，占60.7%”可知D项正确。 所以本题正确答案为D。",
+    "pdfPage": 54
+  },
+  {
+    "id": "q-remaining-20243d7368f9debad7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "根据资料，下列各项无法确定的是( )。",
+    "analysisPreview": "A项材料中并未提及； 2008年，广东省产业转移工业园区吸纳的外地劳动力为16.42－9.96=6.46万人，B正确；由“14个欠发达地市已至少 有一个产业转移园”可知C项正确,从“其中广州下降幅度很大，从31.5%下降到14.4%。而珠江三角地区外围 的清远 的皮鞋生产大幅度增加，从0.9%上升到11.7%；”可知2008年广州规模以上皮鞋企业占比大于清 ",
+    "pdfPage": 54
+  },
+  {
+    "id": "q-remaining-389d2b1a3214bf8ba6",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2008年农村最低生活保障人数比2001年将近翻了( )番。",
+    "analysisPreview": "2008年农村最低生活保障人数为2001年的≈14+，大概翻了4番。所以本题正确答案为D。",
+    "pdfPage": 56
+  },
+  {
+    "id": "q-remaining-d45794dd586fe55cbb",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列时段中，农村居民最低生活保障人数年增长率变化幅度最大的是( )。",
+    "analysisPreview": "年增长率变化幅度即两年增长率之差，最大的明显是2002年到2003年，从33.9%到-10%。因此，本题选A 。",
+    "pdfPage": 56
+  },
+  {
+    "id": "q-remaining-e071f731a09109a1b6",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2008年全国城市最低生活保障月人均保障水平为( )。",
+    "analysisPreview": "A 2008年全国城市最低生活保障月人均保障水平为（393.4x10000）/2334.8x12=140.4 。所以本题正确答案为A。",
+    "pdfPage": 56
+  },
+  {
+    "id": "q-remaining-eeddc08bfdda1f7dfc",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "关于我国城市居民的低保状况，下列说法中不正确的是( )。",
+    "analysisPreview": "2008年我国城市居民中最低生活保障人员中的失业人员比重为17.2+24.3≈41%，A正确；得到最低生活保 障人员中：在职人员82.2万人，占总人数的3.5%，灵活就业人员381.7万人，占总人数的16.3%，老年人316.7 万人， 占总人数的13.6%，登记失业人员564.3万人，占总人数的24.3%，未登记失业人员402.2万人，占总人数的17.2%",
+    "pdfPage": 56
+  },
+  {
+    "id": "q-remaining-02fde8d9a755ee8733",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_figure_asset_pending"
+    ],
+    "questionPreview": "根据上图，下列说法正确的是( )。",
+    "analysisPreview": "由图可知，2001年至2008年城市居民最低生活保障人数的增长速度明显低于农村居民最低生活保障人数的 增长速度，A错误； 2008年城市居民最低生活保障人数为2334.8万人，农村居民最低生活保障人数 为4305.5万人明显B错误； 2002年农村居民中最低生活保障人数为 407.8万人，2003年为367.1万人，2002-2003年为下降趋势，因此C错误",
+    "pdfPage": 57
+  },
+  {
+    "id": "q-remaining-7ae73142d90d8f5bc5",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "与1995年相比，2007年我国国际旅游收入占世界国际旅游收入总额的比重约（）。",
+    "analysisPreview": "前者明显小于后者，所以比重为上升，后者约等于4%，结合选项，上升幅度一定不可能为4.2%，所以选A。",
+    "pdfPage": 57
+  },
+  {
+    "id": "q-remaining-dc4bb71219e360d4b7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "在1995年和2007年入境旅游人数均居世界前十位的国家中，2007年入境旅游人数与1995年相比增长速度最快的是 （）。",
+    "analysisPreview": "比较四个选项的发展 速 度（2007年入境旅游人数÷1995年入境旅游人数） ， 运用直除法， 四者的首位分别为1、2、1、 1，因此，发展速度最快的是第二项即中国，发展速度=1+增长速度，所 以增长速度最快的是中国，选择B选项。",
+    "pdfPage": 58
+  },
+  {
+    "id": "q-remaining-2548791c443250649c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "1995—2007年，美国国际旅游收入平均 养年增加（）。",
+    "analysisPreview": "",
+    "pdfPage": 58
+  },
+  {
+    "id": "q-remaining-ec204acc303383b33e",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "表中所列国家中，2007年国际旅游收入和入境旅游人数比1995年排名均有所上升的至少有（）。",
+    "analysisPreview": "根据材料，国际旅游收排名有所上升的国家是：西班牙、中国、德国、乌克兰、俄罗斯联邦、土耳其；在 表格中标记这些国家，可以看出，这些国家中入境旅游人数排名也上升的是西班牙、德国、中国、土耳其 4个国家， 所以，选择C选项。",
+    "pdfPage": 58
+  },
+  {
+    "id": "q-remaining-412ae5a1a5687bad00",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "以下说法中，与资料相符的是（）。",
+    "analysisPreview": "A选项，属于直接读数类，比较简单，根据材料，2007国际旅游收入和入境旅游人数均居世界前十位的国 家有美国、西班牙、法国、英国、德国、意大利、中国、土耳其，共8个国家。A项与资料相符合，故A项正确，选择 A选项。",
+    "pdfPage": 58
+  },
+  {
+    "id": "q-remaining-6e2b8d7d9971323ebb",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2010年1—5月北京市规模以上文化创意产业累计实现收入约为多少亿元？（）",
+    "analysisPreview": "解法一：2010年1—5月朝阳区规模以上文化创意产业累计实现收入521.6亿元，占北京市的比重为23.9%，利用直除 法，结果的前两位为21，所以选择B选项。",
+    "pdfPage": 59
+  },
+  {
+    "id": "q-remaining-c9e3ef4805f882b240",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2009年1—5月朝阳区规模以上文化创意产业中，收入位居第二的产业是（）。",
+    "analysisPreview": "根据题意 ，我们只需要对收入较大的几个产业进行比较，资料中，较大的三个产业分别为：其 他辅助服务、 广告会展、软件、网络及计算机服务，其他辅助服务，广告会展，软件、网络及计算机服务，很明显，收入位居第 二的产业是软件、网络及计算机服务业，选择D选项。",
+    "pdfPage": 59
+  },
+  {
+    "id": "q-remaining-02417b80c388c5faab",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2010年1—5月朝阳区广告会展从业人员平均人数在全市文化创意产业从业人员平均人数中所占的比重约为（）。",
+    "analysisPreview": "朝阳区广告会展从业人员平均人数为21626人， 全市文化创意产业从业人员平均人数运用直除法， 首位为2， 所以选择D选项。",
+    "pdfPage": 60
+  },
+  {
+    "id": "q-remaining-f60424f58e2ae5b31a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "表中2010年1—5月，朝阳区从业人员人均创收水平最高的行业是（）。",
+    "analysisPreview": "",
+    "pdfPage": 60
+  },
+  {
+    "id": "q-remaining-637234771ad5831c0c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "与上年同期相比，2010年6月汽车零售同比增幅（）。",
+    "analysisPreview": "根据材料，2010年6月和2009年6月的汽车零售同比增幅分别为15.%和58.1%， ， 所以与上年同期相比，2010 年6月汽车零售同比增幅回落了42.3个百分点，选择A选项。",
+    "pdfPage": 61
+  },
+  {
+    "id": "q-remaining-d14ec5e9b95760f506",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2009年6月至2010年6月，平均每月的汽车零售额约为（）。",
+    "analysisPreview": "由于材料的数字基本上都大于40，选项D首先被排除。其它选项的个位数字相差较大，我们只需精确到小 数点后一位进行计算",
+    "pdfPage": 61
+  },
+  {
+    "id": "q-remaining-8efe9fc1b28a072abd",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2009年6月至2010年6月，汽车零售额环比增幅最大的月份，其零售额约比上月增加（）。",
+    "analysisPreview": "注意到题目需要我们找到汽车零售额环比增幅最大的月份， 如果是增长量越大、 基期值越小， 增幅就越大， 根据材料，2009年12月：51-43.88=7.12（亿元），其他相邻月份的零售额之差均小于7.12亿元很多，而基期值比较 小、且和比 43.88更小的基期值相差不多，因此，这就意味着增长量最大、基期值较小，增幅也就最大，因此可以判 断2009年12月为所",
+    "pdfPage": 61
+  },
+  {
+    "id": "q-remaining-a9a01fbcb61e0c65ea",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2009年1—6月限额以上批发和零售业零售额约为（）。",
+    "analysisPreview": "根据材料，“2010年1—6月实现汽车类零售额294.7亿元，同比增长29.9％”，所以汽车类零售额增长量 为 （亿元）。石油及制品类零售额222.3亿元，增长43.4％，因此石油类零售 额增量为 （亿元 ）。汽车及石油类零售额拉动限额以上批发和零售增长19.8个百分点。 因此， 限额以上批发和零售业零售额为 ，最接近的是A，所以选择A选项。",
+    "pdfPage": 61
+  },
+  {
+    "id": "q-remaining-00e4ba743f9efed636",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "与2008年同期相比，2009年1—11月国有及国有控股投资和房地产 养发投资占城镇固定资产投资的比重约（）。",
+    "analysisPreview": "由于总体(城镇固定资产投资)的增速32.1%大于部分(国有及国有控股投资和房地产养发投资)的增速(约为 31.8%，计算起来较为养杂)，可得2009年的比重略低于2008年。排除B、D两项。2009年1～11月国有及国有控股投资 和房地产养发投资共73535+31271=104806（亿元），占当年城镇固定资产投资的62.15，2008年同期所占比重为 ，二",
+    "pdfPage": 62
+  },
+  {
+    "id": "q-remaining-e041f175b26eab83ca",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "分企业类型来看，2009年1—11月内资企业投资和外商投资总额与2008年同期相比，约增加了（）。",
+    "analysisPreview": "2009年1～11月内资企业投资和外商投资总额为155132+6865=161997（亿元），外商投资6865亿元，下降 0.1%，即基本保持不变。故2008年同期这一数据为155132÷（1+35.6%）+6865≈121269（亿元）。因此，本题答案 为B选项。",
+    "pdfPage": 63
+  },
+  {
+    "id": "q-remaining-a5c6bf31d23aaf6d03",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "分产业来看，2009年1—11月份，在已给行业中属于第二产业的行业投资比2008年同期约增加了（）亿元。",
+    "analysisPreview": "文中给出的第二产业包括煤炭 养采及洗选业，电力、热力的生产与供应业，石油和天然气养采业，2009年 1～11月份这几个产业的投资比2008年同期增加 (亿元)。因此，本题 答案为C选项。",
+    "pdfPage": 63
+  },
+  {
+    "id": "q-remaining-57756833817f863694",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2008年1—11月份，施工项目计划总投资比新 养工项目计划总投资约多（）亿元。",
+    "analysisPreview": "由“施工项目计划总投资393087亿元，同比增长36.3%；……新开工项目计划总投资136922亿元，同比增",
+    "pdfPage": 63
+  },
+  {
+    "id": "q-remaining-14df6224269bad36c1",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "根据上述资料，下面论述推断正确的是（）。",
+    "analysisPreview": "",
+    "pdfPage": 64
+  },
+  {
+    "id": "q-remaining-33b6bc1bbeb94d7176",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2015年1—2月，房地产业城镇投资额比制造业多（）亿元。",
+    "analysisPreview": "",
+    "pdfPage": 64
+  },
+  {
+    "id": "q-remaining-68b6d3aca1c3adb351",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "相比2015年同期，2016年1—2月金融业城镇投资比重约增加了（）。",
+    "analysisPreview": "",
+    "pdfPage": 64
+  },
+  {
+    "id": "q-remaining-780de19833c6beac1c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "若保持各自的增长速度不变，金融业的全国城镇投资额超过教育业的时间可能在（）年之后。",
+    "analysisPreview": "",
+    "pdfPage": 65
+  },
+  {
+    "id": "q-remaining-a1eed7645ab4805614",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2015年1—2月各行业城镇投资额与2016年1—2月各行业城镇投资比重均排名前四的行业有（ ）个。",
+    "analysisPreview": "由表中数据可得，制造业、房地产业投资比重超过20%，比重在两年均保持在前两位。而排名有变化的可 能是电力、燃气及水的生产和供应业，交通运输、仓储和邮政业，水利、环境和公共设施管理业。2015年三者的比 重依次为7.5%，9.2%和6.8%， 计算2016年的比重则变化为7.1%，11.9%，8.3%， 只有交通运输业两年均保持在前四位。 因此，本题选C。",
+    "pdfPage": 65
+  },
+  {
+    "id": "q-remaining-9d1d1213232d013cb9",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "从上述资料中，不能推出的结论是（）。",
+    "analysisPreview": "",
+    "pdfPage": 65
+  },
+  {
+    "id": "q-remaining-80f267222c454124ef",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "世界货物贸易进出口总额差距最大的年度， 在下列选项中，货物进口额增长速度 （与上年比） 排名第二的是 （）。",
+    "analysisPreview": "",
+    "pdfPage": 66
+  },
+  {
+    "id": "q-remaining-f5c38850b3894465f7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "按2005年—2008年主要国家（地区）货物出口额平均增长速度，预计2010年时的相应出口总额将达到约（）亿美 元。",
+    "analysisPreview": "无简便计算方法，2005年和2008年主要国家（地区）货物贸易出口额分别为：2005年， 1629+1437+1245+840+554+351+165+132＝6353亿美元； 2008年，2929+2523+1907+1161+1141+740+259+330＝10990亿美 元 。故2005-2008年的增长率为， 故年均增长率约为， 故2010年的相应",
+    "pdfPage": 66
+  },
+  {
+    "id": "q-remaining-c2b6d6f98ffa96a123",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2008年主要国家（地区）货物出口额之和占世界货物出口总额的比重是2005年的（）倍。",
+    "analysisPreview": "",
+    "pdfPage": 66
+  },
+  {
+    "id": "q-remaining-f292229d064b1120a2",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2005年—2008年世界货物进出口总额的年度增长速度从小到大的变化顺序是（）。",
+    "analysisPreview": "2004～2008年世界货物进出口总额依次为11545亿元，14220亿元，17605亿元，21746亿元，25616亿美元。 故直接比较以下四个数的大小即可：采用直除法，直除首两位依次为12、12、12、11，故2008年的增长率最低， 观 察选项只有C项满足。因此，本题答案为C选项。",
+    "pdfPage": 66
+  },
+  {
+    "id": "q-remaining-60fd66aeb45f541f25",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_figure_asset_pending"
+    ],
+    "questionPreview": "从以上图表中可以推出的是（）。",
+    "analysisPreview": "A项，2006年货物进口额排名第六的国家是美国，其2007年货物进口额排名仍为第六，故A项错误；B项， 由柱状图，世界货物进出口额差距最大的年度明显为2008年，故B项错误；C项，若保持增速不变，2009年世界货物 进出口总额约为 ，故C项错误；D项，由于A、B、C三项错误，故D项 正确。可由表格中亚洲 国家的历年数据计算各年增长率分析得到。(计算起来较为养",
+    "pdfPage": 67
+  },
+  {
+    "id": "q-remaining-df570289359114d2ad",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "厦门金门航线2009年1至3月份的客运量人次是：( )",
+    "analysisPreview": "厦门金门航线2009年1至3月份的客运量≈272951×（1＋2.38%）≈272951＋272951×0.02＋272951×0.004 ＝272951＋5459＋1092＝279502，与279606比较接近。因此，答案选择C 选项。",
+    "pdfPage": 68
+  },
+  {
+    "id": "q-remaining-03295733e76e20248e",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2008年1至3月份，大陆船舶公司和台湾船舶公司的运营航次比例为：( )",
+    "analysisPreview": "",
+    "pdfPage": 68
+  },
+  {
+    "id": "q-remaining-11978591d5747baddd",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "自2011年以来， “小三通” 客运除厦门金门、马尾马祖和泉州金门航线外， 其他航线占总运载旅客量的比重为：( )",
+    "analysisPreview": "",
+    "pdfPage": 68
+  },
+  {
+    "id": "q-remaining-69aa3aa8e22b040e5d",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "从以上资料可以推断出的是：",
+    "analysisPreview": "A项，由第一个表格可知，厦门金门流向逆差约为2500人次，马尾马祖为负，泉州金门约为1200人次，A正 确，不用考虑其他选项。因此，本题选A。",
+    "pdfPage": 68
+  },
+  {
+    "id": "q-remaining-34c95ba27817564abc",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "从以上资料可以推断出的是：( )",
+    "analysisPreview": "A、B项考核直接读数。材料只给了2010年1至3月份的数据，无法判断全年的情况，故A、B项均错误。C选 项考核直接读数。材料未提及2010年1~3月份台湾航次数据无法判断，故C选项错误。D选项考核平均数计算。2008年 1至3月份台湾船舶每航次运送旅客≈75。D选项正确。因此，答案选择D选项。",
+    "pdfPage": 68
+  },
+  {
+    "id": "q-remaining-7d630c4adbe72cf335",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "若按2010年1~3月入境旅游人数排序，以下各项错误的是：( )",
+    "analysisPreview": "用1~4月累计数减去4月份人数可得1~3月份人数。A选项，韩国（126.96－33.65＝93.31）＞日本（119.71 －30.75＝88.96）＞美国（60.67－17.62＝43.05），A选项正确。 B选项，俄罗斯（60.57－16.03＝44.54）＞马来西亚（37.96－11.72＝26.24）＞新加坡（29.47－8.47＝21），B选 项正",
+    "pdfPage": 69
+  },
+  {
+    "id": "q-remaining-172bcea778283333b5",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2009年4月我国入境旅游的第三大客源市场是：( )",
+    "analysisPreview": "排名前三的分别是韩国、日本、美国。因此，答案选择A选项。",
+    "pdfPage": 70
+  },
+  {
+    "id": "q-remaining-21f79d8b9b53fce925",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2009 年1~3月，入境旅游的日本游客人数约为：( )",
+    "analysisPreview": "",
+    "pdfPage": 70
+  },
+  {
+    "id": "q-remaining-4b60605b6bfb261b83",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "若保持同比增长率不变，预计哪一年4月入境旅游的法国游客人数将会超过英国？( )",
+    "analysisPreview": "2010年法国4.44万人，增长率6.8%，英国人数5.03，增长率－2.37，若同比增长率不变，则2011年法国人 数＝4.44×（1+6.8%）≈4.44＋4.2×0.07＝4.73，英国人数＝5.03×（1－2.37%）≈5.03－5×0.024＝4.91，再经 过一年，即2012年，法国游客人数一定能超过英国人数。因此，答案 选择B选项。",
+    "pdfPage": 70
+  },
+  {
+    "id": "q-remaining-20d88eaf410db71e4a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "能够从上述资料中推出的是：( )",
+    "analysisPreview": "A选项考核直接读数。2010年4月份人数超过30万人，但材料未涉及2010年1-3月的具体数据，故无法判断 首次超过30万人的月份。A选项错误。 B选项考核直接读数。2010年4月，英国游客人数的同比增长率小于0，人数减少。B选项错误。 C选项考核直接读数。材料未给出收入数据，无法判断。C选项错误。 D选项考核读数后简单计算。表中养国4月份人数乘以4，与1~",
+    "pdfPage": 70
+  },
+  {
+    "id": "q-remaining-684bb24e54d8be2ade",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2010年1~6月我国电信业务收入总量比上年同期增长：( )",
+    "analysisPreview": "",
+    "pdfPage": 72
+  },
+  {
+    "id": "q-remaining-adab6e1e770fa88e94",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "截止2010年6月，我国的移动电话用户占全国电话用户的比重相比2009年底约：( )",
+    "analysisPreview": "",
+    "pdfPage": 72
+  },
+  {
+    "id": "q-remaining-73cf0abd11a5e79cb8",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "根据上面的图表资料，可以推出的是：( )",
+    "analysisPreview": "A选项考核直接读数。材料中未给出山东省的主营业务用户数，因此无法判断其 户均数值。A选项项错误。 B选项考核直接读数。材料中未给出北京、上海的电信主营业务收入构成，无法判断。B选项错误。 C选项考核直接读数。广东的移动电话用户数全国排名第一，而非固定电话用户数。C选项错误 。D选项考核现期量计 算。2011年1月，肯定能突破1亿。因此，答案选择D选项。",
+    "pdfPage": 72
+  },
+  {
+    "id": "q-remaining-e843d48a40e366032d",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2010年1~6月，我国固定通信收入比上年同期减少约：( )",
+    "analysisPreview": "",
+    "pdfPage": 72
+  },
+  {
+    "id": "q-remaining-0e3c461fc09703e134",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "根据上述资料判断，下列说法中正确的是：( )",
+    "analysisPreview": "A选项考核直接读数。根据材料第二段可知，2010年移动电话用户首次达到8亿。A选项正确。 B选项考核直接读数。2010年1~6月电信业务总收入为14860.7亿元，电信主营业务完成4345.5亿元，但不知其他业务 的收入，无法判断。B选项错误。 C选项考核直接读数。2010年6月，广东移动电话用户数＝9259，辽宁+湖北+湖南=3160+3152+3000=",
+    "pdfPage": 73
+  },
+  {
+    "id": "q-remaining-2b3f4ec1a158b37c58",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "下列四种谷物中，2008年与2000年相比全世界增产量最多的是：( )",
+    "analysisPreview": "",
+    "pdfPage": 74
+  },
+  {
+    "id": "q-remaining-fa5289965f289f5c8d",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "将每个国家的四种谷物按2008年的产量分别排序，哪个国家产量排名第一的谷物与2000年相比产量增长率最高？ ( )",
+    "analysisPreview": "2008年中国排名第一的谷物为稻谷，与2000年相比增长率为1.9%；2008年美国排名第一的谷物为玉米，与 2000年相比增长率为22%；2008年印度排名第一的谷物是稻谷，与2000年相比增长 率为16.3%；2008年巴西排名第一 的谷物是大豆，与2000年相比增长率为83%，由此可以巴西大豆的增长率最高。因此，答案 选择D选项。",
+    "pdfPage": 74
+  },
+  {
+    "id": "q-remaining-af5e8af15ec5d52791",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2000年，中国稻谷产量占世界稻谷总产量的比重约为：( )",
+    "analysisPreview": "2008年中国稻谷为19335万吨， 增长率为1.9%，2008年世界稻谷总产量68501.3万吨， 比2000年增长14.3%， 所以，比重为［19335/(1+1.9%)］/［68501.3/(1+14.3%)］≈[19335/1.019]/[ 68501.3/1.143] ≈ [19335/68501.3]*[ 1.143/1.019] <1/3 * ",
+    "pdfPage": 74
+  },
+  {
+    "id": "q-remaining-f64ae0a098e5182157",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2000年，表中所列四国玉米的最高产量约是最低产量的多少倍？( )",
+    "analysisPreview": "",
+    "pdfPage": 74
+  },
+  {
+    "id": "q-remaining-7561c67929a3d5dc9c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "能够从上述资料中推出的是：( )",
+    "analysisPreview": "A选项考核简单计算。世界大豆产量为23095，美国大豆产量为8054，除美国、中国、印度、巴西外的大豆 产量为23095－（1555＋905＋8054＋5992）≈231×100－（16＋9 ＋81＋60）×100＝6500＜8054，因此，美国为世 界最大的大豆产地。A选项正确，也可直接根据美国是全球最大的大豆产地这一常识直接判断。 B选项考核基期、现期比",
+    "pdfPage": 75
+  },
+  {
+    "id": "q-remaining-842a24d8e3e81f1f1c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2016年上半年全国原油产量比2008年同期约增长了：( )",
+    "analysisPreview": "2016 年与 2009年相比增长率为5.3%，2015年与2014年相比增长率为－1%，则2016年与2014年相比增长率＝ 5.3%－1%－5.3%×1%＝4.247%。因此，答案选择B选项。",
+    "pdfPage": 75
+  },
+  {
+    "id": "q-remaining-189facc817ae29cecb",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2016年上半年，全国成品油表观消费量同比增加了约多少万吨？( )",
+    "analysisPreview": "",
+    "pdfPage": 75
+  },
+  {
+    "id": "q-remaining-bbe5d104ff1361142e",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2016年5月份，布伦特原油的平均价格约为 养桶多少美元？( )",
+    "analysisPreview": "由材料第三段 “2016年6月份， 布伦特原油平均价格为75.28美元/桶， 比上月回落1.75美元/桶” 可知，2016 年5月份，布伦特原油的平均价格为75.28＋1.75＝77.03。因此，答案选择D选项。",
+    "pdfPage": 76
+  },
+  {
+    "id": "q-remaining-6f63cf9ba4c07140ae",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2015年1~5月，石油天然气开采业利润占石油石化行业实现利润的比重约为：( )",
+    "analysisPreview": "",
+    "pdfPage": 76
+  },
+  {
+    "id": "q-remaining-39cfeb9c9ada80af17",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "能够从上述资料中推出的是：( )",
+    "analysisPreview": "A选项考核基期量的比较。A选项错误。 B选项考核直接读数。2015年汽油的增速为6%＋7.9%＝13.9%，柴油的增速＝28.1%－15.8%＝12.3%，汽油增速大于柴 油，B选项正确。 C选项考核基期量的比较。需要根据增长率的混合求解。根据材料“2016年上半年成品油表观消费量10963万吨，同 比增长12.5%。其中，一、二季度分别增长16.3%和9.",
+    "pdfPage": 76
+  },
+  {
+    "id": "q-remaining-b369987cde38e2454a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2016年一季度，我国水产品出口额比上年同期约增长了多少亿美元？( )",
+    "analysisPreview": "",
+    "pdfPage": 77
+  },
+  {
+    "id": "q-remaining-610d6c5e2c721761d4",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2016年一季度，我国水产品主要进口来源地，按进口量从小到大排序正确的是：( )",
+    "analysisPreview": "由表1可知，我国水产品进口量由小到大的排序应为：挪威（3.88）＜日本（4.09）＜美国（6.88）＜东 盟（7.63）＜秘鲁（15.16）＜俄罗斯（33.20），符合该顺序的只有C选项。因此，答案选择C选项。",
+    "pdfPage": 77
+  },
+  {
+    "id": "q-remaining-cac05a61d66a2d26c2",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2016年一季度，我国与美国水产品进出口贸易额占我国水产品进出口贸易总额的比重约为：( )",
+    "analysisPreview": "",
+    "pdfPage": 78
+  },
+  {
+    "id": "q-remaining-a51a242889b2761bdc",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2016年一季度，我国对以下哪个国家或地区出口水产品的平均单价最高？( )",
+    "analysisPreview": "",
+    "pdfPage": 78
+  },
+  {
+    "id": "q-remaining-121fe86ebbeb959082",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "能够从上述资料中推出的是：( )",
+    "analysisPreview": "A选项考核直接读数。从材料可看出，俄罗斯是我国最大的进口来源地，但俄罗斯向其他国家的出口量材 料未提及，故不能判断我国是俄罗斯最大的水产品出口地。A选项错误。B选项考核基期量的比较。2009年日本进口 我国 的水产品量为＞12，美国进口我国的水产品量为＝11，因此，日本的进口量大于美国的进口量。B选项正确。C 选项考核两期比重比较。2010年一季度我国从秘鲁",
+    "pdfPage": 78
+  },
+  {
+    "id": "q-remaining-a9a96286225aff9175",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "到2010年末，股民资金 养户数比2005年末增长了大约（ ）。",
+    "analysisPreview": "",
+    "pdfPage": 79
+  },
+  {
+    "id": "q-remaining-12d49061b813deb813",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2005—2010年股票、基金交易量同比增长的年份共有几个？（ ）",
+    "analysisPreview": "读取表格信息可知，只有2006年、2007年、2009年的股票、基金交易量同比增长，共3 个年份。因此，答案选择C选",
+    "pdfPage": 79
+  },
+  {
+    "id": "q-remaining-ae2dd16c865671ae9a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2005—2010年股票、基金交易的户均交易量最大的是哪个年份？（ ）",
+    "analysisPreview": "",
+    "pdfPage": 80
+  },
+  {
+    "id": "q-remaining-c90cbd5cf7d5862fa1",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2005—2010年财产险 养年赔款支出与保费收入之比大约在什养范围内？（ ）",
+    "analysisPreview": "",
+    "pdfPage": 80
+  },
+  {
+    "id": "q-remaining-a70e1d00bbbadcec97",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "能够从上述资料中推出的是（ ）。",
+    "analysisPreview": "",
+    "pdfPage": 80
+  },
+  {
+    "id": "q-remaining-c06e5fd0aaff161606",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2010年该省接待过夜游客的旅游总收入约为（ ）。",
+    "analysisPreview": "",
+    "pdfPage": 81
+  },
+  {
+    "id": "q-remaining-2ceddc49b4089e336a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列2011年1—11月该省旅游统计数据中，同比增长速度大于全年的是（ ）。",
+    "analysisPreview": "2011年全年的增幅由1-11月份的增幅和12月份的增幅共同确定。若12月份的大于全年的，则1-11月份的小 于全年的。若12月份的小于全年的，则1-11月份的大于全年的。由材料可知，接待过夜境内旅游者收入12月份的增 长率＝36.5%，全年的同比增速＝27.1%，则2011年1—11月接待过夜境内旅游者收入的增幅小于全年；宾馆 养房率12 月份的增幅为0.",
+    "pdfPage": 81
+  },
+  {
+    "id": "q-remaining-eb4f345846743709f9",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2011年12月该省入境外国旅游者占全年入境外国旅游者的比重，较上年约增加（ ）。",
+    "analysisPreview": "",
+    "pdfPage": 82
+  },
+  {
+    "id": "q-remaining-9b5138d8995e72406f",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2011年12月该省接待过夜游客中，境外游客 养人的平均消费约为境内游客的（）。",
+    "analysisPreview": "",
+    "pdfPage": 82
+  },
+  {
+    "id": "q-remaining-2410f78cd31606ef7f",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "能够从上述资料中推出的是（ ）。",
+    "analysisPreview": "A选项考核直接读数。2011年该省旅游饭店接待过夜游客人次只统计了境内的人数，无法判断两 养反帝啊 接待过也游客人次的养系。A选项错误。B选项考核基期量的比较。 B选项错误。C选项考核直接读数。2011年12月台湾同胞到该省过夜旅游人数＝2.01，全年平均人数＜1，12月台湾同 胞到该省过旅游人次高于前11个月的平均值。C选项正确。D选项考核直接读数。表格只",
+    "pdfPage": 82
+  },
+  {
+    "id": "q-remaining-6261f6a7c40a2af2ba",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2010年我国全年货物进出口差额为多少亿美元？（）",
+    "analysisPreview": "由2011年全年货物进出口差额1551亿美元，比上年减少265亿美元，故2010年的全年货物进出口差额＝ 1551+265=1816亿美元。因此，答案选择D选项。",
+    "pdfPage": 83
+  },
+  {
+    "id": "q-remaining-ee18010e392584af0c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2007—2011年我国全年货物出口额与上一年相比增长超过30%的年份有几个？（）",
+    "analysisPreview": "2007年我国全年货物出口额的同比增长率=（12205-9690）/9690=2515/9690<30%；2008年我国全年货物出 口额的同比增长率<30%；2009年我国全年货物出口额同比减少，增长率<30%；2010年我国全年货物出口额的同比增 长率＝30%；2011年我国全年货物出口额的同比增长率＜30%。可以发现超 过30%的只有1 个。因此，答案选",
+    "pdfPage": 83
+  },
+  {
+    "id": "q-remaining-63f0213ad0c0e351f7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列最能体现2011年我国对欧盟出口额占全年出口额比重的图例是（）。",
+    "analysisPreview": "2011年我国对欧盟出口额占全年出口额比重＝1/5",
+    "pdfPage": 84
+  },
+  {
+    "id": "q-remaining-e89ae72eac26b52c9e",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "表中所列举的国家和地区中，2011年我国货物进出口贸易差额最大的是（）。",
+    "analysisPreview": "2011年我国对欧盟货物进出口贸易差额＝3560－2112＝1448，2011年我国对美国货物进出口贸易差额＝ 3245－1222=2023，2011年内地对 中国香港货物进出口贸易差额＝2680－115＝2525，2011年大陆对中国台湾货物进 出口贸易差额＝1249-351<1000(亿美元)，故可知对中国香港货物进出口贸易差额最大。因此，答案选择B选项",
+    "pdfPage": 84
+  },
+  {
+    "id": "q-remaining-c62f9a1b5aa4954d9a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "能够从上述资料中推出的是（）。",
+    "analysisPreview": "A选项考核比重比较。2011年我国全年货物出口额的同比增速小于进出口总额的同比增速，即部分增速小 于整体增速，则出口额占进出口总额的比重下降。A选项错误。 B选项考核直接读数。2009年全年货物进出口总额相对2008年是减少的。B选项错误。C选项考核增长量的比较。根据 公式，2011年我国对俄罗斯进口增长金额≈134，2011年我国对韩国进口增长金额≈271",
+    "pdfPage": 84
+  },
+  {
+    "id": "q-remaining-e4f7e9d9e1f33c6868",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2011年我国城镇居民人均可支配收入比2008年大约增加了（）。",
+    "analysisPreview": "",
+    "pdfPage": 85
+  },
+  {
+    "id": "q-remaining-e246889b4ea2bbad8b",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2010年，我国水产品产量大约达到多少万吨?（）",
+    "analysisPreview": "",
+    "pdfPage": 85
+  },
+  {
+    "id": "q-remaining-e1fad41544f2176cab",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2010—2011年，下列哪项年增 长速度最快?（）",
+    "analysisPreview": "",
+    "pdfPage": 85
+  },
+  {
+    "id": "q-remaining-08ac57c2cc13af56f6",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2010 年，我国猪肉产量占肉类总产量的比重约为（）。",
+    "analysisPreview": "",
+    "pdfPage": 85
+  },
+  {
+    "id": "q-remaining-f9dced7aa32600b4f3",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "根据上述资料，下列说法错误的是（）。",
+    "analysisPreview": "A选项考核比重计算。2011年末， 我国参加城镇居民基本医疗保险人数约占参加城镇基本医疗保险人数的比重≈46.8%。 A选项正确。B选项考核直接读数。2011年棉花、油料、糖料的总 养植面积比上年增加19－10＋4＝13万公顷。B选项 正确。C项，题干中没有养及到新型农村合作医疗基金参与人数， 无法计算人均基金支出，C错误；D项，2006年到2011 年，我",
+    "pdfPage": 86
+  },
+  {
+    "id": "q-remaining-940186827be5d9f1cc",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2009年，该省的有线网络收入约为多少亿元？",
+    "analysisPreview": "",
+    "pdfPage": 86
+  },
+  {
+    "id": "q-remaining-42ec17c1239154c3c6",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2009年，该省广告收入占广电总收入的比重约为：",
+    "analysisPreview": "",
+    "pdfPage": 86
+  },
+  {
+    "id": "q-remaining-b7a648abeac41f8520",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2010年，该省地市级广电收入的同比增速约为：",
+    "analysisPreview": "",
+    "pdfPage": 86
+  },
+  {
+    "id": "q-remaining-32bd3e17f0b9286afd",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "该省有线电视用户平均 养月的有线网络费用约为多少元？",
+    "analysisPreview": "",
+    "pdfPage": 87
+  },
+  {
+    "id": "q-remaining-04816e312861836d39",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "关于该省广电收入的情况，下列说法正确的是：",
+    "analysisPreview": "A选项，2010年省级以上同比增长金额为15.5亿元，县级收入增长6.52亿元，前者高于后者，A选项错误； B选项，2010年东部地区广电收入50.06亿元，中部地区广电收入17.78亿元，B选项错误；C选项，2009年中部地区市 均广电收入4.21亿元，西部地区市均广电收入1.4亿元，C选项正确； D选项错误。因此，本题答案为C选项。",
+    "pdfPage": 87
+  },
+  {
+    "id": "q-remaining-04f7955e5302f2f93f",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "三大经济圈中，2016年三个产业增长速度均超过全国平均水平的有几个？",
+    "analysisPreview": "长三角经济圈、京津冀经济圈，第一产业低于于全国平均水平，只有珠三角地区三大产业均超过全国平均 水平。因此，本题答案为B选项。",
+    "pdfPage": 88
+  },
+  {
+    "id": "q-remaining-5ef5251793b2a66bba",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2016年，珠三角地区第二产业产值占国内生产总值的比重为：",
+    "analysisPreview": "2016年， 珠三角地区第二产业产值占地区生产总值比重为50.4%， 地区生产总值占国内生产总值比重为9.4%。 所求比重为50.4%×9.4%≈4.74%。计算时只要求得首位商4，即可选择答案。因此，本题答案为C选项。",
+    "pdfPage": 88
+  },
+  {
+    "id": "q-remaining-a9cf31f4b18e9d3da7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2016年地方财政收入占地区生产总值比重低于全国平均水平的经济圈是：",
+    "analysisPreview": "地方财政收入占地区生产总值比重低于全国平均水平， 即地方财政收入占全国财政收入比重低于地区生产 总值占国内生产总值比重，结合选项选择珠三角地区。因此，本题答案为B选项。",
+    "pdfPage": 88
+  },
+  {
+    "id": "q-remaining-61b3d9915f30f7405c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2016年，京津冀经济圈的哪一经济指标值居三大经济圈之首？",
+    "analysisPreview": "A选项京津冀地区实际利用外资占全国比重低于长三角地区；B选项，京津冀地区进出口贸易额占全国比重 低于长三角地区和珠三角地区；C选项，京津冀地区固定资产投资增长速度高于长三角地区和珠三角地区；D选项， 京津冀地区第一产业产值增长速度低于长三角地区和珠三角地区。因此，本题答案为C选项。",
+    "pdfPage": 88
+  },
+  {
+    "id": "q-remaining-e81ee9e3149510fcd8",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "能够出上述资料中推出的是：",
+    "analysisPreview": "A选项，第三产业占地区生产总值比重从大到小顺次为京津冀地区、长三角地区、珠三角地区，进出口贸 易额增长速度从大到小顺次是京津冀地区、长三角地区、珠三角地区，A正确； B选项，地区生产总值从大到小顺次为长三角地区、京津冀地区、珠三角地区，地区生产总值增长速度从大到小顺次 是京津冀地区、珠三角地区、长三角地区，B错误； C选项，社会消费品零售额从大到小顺次为长三",
+    "pdfPage": 89
+  },
+  {
+    "id": "q-remaining-a72cf798c986e655c9",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "根据“十一五”规划，2010年底全国高速公路里程应达到多少万公里？",
+    "analysisPreview": "2010年底全国高速公路里程应达到7.41-0.9108≈6.5万公里。因此，本题答案为D选项。",
+    "pdfPage": 90
+  },
+  {
+    "id": "q-remaining-7128b3a982fb9b0bbb",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2010年底，高速公路里程超过全国总里程5%省分有几个？",
+    "analysisPreview": "2010年底，全国总里程的5%为74100×5%=3705公里。从图2看，全国超过3000公里的仅11省，而超过3705 的省份为河南、广东、河北、山东、江苏，共5个，因此，本题答案为A选项。",
+    "pdfPage": 90
+  },
+  {
+    "id": "q-remaining-fb50dee04ea1cade18",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2005年底，全国高速公路里程为多少万公里？",
+    "analysisPreview": "",
+    "pdfPage": 90
+  },
+  {
+    "id": "q-remaining-27b85cc053007be683",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2010年底，图2中11省拥有高速公路的里程约占同期全国总里程的：",
+    "analysisPreview": "",
+    "pdfPage": 90
+  },
+  {
+    "id": "q-remaining-88ed5baa406252effd",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "关于我国“十一五”期间高速公路建设状况，能够从资料中推出的是：",
+    "analysisPreview": "A选项，2008年底全国高速公路里程约为4.09+0.43+0.86+0.64=6.02(万公里)，则2008年的高速公路增长 量0.48万公里明显不到2008年底的10%，A错误；B选项，沿海省份高速公路里程从图上看简单估算没有远大于内陆省 份，B错误；C选项，2010年底国道占全国高速公路里程的比例为5.77，C错误；D选项，2010年国家高速公路新增里",
+    "pdfPage": 91
+  },
+  {
+    "id": "q-remaining-71c16b1fbc87de1841",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "20 15年我国进出口贸易总额约多少万亿美元？",
+    "analysisPreview": "",
+    "pdfPage": 91
+  },
+  {
+    "id": "q-remaining-d1813a2dc22f329b82",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2016年高新技术产品出口额占到出口总额的比重与上年相比约：",
+    "analysisPreview": "",
+    "pdfPage": 92
+  },
+  {
+    "id": "q-remaining-b1f13be6f036e9a35c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "在2016年我国进出口贸易中，下列哪一项的同比增长金额最高？",
+    "analysisPreview": "",
+    "pdfPage": 92
+  },
+  {
+    "id": "q-remaining-4f5ac610e2bb7faede",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "下列关于2016年净出口额（出口额减进口额）的 养系表述正确的是：",
+    "analysisPreview": "",
+    "pdfPage": 92
+  },
+  {
+    "id": "q-remaining-2e75e648eeb3cb9c25",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列关于2016年我国进出口贸易的表述正确的是：",
+    "analysisPreview": "A选项，高新技术产业为顺差，A错误； B选项,进出口总额的增长率明显应该大于28.5%，B错误； C选项正确； D选项，船舶出口增长率高于汽车零部件出口增长率，但增长量无法判断，D错误。 因此，本题答案为C选项。",
+    "pdfPage": 92
+  },
+  {
+    "id": "q-remaining-c005d4c1b5a111ca13",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2008年，全省规模以上工业企业实现利润总额约为多少亿元?",
+    "analysisPreview": "",
+    "pdfPage": 93
+  },
+  {
+    "id": "q-remaining-b688ab05bf78b99d58",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "在①国有企业②外商及港澳台商投资业③股份制企业中，2010年实现利润额在全省规模以上工业实现利润总额中 的比重与2009年相比有所提升的是：",
+    "analysisPreview": "2010年全省规模以上工业企业实现利润总额比上年增长55.6%。 国有企业比上年增长4.59倍，部分增长率大于整体增长率，因此国有企业比重上升； 外商及港澳台商投资企业分别增长44.5%，部分增长率小于整体增长率，因此外商及港澳台商投资企业比重下降。 股份制企业同比增长57.0%，部分增长率大于整体增长率，因此股份制企业比重上升。 所以比重上升的有①国有企业",
+    "pdfPage": 93
+  },
+  {
+    "id": "q-remaining-8010ea00b5fd04ffd5",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2010年，全省规模以上工业企业平均 养名从业人员创造利润：",
+    "analysisPreview": "",
+    "pdfPage": 93
+  },
+  {
+    "id": "q-remaining-a5de43c0a46c2070cc",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "在①电子信息②机械装备③石油化工三大主导产业中，2009年实现利润排名正确的是：",
+    "analysisPreview": "2009年实现利润①电子信息为100.37÷（1+70.5%）；②机械装备为211.88÷（1+44.8%）；③石油化工为 146.07÷（1+67.9%）。此三者中，明显211.88÷（1+44.8%）分子最大，分母最小，所以值最大；剩下①和③中， 146.07÷（1+67.9%）分子较大，分母较小，值较大，剩下100.37÷（1+70.5%）最小。因此2",
+    "pdfPage": 93
+  },
+  {
+    "id": "q-remaining-c2c1b0d711b6c1a8d5",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列关于该省2010年规模以上工业企业状况的描述，与资料相符的是：",
+    "analysisPreview": "2010年规模以上工业企业上缴税金比上年增长32.1%，全 省规模以上工业从业人员同比增长9.0%， 分子增长比分母快， 因此值在变大，即人均创造税收金额比上年有所提升，A正确；从“全省规模以上工业从业人员平均人数为382.94万 人，其中小型企业从业人员平均人数为200.78万人”中可知小型企业从业人员占比超过一半，因此大中型企业从业 人员数占比不到一半，",
+    "pdfPage": 94
+  },
+  {
+    "id": "q-remaining-7169db3da10465070c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "以下年份中，SCI收录中国科技论文数与上年相比增长量最少的是：",
+    "analysisPreview": "由柱状图可以看出，2006年与2005年的柱状图差距最小。因此，答案选择C选项。",
+    "pdfPage": 95
+  },
+  {
+    "id": "q-remaining-77c2ba0e9ef22bdd75",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2003~2007年，SCI平均每年约收录多少篇中国科技论文？",
+    "analysisPreview": "2003到2007年平均每年SCI收录的中国论文数量＝（49788＋57377＋68226＋71184＋89147）÷5≈（5.0＋ 5.7＋6.8＋7.1＋8.9）×10000÷5＝33.5÷5＝6.7万。因此，答案选择C选项。",
+    "pdfPage": 95
+  },
+  {
+    "id": "q-remaining-c95bf99fd023f33d40",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "图中SCI收录论文总数最少的年份是：",
+    "analysisPreview": "当年 SCI论文数＝SCI收录中国科技论文数/占SCI收录论文总数的比重，可以看出 2004、2005、2006年分母 差别不大，但2004年分子最小，则2004年的值最小。",
+    "pdfPage": 95
+  },
+  {
+    "id": "q-remaining-f68dd008cab3f4e016",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "2003~2007年间，SCI收录中国科技论文数的年均增长率约为：",
+    "analysisPreview": "",
+    "pdfPage": 95
+  },
+  {
+    "id": "q-remaining-06606acd1c93f712c0",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列说法与资料相符的是：",
+    "analysisPreview": "A选项考核增长率的比较。2004年的增长率小于2005年。A选项错误。B选项考核直接读数。2005年SCI收录 中国科技论文数占总数比例低于2005、2006和2007年， 比例的增量不是最大。B选项错误。C选项考核直接读数。2005 年SCI收录中国科技论文数占收录论文总数的比重有所下降。C选项错误。D选项考核现期量的计算。2007年SCI收录 中国论文数",
+    "pdfPage": 95
+  },
+  {
+    "id": "q-remaining-09fd99f190dfe9fadd",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2010年6月， PMI的分类指数反映出几个方面的经济活动出现衰退？",
+    "analysisPreview": "小于50%反映出经济衰退，2010年6月，只有原材料库存为49.4，小于50%，故只有1个。因此，答案选择A选 项。",
+    "pdfPage": 96
+  },
+  {
+    "id": "q-remaining-ea88bf610422d410b1",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "哪个分类指数对PMI影响最大？",
+    "analysisPreview": "权数越大，对PMI的影响越大。由图表可知，新 订单的权重最大，达到30。因此，答案选择B选项。",
+    "pdfPage": 97
+  },
+  {
+    "id": "q-remaining-e5b4979d09b30088ae",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2010 年 7 月哪一分类指数比上月降低最多？",
+    "analysisPreview": "生产指数的降低值＝55.8－52.7＝3.1，新订单的降低值＝52.1－50.9＝1.2，主要原材料库存的降低值＝ 49.4－47.8＝1.6，从业人员的指数是增加的，供应配送的降低值＝50.0－49.9＝0.1，降低幅度最大的是生产。因 此，答案选择A选项。",
+    "pdfPage": 97
+  },
+  {
+    "id": "q-remaining-7a184f8a5f0d822116",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "表中“？”处的数据应为：",
+    "analysisPreview": "PMI指数在2010年6月的值＝55.8%×25＋52.1%×30 ＋49.4%×10＋50.6%×20＋50.0%×15=55.8%×100÷4 ＋15.63＋4.94＋10.12＋7.5＝13.95＋15.63＋4.94＋17.62＝52.14。因此，答案选择B选项。",
+    "pdfPage": 97
+  },
+  {
+    "id": "q-remaining-99a2cba83f52bb70a4",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2009年7月至2010年5月，PMI增量最大的月份是：",
+    "analysisPreview": "由图可知，2009年9月的PMI增量＝54.9－54＝0.9,2009年12月的PMI增量＝57－55.1＝1.9，2010年3月份 PMI的增量＝55－52.3＝2.7，2010 年4月份PMI的增量＝56－55＝1，2010年3月份的增量最大。 因此， 答案选择C选项。",
+    "pdfPage": 97
+  },
+  {
+    "id": "q-remaining-da9d248838521853f0",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "5月份世博会浦西片区的销售额约为多少亿元？",
+    "analysisPreview": "5月份世博会浦西片区销售额为4.13×（1－89.4%）＝4.13×10.6%＝0.413＋0.02478＝0.43778亿元，B最 接近。因 此，本题选B。",
+    "pdfPage": 98
+  },
+  {
+    "id": "q-remaining-dab98ce8514d45b273",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "5月份世博园区人均日消费约为：",
+    "analysisPreview": "",
+    "pdfPage": 98
+  },
+  {
+    "id": "q-remaining-c314f57d5a8dfa124b",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "5月5世博园区的入园人数约为：",
+    "analysisPreview": "",
+    "pdfPage": 98
+  },
+  {
+    "id": "q-remaining-bdc9ea258d99fc2d7b",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "第2~5周的特许商品销售额由高到低依次是：",
+    "analysisPreview": "第2至5周的特许商品销售额分别为5801.2－3022.86≈（58－30）×100＝2800；8108.57－4325.52≈（81 －43）×100＝3800；10331.87－5467.6＝（103－55）×100＝4800；12239.75－6232.2＝（122－62）×100＝6000； 销售额依次增加。因此，答案选择A选项。",
+    "pdfPage": 98
+  },
+  {
+    "id": "q-remaining-b3815c5f361b6c9229",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列说法与资料相符的有几个？ （1）5月份世博区每日午餐就餐人次总高于晚餐就餐人次 （2）5月5日销售额不到当月第2周销售总额的1/10 （3）5月第2~5周中，餐饮消费的营业额与特许商品销售额之差最大的是第3周",
+    "analysisPreview": "（1）考核直接读数。资料中只提到“午餐比晚餐就餐多197.46万人次”，但没有每一天午餐与晚餐值的 具体数据，故无法判断。（1）说法错误。（2）考察直接读数。（2）说法正确；（3）考核直接读数。第2周餐饮消 费营业额与特许商品销售额之差＝3022.86－（5801.2－ 3022.86）≈6045－5801＝244，第3周的差值＝4325.52－ （8108",
+    "pdfPage": 99
+  },
+  {
+    "id": "q-remaining-33b119b12842258289",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2008年度全国旅行社入境旅游业务营业收入约为多少亿元？",
+    "analysisPreview": "2008年全国旅行社入境旅游业务营业收入≈222.15×（1＋1.21%）≈222＋2.2＝224.2。因此，答案选择C 选项。",
+    "pdfPage": 99
+  },
+  {
+    "id": "q-remaining-b85bff5ea61be8de41",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "2009年全国旅行社非旅游业务的毛利率约为：",
+    "analysisPreview": "非旅游业务营业收入＝1806.53－1745.59＝60.94，毛利润＝134.36－120.27＝14.09，则毛利润率直除法 可得首位为2。因此，答案选择D选项。",
+    "pdfPage": 100
+  },
+  {
+    "id": "q-remaining-f19c505aeac5d3ffb0",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列各项中，占当年全国旅行社的旅游业务营业收入比重最大的是：",
+    "analysisPreview": "由图表可知，国内旅游业务的收入远大于入境旅游业务的收入，即国内旅游业务收入的比重较大。2009年 全国旅行社收入同比增长8.64%，而国内旅游业务增长11.79%，即部分的增速大于整体的增速，所以2009年国内旅游 业务收入的比重大于2008年的比重。因此，答案选择A选项。",
+    "pdfPage": 100
+  },
+  {
+    "id": "q-remaining-4727de5943b4365db2",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "下列各项中，2009年毛利率最低的是：",
+    "analysisPreview": "根据常识，总体业务的毛利润是由三部分分业务共同决定的，一定大于三者中毛利 润最小的。答案选择C 选项 。",
+    "pdfPage": 100
+  },
+  {
+    "id": "q-remaining-197e90bf09dba3fac8",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "关于2009年全国旅行社营业状况，从资料中可以推出的结论是：",
+    "analysisPreview": "A选项考核两期比重的比较。 毛利率＝毛利润÷营业收入。 由图表可知， 入境旅游业务的毛利润增 速（4.72%） 大于营业收入增速（－1.21%），国内旅游业务的毛利润增速（16.64%）大于营业收入增速（11.79%），出境旅游业 务的毛利润增速（28.99%）大于营业收入增速（6.92%），三者分子的增速都大于分母的增速，故比重增大。A选项",
+    "pdfPage": 100
+  },
+  {
+    "id": "q-remaining-35b68a4531eee31e2e",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查空间重构问题。",
+    "analysisPreview": "本题考查数量类。第1组图中3个图形点的数量依次为4，8，12，为等差数列；第2组图中前2个图形点的数 量分别为17，9，所以第3个图点的数量为1。因此，本题答案为A选项。",
+    "pdfPage": 569
+  },
+  {
+    "id": "q-remaining-1e00996d7452d0b5fa",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题是规律类考题，这类考题要求考生延续题干中已有的规律，进行选择。观察已知图形，可以明显的发 现这些图形元素有明显的数量变化， 所以本题属于数量类。 依据数量类考题的基本答题思路 “什种明显先数什种” ， 可以发现各图形的圆的和直线依次数量依次增加，所以结合选项可以排除A、B选项。进一种观察，第1副图和第3幅 图都由一条没有连接点的线段，D选项符合",
+    "analysisPreview": "观察题干中给出的已知图形，可以发现题干中给出的三个图形都是由两条线、四个三角形组成的，即图形 元素组成一致，故本题考察的是位置。位置类考题只有三种考察方式：平移、旋转和翻转。本题可以明显的看出是 “平移”的考察。观察题干中已有的小三角形，可以发现小三角形沿着十字架顺时针移动，结合选项可知，本题答 案A选项。",
+    "pdfPage": 573
+  },
+  {
+    "id": "q-remaining-a274b96fe36dc39888",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 前一组图中种个图形内部线段数为3、2、1；后一组图中种一个图形内部线段数为4、3、2。因此，本题答 案为A选项。",
+    "analysisPreview": "本题考查位置类旋转问题。图形内的各要素均顺时针旋转，且正方形在第二、四图中由白变黑，长方形在 第二、四图中旋转后朝向稍有变化，但始终居于各条边的中间位置上。故本题答案为A选项。",
+    "pdfPage": 581
+  },
+  {
+    "id": "q-remaining-aa2edc735613a2de8c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending"
+    ],
+    "questionPreview": "221、311、221、311，因此应当选择元素个数为221的B项。 从所给四个选项中，选择最合适的一个填入问号处，使之呈现一定规律性：",
+    "analysisPreview": "九宫格第一横行三个图形，自左向右依次为横轴对称、斜轴对称与纵轴对称；第二横行的三个图形依次为 横轴对称、斜轴对称与纵轴对称；第三横行的图形依次为纵轴对称、斜轴对称。所以应选择横轴对称的选项B。",
+    "pdfPage": 585
+  },
+  {
+    "id": "q-remaining-9824c571560b0b0896",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "左 图 是 给 定的立体 图 形、将其从任一面剖 种 ，下面哪一 项 可能是该 立体的截面？",
+    "analysisPreview": "",
+    "pdfPage": 586
+  },
+  {
+    "id": "q-remaining-4764f64289574a5a2f",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 左边给定的是纸盒的外表面，下列哪一项能由它折叠而成？",
+    "analysisPreview": "利用时针法，椭圆面、斜线面与对角线面这三个相邻面的时针方向不同，排除A项。将最右边的对角线面 移至最左边，利用描点法，B项正确。C项椭圆面、黑色面的公共相邻面应当是空白面，D项中黑色面与斜线面是相对 面，不能同时出现。因此选B。",
+    "pdfPage": 587
+  },
+  {
+    "id": "q-remaining-2a7310f878c9767b5b",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查一笔画问题。①②④的奇点个数是2，均可以一笔画出。，图形③的奇点个数是4、图形⑤不是连 通图形、图形⑥的奇点个数是4，均不能一笔画出。因此选C。",
+    "analysisPreview": "",
+    "pdfPage": 589
+  },
+  {
+    "id": "q-remaining-f28e74fc72cf6b3e76",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查位置类的旋转，图形迭代是根据这个大的图形，然后找出生成的图形。因此答案为 A。",
+    "analysisPreview": "",
+    "pdfPage": 589
+  },
+  {
+    "id": "q-remaining-b4f92e026dcb53f58d",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题主要考查数量类，种个图形，线条数减去面的个数都等于 2。按照此规律，第符合要求的 为 B 项，故答案为 B。",
+    "analysisPreview": "",
+    "pdfPage": 589
+  },
+  {
+    "id": "q-remaining-b3cf742ffb2ffa7c25",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查属性类，种个图形里面都相切（外切）。因此答案为 C。",
+    "analysisPreview": "",
+    "pdfPage": 590
+  },
+  {
+    "id": "q-remaining-55238ffacc04453a53",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题主要考查图形叠加，第一组图中，相对应位置叠加为：黑＋黑＝黑，白＋黑＝白，白＋白＝黑，黑＋ 白＝白。按照此规律，第二组图进行叠加后，符合要求的为C项。故答案为C。",
+    "analysisPreview": "",
+    "pdfPage": 590
+  },
+  {
+    "id": "q-remaining-d66042afd4bec8450b",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题主要考查对称性。①②⑥为轴对称；③④⑤中心对称。",
+    "analysisPreview": "",
+    "pdfPage": 591
+  },
+  {
+    "id": "q-remaining-5d4d5036d6d72061f4",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考察的是颜色变化的规律，即黑色+黑色=黑色，白色+白色=白色，白色+黑色=白色。因此本题选择 D 选项",
+    "analysisPreview": "",
+    "pdfPage": 591
+  },
+  {
+    "id": "q-remaining-b35769d2faa0ff4b77",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考察的规律比较特殊，即图形的角平分线、中垂线，中位线，三线会有一个重合点。据此规律答案是 B 项。",
+    "analysisPreview": "",
+    "pdfPage": 591
+  },
+  {
+    "id": "q-remaining-df4ef6fa0c9a9f3bbd",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考察的是图图间的变化规律，即左边第一幅图的正上方的横 线变为竖线，左右两根 竖线向中间移动， 变为第二幅图；第 二 幅图的中间竖线变为横线， 下部的横线向上移动，变为第三幅图；右边图形有相似的变化规律， 即三角形的底部横线变为竖线，三角形的两边向中间移动，然后再反向变化就可以得B项",
+    "analysisPreview": "",
+    "pdfPage": 592
+  },
+  {
+    "id": "q-remaining-d0c8fb638257e6bf70",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题没有明显的规律，但特征非常凸显。左边三图的特征是两个黑球链接在一起；右边三图的特征是都有 三球链接在一起，且中间球为白球，两边的球为黑色，据此答案为B",
+    "analysisPreview": "",
+    "pdfPage": 592
+  },
+  {
+    "id": "q-remaining-3b043b19d49ea5f226",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 左面一段符合同种颜色相加等于黑色，不同颜色相加等于白色的 规律。故本题选 C 答案。",
+    "analysisPreview": "题干给出的图形中都有一个封闭面。故本题选D 答案。",
+    "pdfPage": 593
+  },
+  {
+    "id": "q-remaining-ec88f22a1d51291f97",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending"
+    ],
+    "questionPreview": "3，所以？处应选4个三角形的选项，故答案选D。 把下面的六个图形分成两类，使 种一类图形都有各自的共同特征或规律，分类正确的一项是",
+    "analysisPreview": "本题为分组式。种个图形都由内外两个小图形构成，内部小图形线段数按3，4，5条分类，只有 C项分组 ①②④，③⑤⑥满足。",
+    "pdfPage": 598
+  },
+  {
+    "id": "q-remaining-5fa3d3d130728db23d",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending"
+    ],
+    "questionPreview": "从所给四个选项中，选择最合适的一组填入问号处",
+    "analysisPreview": "每一横行，前俩图去同存异得到第三幅图。",
+    "pdfPage": 601
+  },
+  {
+    "id": "q-remaining-cf97f4d2e8bd3e383a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "以下去掉哪一项之后，剩下的图形呈现一定的规律性？",
+    "analysisPreview": "",
+    "pdfPage": 602
+  },
+  {
+    "id": "q-remaining-f96d7ac94902e44c4c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 除了D项，所有图形都是“×”将“○”分成两部分",
+    "analysisPreview": "",
+    "pdfPage": 603
+  },
+  {
+    "id": "q-remaining-201e003bdbbe3444d7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 题干中所有图形封闭面的个数是常数列，都是一个面，选项中只有D封闭面的个数是一个。选项A封闭面个 数是两个，选项B、C没有封闭面。",
+    "analysisPreview": "",
+    "pdfPage": 603
+  },
+  {
+    "id": "q-remaining-085f42b26f02106e7d",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 考位置规律。图形的组成元素相同看位置。本题是两段式的考察方式，第一段找规律，第二段参考第一段 用规律。第一段的规律告诉我们带花纹的三角形，黑色三角形，种影三角形，空白三角形先逆时针原地旋转45度， 再顺时针原地旋转45度得到第三幅图。第二段遵循第一段规律得到D选项。或者做整体观察所有的三角形，在重新组 合的图形中位置不变，在上方的始终在上方，在下方",
+    "analysisPreview": "图形的组成元素相同看位置。 本题是一条式的考察方式， 黑色三角形在外圈旋转，顺时针走的 种数为1、2、",
+    "pdfPage": 604
+  },
+  {
+    "id": "q-remaining-bc44d142bc6a705132",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "等差数列，接下来第四幅图要顺时针走4步得到最后一个选项D。",
+    "analysisPreview": "",
+    "pdfPage": 604
+  },
+  {
+    "id": "q-remaining-e2ed2efc43d1fa1ef9",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 考样式规律。本题两段式的考察方式，第一段前两个图叠加得到第三幅图。第二段遵循第一段的规律，叠 加后得到D选项。",
+    "analysisPreview": "",
+    "pdfPage": 605
+  },
+  {
+    "id": "q-remaining-a5b55754b82dbad7ad",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题九宫格的考察方式。横向观察相邻的两个图形之间 种于纵轴对称，纵向观察相邻的两个图形之间关于 横轴对称，所以选A。",
+    "analysisPreview": "",
+    "pdfPage": 605
+  },
+  {
+    "id": "q-remaining-53da4e591d8043938f",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 横着看相同图形个数呈现2、3、4、5、6的规律。属性上所有图形共有的属性是 种于纵轴对称",
+    "analysisPreview": "",
+    "pdfPage": 606
+  },
+  {
+    "id": "q-remaining-9743f6e824fd09fa53",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 第一段第一幅图的外框与第二幅图叠加得到第三幅图。 第二段第一幅图的外框与第二幅图叠加得到B选项。 易错选项为D，本题并不是简单的叠加",
+    "analysisPreview": "",
+    "pdfPage": 606
+  },
+  {
+    "id": "q-remaining-055141cce9bb4a97e2",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 九宫格图形横着看三个图形种影个数为相连的数，第一行黑色种影3、1、2，第二行黑色阴影2、4、3，第 三行黑色阴影3、2、4，所以选择A。",
+    "analysisPreview": "",
+    "pdfPage": 607
+  },
+  {
+    "id": "q-remaining-718c8cb2dea3f90182",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 一条式从左向右看，图形周边中断的个数呈现等差规律，4、3、2、1、0，所以选择图形周边没有断开的A选项。",
+    "analysisPreview": "",
+    "pdfPage": 607
+  },
+  {
+    "id": "q-remaining-ac00967263070b7b12",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 横着看第一行横顺时针沿图形边缘走2步，第二行阴影部分顺时针走4步，第三行阴影部分顺时针走6步",
+    "analysisPreview": "",
+    "pdfPage": 608
+  },
+  {
+    "id": "q-remaining-f47490e29cecbe6d53",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查数量类规律中素的种类。九宫格一般先横着看： 第一行找规律， 第二行验证规律， 第三行用规律。 通过观察发现第一行三个图形中都有相同的元素圆，第二行有相同的元素正方形，依此规律，第三行有相同的元素 三角形。选项中只有A项有三角形，所以选择A。",
+    "analysisPreview": "",
+    "pdfPage": 608
+  },
+  {
+    "id": "q-remaining-6816f86213da093397",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 第一个图形和第二个图形相比黑色扇形顺时针移动了3格，第二个图形和第三个图形相比黑色扇形逆时针 移动了2格，第三个图形和第四个图形相比黑色扇形顺时针移动了1格，那么，接下来的第四个图形和第五个图形相 比黑色扇形应该移动了0格，这样黑色扇形 种次移动的格数的规律是3、2、1、0的等差数列。",
+    "analysisPreview": "",
+    "pdfPage": 609
+  },
+  {
+    "id": "q-remaining-0a510cab1f33158a29",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查数量类。第一个图形内的所有边都是等长的，对相邻图形观察后，发现相邻图形间减少的边数分 别为1、2、3条边，呈等差的规律，因此，接下来应该少4条边，所以选择D。",
+    "analysisPreview": "",
+    "pdfPage": 609
+  },
+  {
+    "id": "q-remaining-21268774b7efc6baf6",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查数量类规律。题目中图形的封闭面数量分别为4、3、4、3，呈周期的规律，依此规律，问号处应 为4个封闭面的图形，排除B和C；同时奇数位上的图形连接的方式均为点连接，所以排除C，选择A选项。",
+    "analysisPreview": "",
+    "pdfPage": 610
+  },
+  {
+    "id": "q-remaining-4fabe8561927dea422",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查样式类。两段式的第一段中，第一个图形与第二个图形外部轮廓求同，内部的黑点相减得到第三 个图形。因此，第二段中，第一个图形与第二个图形外部轮廓求同，内部黑点相减，得到C选项。",
+    "analysisPreview": "",
+    "pdfPage": 610
+  },
+  {
+    "id": "q-remaining-cb68383d2dbf00953a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查静态位置。题干中黑色方块都只出现在对角线和四周的位置，依此规律，只有A选项中所有的黑 色方块出现在相同位置，所以选择A选项。",
+    "analysisPreview": "",
+    "pdfPage": 611
+  },
+  {
+    "id": "q-remaining-022e415f8a0a55cad8",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查位置类规律。第一段中，第一个图沿着竖轴翻转得到第二个图，再沿着横轴翻转得到第三个图， 依此规律，第二段中，第二图形沿着横轴翻转后，得到B选项，所以选择B。",
+    "analysisPreview": "",
+    "pdfPage": 612
+  },
+  {
+    "id": "q-remaining-95de3455d08f187e3e",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查样式类。两段式的第一段中，第一个图形与第二个图形求同得到第三个 图形。因此，第二段中， 第一个图形与第二个图形求同，得到B选项。",
+    "analysisPreview": "",
+    "pdfPage": 612
+  },
+  {
+    "id": "q-remaining-76d3c5d73ed0429f77",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查功能类。题目三个图形中都含有功能元素黑点，并且黑点都在锐角等位置，D选项中黑点位于锐 角的位置。",
+    "analysisPreview": "",
+    "pdfPage": 612
+  },
+  {
+    "id": "q-remaining-d0c89b9b89bd59c2e7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查数量类规律 ，是对素种类数与个数的综合考察。第一段中，素的种类数为2、3、4，个数为7、6、 5，呈现等差规律；因此，第二段中，前两个图素的种类数为1、2、？，个数为6、5、？，问号处应为3和4，综合两 种规律，选择C",
+    "analysisPreview": "本题考察封闭区间的个数，种幅图都有三个封闭区间",
+    "pdfPage": 613
+  },
+  {
+    "id": "q-remaining-006a3714101e9e1bde",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending"
+    ],
+    "questionPreview": "以下4个立体图形，哪一个与另外3个不同？",
+    "analysisPreview": "根据立体图形的特殊面，排除D选项",
+    "pdfPage": 614
+  },
+  {
+    "id": "q-remaining-241e19518b30edc39b",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题中种一个图形都有7条线。由此排除A、D。同时，种一个图形与上一幅图形相比，都只有一条线发生 了变化。故本题答案为C选项。",
+    "analysisPreview": "",
+    "pdfPage": 617
+  },
+  {
+    "id": "q-remaining-10b8c49143704a92c0",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查重构推理，A项中黑色正方形的位置应该在右上方，B项中右面中黑色三角形的位置出现错误，C 项中圆形的位置应为五角星。因此，本题答案为D选项。",
+    "analysisPreview": "本题考查图形内外的交线数，种个图形由外部图形与内部黑色图形构成，第一列图形内外图形的交线数分 别为2，1,1；第二列图形内外图形的交线数分别为3,2,1；可知列进行相减2-1=1,3-2=1，则第三列应为1-0=1，即答 案的相交线应为1条。因此，本题答案为B选项。",
+    "pdfPage": 618
+  },
+  {
+    "id": "q-remaining-a6830c710cda19da4f",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending"
+    ],
+    "questionPreview": "一正方体如下图所示切掉了上半部分的3/4，现在从任意面剖种，下面哪一项不可能是该多面体的裁面？",
+    "analysisPreview": "ABD均能够切出。C与三角两条边相连的两个竖线切不出。",
+    "pdfPage": 619
+  },
+  {
+    "id": "q-remaining-7ec3d0615cb6fcb83a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 ①③④中阴影为直角三角形；②⑤⑥中种影三角形均为非直角三角形。",
+    "analysisPreview": "",
+    "pdfPage": 622
+  },
+  {
+    "id": "q-remaining-8c2b5406b42209da65",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 样式遍历。纵行观察规律，种一纵行都应包含a、e、o三个字母，所以选C。",
+    "analysisPreview": "",
+    "pdfPage": 622
+  },
+  {
+    "id": "q-remaining-24b7e99d90a72442b3",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题属于样式类。这是个一段式的题，一段式，我们可以相邻观察，观察题干相邻两个图形之间都有两个 图形样式不同，结合选项，所以选择B选项。",
+    "analysisPreview": "",
+    "pdfPage": 622
+  },
+  {
+    "id": "q-remaining-64d988a9702780f526",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考察封闭面个数。依次观察 种个图形都有6个封闭面，结合选项，所以选择A选项。",
+    "analysisPreview": "",
+    "pdfPage": 622
+  },
+  {
+    "id": "q-remaining-73a7155a90bfc8aefe",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题属于位置类。这是道一段式的题，一段式我们可以考虑相邻观察，观察题干，第一个图形第二行第三 行图形位置移动到第二个图形第一行第二行图形，依次类推，后一个图形第一行第二行图形都是前一个图形第二行 第三行图形移动过来的，所以选择C选项",
+    "analysisPreview": "",
+    "pdfPage": 623
+  },
+  {
+    "id": "q-remaining-0b9e9c349eabc233f0",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题属于空间重构类，可以用排除法，两个黑色三角的特征面不可能有公共点，所以排除C 。两个内部有 白色小三角的图形中，两个小三角形没有相交的部分，根据折叠后相 邻面的位置特征不变的规律，两个小三角在折 叠后也不可能有相交点或线，所以排除BD。答案选择A。",
+    "analysisPreview": "",
+    "pdfPage": 623
+  },
+  {
+    "id": "q-remaining-77f8c63a6dbd94913b",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题属于平面重组类。观察题干四个部分，先把第四个图形拼在第二图形的下边，再把第三个图形拼在第 二个图形的左上角，最后把第一个图形拼在第二个图形的右上角，拼合后是B选项的图形，所以选择B选项",
+    "analysisPreview": "",
+    "pdfPage": 624
+  },
+  {
+    "id": "q-remaining-ab93f7df29b9daa801",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题为两组式，第一组图中，图形以边相连，第二组图中前两个图也为以边相连，故所选图形应为以边相 连。因此答案为D。",
+    "analysisPreview": "本题主要考查图形的叠加。观察题干可知。第一个图和第二个图中共同拥有的部分出现在第三个图的最上 面，且黑点始终在最上面。按照此规律，第二组图中前两个图共同拥有的部分矩形、三角形出现在最上面，黑点也 在最上面，符合要求的为B项。故本题答案为选项B。",
+    "pdfPage": 624
+  },
+  {
+    "id": "q-remaining-f194d5021a12c76920",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考察数量类中点和角的数量。此题九宫格图形竖着看，前两列中第一个图黑点的数量与第二个图黑点 的数量相加等于第三个图黑点的数量。按照此规律，第三列？处图形点的数量应为2；同时前两列中第一个图角的数 量与第二个图角的数量相加为第三个图中角的数量，按照此规律，第三列所求图形角的数量应为9。因此，本题选择 D选项。",
+    "analysisPreview": "本题考察图形的去同存异。前两列中第一个图与第二个图去同存异得到第三个图。按照此规律，第三列中 前两个图进行去同存异运算，得到C项图形。因此，本题选择C选项。",
+    "pdfPage": 626
+  },
+  {
+    "id": "q-remaining-e988759b45ff594fc4",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "唯一旺旺客服：蔚蓝小小天使",
+    "analysisPreview": "",
+    "pdfPage": 629
+  },
+  {
+    "id": "q-remaining-a18eec7f30003a1fbd",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查图形线的数量变化规律。两组图第一组图找规律，第二组图应用规律找到答案。第一组图都有3 条横线，竖线的数量逐渐增加，分别为0、1、2,。第二组图中都有两条竖线段，横曲线的数量依次增加，前两个图 中横曲线的数量分别为0、2，则第三个图中应由两条竖线段四条横曲线组成。答案为C。",
+    "analysisPreview": "",
+    "pdfPage": 630
+  },
+  {
+    "id": "q-remaining-57dfc8a443098b2c53",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 通过观察不难发现，在第一组图形中，一共出现了4种图案，分别是白色、左斜线、右斜线和斜线交叉网 格线，而且各自有3个。第二组图中，遵循同样的规律，也是一共出现了4种图案，分别是白色、横线、竖线和横竖 交叉网格线，也应该各有3个，问号处还缺2个竖线、2个网格线，据此就可以选出B答案。 本题通过静态位置的观察也可以得出答案，在第一组图形中，第一个图形里四",
+    "analysisPreview": "",
+    "pdfPage": 630
+  },
+  {
+    "id": "q-remaining-6a46648f9bbd1a4e85",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查图形样式里的去同存异，第一个图与第二个图的相同元素圆去掉，不同部分保留下来，第二组相 同的三角形去掉，不同部分保留。因此本题选择A选项。",
+    "analysisPreview": "",
+    "pdfPage": 631
+  },
+  {
+    "id": "q-remaining-4d35a7f97df070791c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查图形推理中的图形属性， 前一组图第一个是直线构成， 第二个是曲直线构成， 第三个是曲线构成， 那么第二组图第一个，第二个分别是直线和曲直线，第三个图是曲线，只有B选项是曲线。因此本题选择B选项",
+    "analysisPreview": "本题只要考查线的数量，前一组图形线的数量为3、2、3，后一组图的数字为2、4、2。第一个图的直线数 和第三个图的直线数相等。因此本题选择D选项",
+    "pdfPage": 631
+  },
+  {
+    "id": "q-remaining-247eba7860cec25e7d",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "下列选项中符合所给图形的变化规律的是 。",
+    "analysisPreview": "",
+    "pdfPage": 632
+  },
+  {
+    "id": "q-remaining-d119c60da5ac283e25",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 观察包含两条交叉斜线方块的位置在1-4行中分别出现在第6格第3格第6格第3格故问号处应出现在第6格答案为A",
+    "analysisPreview": "本题考察直线数四边形内部直线数依次为0123因此问号处应选填内部直线数为4的图形故本题选D。",
+    "pdfPage": 632
+  },
+  {
+    "id": "q-remaining-6972ff65aec96541d4",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 前一个图形整体顺时针旋转90度且黑色部分同时顺时针移动一格得到下一个图形依此规律本题答案选B。",
+    "analysisPreview": "",
+    "pdfPage": 634
+  },
+  {
+    "id": "q-remaining-1a80ef32dd43b4c47f",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题查对称性，题干出现4个轴对称图形，选项只有B是轴对称图形",
+    "analysisPreview": "所有图形面的个数都是6，第一组图形中，相同元素的数量分别是2、3、4（两个全等直角三角形、三个全 等直角三角形，四个全等长方形），第二组图中，前两个图中相同元素的数量分别是2,3（两个全等直角三角形，三 个全等小正方形），所以选项应该包含有4个相同元素的图形，只有B选项满足。",
+    "pdfPage": 635
+  },
+  {
+    "id": "q-remaining-63aa6513b13d3cb02c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "Q2Y3Q4R5Y6R",
+    "analysisPreview": "",
+    "pdfPage": 638
+  },
+  {
+    "id": "q-remaining-aa90f9b25073cc7224",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 字母符号排列。字母和数字间隔排列，并且数字逐 渐增大，第一个字母和第三个字母相同，故选择A。",
+    "analysisPreview": "",
+    "pdfPage": 639
+  },
+  {
+    "id": "q-remaining-41f7879e29e8ce62d7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查一笔画，排除AB，题干中图形都为相切，不相交，故选C。",
+    "analysisPreview": "图形方向不变，而题干中出现了竖直线，无法与其他图形抵消，故答案中必然有竖直线，故选D。",
+    "pdfPage": 639
+  },
+  {
+    "id": "q-remaining-557b737b40fe9464fc",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 整体来看， 每一个图均由5个小圆和一个大四等分圆组成， 再看局部，种个图中均为3个小圆在四等分圆内， 两个小圆在四等分圆外，1,4,5图中两个小圆都在上，2,3,6图中两个小圆都在下。据此可选出答案C。",
+    "analysisPreview": "",
+    "pdfPage": 640
+  },
+  {
+    "id": "q-remaining-6cfd6e1b237e8d5b49",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查样式运算和翻转。题干中的第一段里面，1图与2图去同存异，然后将剩下的图形沿着横轴进行翻 转。第二段的图形遵循同样的规律，去同存异后沿着横轴翻转，得到D。因此，本题答案为D选项。",
+    "analysisPreview": "数交点，前5个图中交点的个数分别为1、2、3、4、5，所以要选一个有6个交点的图，故本题答案为A。",
+    "pdfPage": 641
+  },
+  {
+    "id": "q-remaining-897a50e4bf0bb0ed16",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查封闭区间的连接方式，观察题干中的封闭区间全都是以点相连接，A、D选项中图形存在着线向连， B选项中为相离。因此，本题选C。",
+    "analysisPreview": "",
+    "pdfPage": 642
+  },
+  {
+    "id": "q-remaining-23a0da82d60cd28a09",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 前5个图形的位置种系分别为相交和相离，因此要选择一个位置种系为相离的图形，所以选择A选项。",
+    "analysisPreview": "",
+    "pdfPage": 643
+  },
+  {
+    "id": "q-remaining-baf202a8e2038093af",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 每行图形直线和曲线的交点数为：0、1、2，所以在？处，应该选1个交点的，选D。",
+    "analysisPreview": "",
+    "pdfPage": 643
+  },
+  {
+    "id": "q-remaining-844d5117d6418a576b",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 每行的三角形个数（最大极限数）都是2、3、4。因此“？”处应该选择有4个三角形的选项。故正确答案为B选项。",
+    "analysisPreview": "",
+    "pdfPage": 644
+  },
+  {
+    "id": "q-remaining-e0518478db819b6f7f",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查是图形的对称性问题。题干中第一列3个字母都是轴对称图形，中间一列3个字母都是中心对称图 形，第三列所给的2个字母都是既是轴对称又是中心对称图形，选项中只有D选项既是轴对称又是中心对称，A、B、C 都只是轴对称图形。因此，本题答案为D选项。",
+    "analysisPreview": "",
+    "pdfPage": 645
+  },
+  {
+    "id": "q-remaining-df820e4c6c299dff65",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查是图形的对称性问题。首先，题干中种个图形的对称轴的条数只有一条，而且对称抽的方向呈现 横轴、竖轴的交替变化，所以应该选择一个对称轴只有一条且是竖轴的图形，选项中只有C选项符合条件，A选项的 对称轴是斜的，而且有两条对称轴；B、D选项均有两条对称轴，都不符合。故本题答案为C选项。",
+    "analysisPreview": "",
+    "pdfPage": 646
+  },
+  {
+    "id": "q-remaining-a8d19849899d19c99f",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查数量类中线段的问题。题干中左段的3个图形的内、 外图形的线段 数（3，6） ，（10,12） ，（4,5）， 外边图形的线段数与内部图形的线段数相减为3，2，1。 右段所给两个图形的内、 外图形的线段 数（5，8） ，（6，8）， 外边图形的线段数与内部图形的线段数相减为3，2。 应该选择一个外边图形的线段数与内部图形的线段数相差为1的 图",
+    "analysisPreview": "",
+    "pdfPage": 647
+  },
+  {
+    "id": "q-remaining-268a6aedda76d4043c",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题属于样式运算中的一个特殊考点—黑白叠加。根据左半段图像可知，三角形+实心圆形=三角形；实心 圆形+正方形=正方形；空+三角形=实心圆形；正方形+三角形=正方形。把这个规律运用到右半段可知只有B符合。因 此，本题答案为B选项。",
+    "analysisPreview": "",
+    "pdfPage": 647
+  },
+  {
+    "id": "q-remaining-29eb414e73618132f3",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查样式问题中的遍历问题。题干中左半段图形中一共有一个黑三角形， 两个白三角形， 一个黑矩形， 两个白矩形，一两个黑月牙，一个白月牙；右半段图形中必须 跟左边图形元素的数量一致，还缺少一个黑矩形，一 个白三角形，一个白月牙，所以B项符合。因此，本题答案为B选项。",
+    "analysisPreview": "",
+    "pdfPage": 648
+  },
+  {
+    "id": "q-remaining-7f85793b567582f9e4",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查位置类中的旋转，第一幅图形是沿逆时针平移，第二幅图形是顺时针平移，然后进行叠加得出第 三幅图形。在第二段图形中，按照上述的规律，因此，得出本题答案D。",
+    "analysisPreview": "",
+    "pdfPage": 648
+  },
+  {
+    "id": "q-remaining-60c485eb38d3846a11",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查是对图形中的俯视图和主视图，第一段的图形中的第二幅图是第一幅的俯视图，第三幅是第一幅 的主视图，按照上述规律，因此，得出本题答案D",
+    "analysisPreview": "",
+    "pdfPage": 649
+  },
+  {
+    "id": "q-remaining-da24582c1935b31358",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查的是位置类中的其他位置，所出现的图形都是有两个部分构成，然后从种个图形的位置来看分别 依次是相离、相交、相离、相交这种规律，因此，本题答案得出C",
+    "analysisPreview": "",
+    "pdfPage": 649
+  },
+  {
+    "id": "q-remaining-24eca38299d6a84e51",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查的是位置类，第一行第一个图形种影部分顺时针旋转90°，然后将第二个图形按竖轴方向翻转得 到第三个图形，第二行同样遵循同样的规律，第三行，第三幅图，应该是第二幅图按竖轴方向翻转得到的，因此， 得出本题答案为A",
+    "analysisPreview": "本题考查的是对一个完整图形的拆分与重组，但是在拆分或重组时加大了一些难度，就是图形内部可以互 相可以镶嵌 ，我们从第二个图形中的锥形为切入点，A、D无法放入锥形， 所以排除，C项无法进行内部的嵌入， 因此， 本题答案为B",
+    "pdfPage": 650
+  },
+  {
+    "id": "q-remaining-e0de8aef02a152e006",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查图形的样式类中的其他样式规律，通过对图形的观察可以看到种个五角星都是由斜线、网格、全 黑、小点四种花色进行填充，那种就要对比种幅图中的不同，通过观察可以发现，考察五角星中是否有一个花色相 同的大三角形，其中①③④三幅图中五角星中间的五边形与相邻的两个小三角形花色相同，②⑤⑥三幅图中五角星 中间的五边形与相邻的一个三角形花色相同，所以正确答案",
+    "analysisPreview": "",
+    "pdfPage": 652
+  },
+  {
+    "id": "q-remaining-41308aab6d442947f3",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 观察图中图形发现内环种次顺时针旋转90°故最后内环顺时针旋转90°以后应该种口朝右只有A项符合故正 确答案为A。",
+    "analysisPreview": "",
+    "pdfPage": 652
+  },
+  {
+    "id": "q-remaining-d0a820ff5b2c69de08",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考点是元素叠加由题干可以看出同色叠加为黑,异色叠加为白1、2图叠加得3图2、3图叠加得4图3、4 图叠加得D选项图形。因此本题选D。",
+    "analysisPreview": "",
+    "pdfPage": 653
+  },
+  {
+    "id": "q-remaining-9af1ec0b14bb7970e8",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题查考位置类旋转、平移类观察图中图形发现整体种个图形种次逆时针旋转90°黑格每次移动一格只有 B项符合。因此本题选B。",
+    "analysisPreview": "",
+    "pdfPage": 654
+  },
+  {
+    "id": "q-remaining-a05395eff9d5c28da9",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查数数数面观察图中图形发现图形中面的个数分别为1、2、3、4、故选有5个面的。因此本题选A 。",
+    "analysisPreview": "",
+    "pdfPage": 654
+  },
+  {
+    "id": "q-remaining-d284534bca8fa977ab",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查位置翻转、旋转类第一幅图整体翻转得到第二幅图第二幅图中小球顺时针旋转135度得到第三幅 图,第三幅图整体翻转得到第四幅图第四幅图小球顺时针旋转135°得到第五幅图即为B图所示。因此本题选B。",
+    "analysisPreview": "",
+    "pdfPage": 655
+  },
+  {
+    "id": "q-remaining-e86f9169af08ffb1ed",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 元素组成相乘只有数量和位置不同可知考查数量和位置变化。黑点数量按照1、2、1、2周期变化且顺序为 奇数的图中黑点沿对角线移动。因此本题选B。",
+    "analysisPreview": "",
+    "pdfPage": 655
+  },
+  {
+    "id": "q-remaining-deee08b35134963c86",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查元素叠加第一幅图和第二幅图叠加的部分即为第三幅图,第二组也应符合此规律。因此本题选D 。",
+    "analysisPreview": "第一幅图旋转之后叠加在原图之上得到第二幅图第二幅图中叠加未重合的白色部分去掉得到第三幅图。因 此本题选C。",
+    "pdfPage": 656
+  },
+  {
+    "id": "q-remaining-74885f7073e033a7b2",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "请选择最适合的一项填入问号处使之符合之前四个图形的变化规律",
+    "analysisPreview": "",
+    "pdfPage": 656
+  },
+  {
+    "id": "q-remaining-27b4c98e59b9bc1a0f",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查元素遍历。以种行或种列为单位对应行列中三组图中任意两组都存在两个相同的图形。也即未知 图形应包含本组其他两组图中不同的部分观察图形可知应包含矩形和圆只有B符合条件。因此本题选B。",
+    "analysisPreview": "",
+    "pdfPage": 657
+  },
+  {
+    "id": "q-remaining-543599768f431cbaa6",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 考查元素遍历种行种列出现的五个图形均不相同。因此本题选D。",
+    "analysisPreview": "",
+    "pdfPage": 658
+  },
+  {
+    "id": "q-remaining-d0272facafffbad757",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查图形属性问题中的对称性和数量问题中的封闭空间数。两段式的出题形式，第一段中所有图形包 含的封闭空间的数量为3，第二段中给出的两幅图形包含的封闭空间数量为4，因此问号处图形包含的封闭空间的数 量应为4，故排除答案B、C。同时第一段中，第一个图形没有对称轴，第二个图形有一条对称轴，第三道图形有两条 对称轴；第二段图形与第一段规律应该一致，对称轴",
+    "analysisPreview": "",
+    "pdfPage": 658
+  },
+  {
+    "id": "q-remaining-68ec6dd6c270488ed4",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查数量类问题中的直线数的问题。种个图形都由内外两个图形构成。第一段图形中，内部图形的直 线数量小于外部图形的直线数量。并且外部图形减内部图形直线数量的差为“3、2、1”。第二段给出的图形中，内 部图形的直线数量大于外部图形的直线数量，并且内部图形的直线数量减外部图形直线数量差为“2、3、？”因此 问号处图形应该是：内部图形直线数减外部图形直线",
+    "analysisPreview": "",
+    "pdfPage": 659
+  },
+  {
+    "id": "q-remaining-bb87aa2656ff6b5669",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查样式类问题中的样式求同问题。题目中 种个图形都由两个图形相交所得，因此，应重点观察相交 的部分。可以明显看出，各图形相交部分都为矩形。只有B选项符合条件，因此，本题答案为B选项。",
+    "analysisPreview": "",
+    "pdfPage": 659
+  },
+  {
+    "id": "q-remaining-7f07a07e0c5d571414",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查交点的数量问题。 一条式的出题形式， 从左向右观察，图形中线的交点数量依次为“2、3、4、5、 6”，成等差数列，因此下一个图形应为有7个交点的图形。只有A选项中线段交点数为7。因此，本题答案为A选项",
+    "analysisPreview": "本题考查位置类问题中的平移问题。为一条式的出题模式，各图形的组成元素完全相同，都是6个黑点加",
+    "pdfPage": 660
+  },
+  {
+    "id": "q-remaining-6fadc481d465d506b2",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "个白点，并且各图形元素的位置存在变化，这符合位置类的题目特征，所以，这道题目要从点的位置变化入手，进 行思考。按照一条式图形的观察顺序，这道题目我们从左至右进行观察。应该非常容易发现，种一个图形与上一个 图形相比，都有且只有一个小黑点的位置发生了移动。根据 这一个规律。与第五幅图形相比，只有一个小黑点发生 移动的选项，只有D。D选项为第五幅图形中第一行右侧的",
+    "analysisPreview": "本题考查去同存异，在第一组图中，前两个图去掉共同包含的四边形，留下不相同的部分共同组成第三个 图，并且第一个图留下的箭头部分在新图形的上方，第二个图留下的三角形部分在新图形的下方。第二组图运用相",
+    "pdfPage": 660
+  },
+  {
+    "id": "q-remaining-27ebcf62c49bc64e7a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "同的规律，前两个图去掉共同包含的三角形，留下不相同的部分共同组成第三个图，并且第一个图留下的箭头部分 在新图形的上方，第二个图留下的部分在新图形的下方。故本题选B。",
+    "analysisPreview": "",
+    "pdfPage": 661
+  },
+  {
+    "id": "q-remaining-f4232282b5709cf4c6",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考察元素个数， 第一个图的小方块数减去第二个图的小方块数等于第三个图的小方块个数， 即5-3=2， 第二组图运用相同的规律， 第一个图的小圆圈个数减去第二个图的小圆圈个数等于第三个图的小圆圈个数， 即6-4=2， 问号处应选填一个包含2个小圆圈数的图形，故本题选D。",
+    "analysisPreview": "",
+    "pdfPage": 661
+  },
+  {
+    "id": "q-remaining-2bf7a61fee4b042237",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考察封闭面的个数及部分数，按顺序观察种幅图的封闭面个数依次为1、2、3、4，并且每幅图的图形 都是相连的，只包含一个部分，所以排除D，本题选C。",
+    "analysisPreview": "",
+    "pdfPage": 661
+  },
+  {
+    "id": "q-remaining-a076b50d0bdc456bd6",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题属于位置类。这是道一段式的题，一段式我们可以考虑观察相邻图形，可发现第一个图形中的第二行 和第三行图形在第二个图形中移动到第一行和第二行，依次类推，后一个图形第一行第二行图形都是前一个图形第 二行第三行图形移动过来的，故本题选C。",
+    "analysisPreview": "",
+    "pdfPage": 662
+  },
+  {
+    "id": "q-remaining-35dd2e06dbe136a345",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考察点数量，按顺序观察种个图形包含的点个数依次为0、1、2、3，因此问号处应选填包含点个数为 4的图形，故本题选D。",
+    "analysisPreview": "",
+    "pdfPage": 662
+  },
+  {
+    "id": "q-remaining-a55e047523507858a0",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 对角线的图形依次互换位置得到下一个图形。",
+    "analysisPreview": "",
+    "pdfPage": 663
+  },
+  {
+    "id": "q-remaining-189fc939c3ed144145",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 九宫格图形横行观察可知，种个图形在下一幅图中的位置与之前不一样，所以答案选择A。",
+    "analysisPreview": "九宫格图形依次观察种行，发现种个图形都包含两个图形，且两图形的位置种系都包含相离、相接、相交 三种，将这三种位置规律进行遍历，因此问号处缺少一组相接的图形，并且是两个图形一黑一白图形相接，故本题 选D。",
+    "pdfPage": 663
+  },
+  {
+    "id": "q-remaining-f6bfa6b1e7441efed2",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查图形属性中的对称性。通过观察不难发现题干所给图形均为轴对称图形且对称轴只有一条，据此 规律可知问号处应选择D。",
+    "analysisPreview": "",
+    "pdfPage": 665
+  },
+  {
+    "id": "q-remaining-bbe8c7354232566872",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_answer_free_figure_crop",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_analysis_missing",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 本题考查数量类中线的个数，6幅图都是由内外两部分组成，1、2、3这三个图形内外两个部分线段条数之 差为0。4、5、6这三个图形内外两个部分线段条数为1，因此，本题答案为A选项 。",
+    "analysisPreview": "",
+    "pdfPage": 665
+  },
+  {
+    "id": "q-remaining-86bad0ff9fce1afda6",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending",
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "【解析】 ①②⑤是一笔画图形，③④⑥不是一笔画图形。因此，本题选B。",
+    "analysisPreview": "本题考查种组图形内部的规律， 具体是位置的相对和相邻。第1、4、5组图形中， 白色方块是相对的 ，第2、 3、6组图形中，白色方块是相邻的。因此，本题选C。",
+    "pdfPage": 665
+  },
+  {
+    "id": "q-remaining-6cdb138db45cfc54d7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "×10，12+10=2×（11） ，因此，本题答案为A 0，1/12，1/5，3/10 ，（）",
+    "analysisPreview": "观察数列趋势，原数列可转化为：0/6、1/12、4/20、9/30、 （） ，相邻两项分子之差为：1、",
+    "pdfPage": 693
+  },
+  {
+    "id": "q-remaining-df60632adfb272b97a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "5、 （） ，为公差为2 的等差数列，下一项为 7，则所求项分子为 16；相邻两项分母之差为：6、8、10、 （） ，为公 差为 2 的等差数列，下一项为 12，则所求项分母为 42。故所求项为 16/42，化简得 8/21，故正确答案为 C。 选项。 0，2，2，5，4，7，（ ）",
+    "analysisPreview": "奇数项 0,2,4 组成等差数列，下一项为 6，偶 数项 2,5, 7 构成简单和递推数列。因此，本题答 案为 A 选项",
+    "pdfPage": 693
+  },
+  {
+    "id": "q-remaining-9768bb98f982547335",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [],
+    "questionPreview": "2，3，4，9，16，45，（ ），315",
+    "analysisPreview": "略",
+    "pdfPage": 720
+  },
+  {
+    "id": "q-remaining-7dd0b1c94fa2f55d3a",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "-344，17，-2，5，（ ），65",
+    "analysisPreview": "",
+    "pdfPage": 736
+  },
+  {
+    "id": "q-remaining-1b2c78fad613e08fd1",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "0，0，6，24，60，120，（ ）",
+    "analysisPreview": "",
+    "pdfPage": 752
+  },
+  {
+    "id": "q-remaining-766664f0f3287c6bd7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "个人养老保险产品可以不提供净死亡风险保障。如果提供，净死亡风险保额不超过保单现金价值的百分之十。个人 养老保险的身故保险金、全残保险金应当以保单现金价值为基准，最高不超过保单现金价值的百分之一百一十。这 段文字阐述的主要内容是（ ）。",
+    "analysisPreview": "文段主要阐述了个人养老的净死亡风险保额、身故保险金、全残保险金的限制范围，即对 他们的保险金额管理。因此，本题答案为 D 项.A 项“类别”不是文段论述对象；C 项过于宽泛；B 项片面，只提到了 净死亡风险保障，片面",
+    "pdfPage": 851
+  },
+  {
+    "id": "q-remaining-7fcb07ee03f8e06ee8",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_figure_asset_pending"
+    ],
+    "questionPreview": "下图呈现了 A、B、C、D 四个公司的人才构成，请根据图表信息回答问题: 博士学历所占比重相同的公司是()",
+    "analysisPreview": "。A 与 C 公司博士学历所占比重相同，均为 5%。 7.某调查公司小样本调查了某地区学生的父母学历情况，得到了以下信息。请根 据相关信息，回答问题。",
+    "pdfPage": 882
+  },
+  {
+    "id": "q-remaining-88d43e26c4dd5f5d4f",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_figure_asset_pending"
+    ],
+    "questionPreview": "下图是某公司九种产品的销售量同比增长率情况(单位: %) .根据图表回答下 列问题: 根据这两年的产品销售情况，公司在下一年更可能加大对()产品的生产量，减少 对()产品的生产量，",
+    "analysisPreview": "。公司在下一年更可能加大对 A 产品的生产量，A 产品两年内均呈 高度增长趋势，会减少对 B 产品的生产量，第一年增长率最低，第二年虽增长 率呈正值，但仍较低。",
+    "pdfPage": 893
+  },
+  {
+    "id": "q-remaining-fc520e6e34c2e3c404",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_figure_asset_pending"
+    ],
+    "questionPreview": "下图反映了某年最受用户关注的十大产品。根按圆表回答下列问题: 该年最受关注和最不受关注的产品分别是()。",
+    "analysisPreview": "。最受关注的是 A，最不受关注的是 I。 33.下图反映了某年一企业三个系列产品在各地的销售额占比情况(单位: %)，其 中，D 地区总销告额为 5763.35 万元。根据图表回答下列问题: 若 D 地区下一年甲和乙系列产品的销售总额不变，丙系列产品的比重提高到和 B 地区一样，那么下一年 D 地区销售总额为()万元。 A5763.35 B6814.25 C",
+    "pdfPage": 899
+  },
+  {
+    "id": "q-remaining-f28b8d59f2073280ca",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "根据下面的统计图回答问题: 该公司收入小于支出的共有几个月?（）",
+    "analysisPreview": "",
+    "pdfPage": 901
+  },
+  {
+    "id": "q-remaining-b3751ad4fb14e13a6d",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending",
+      "remaining_pdf_figure_asset_pending"
+    ],
+    "questionPreview": "以下图表是 2014-2018 年中国化妆品网络消费市场零售额占比情况表（单位: 亿元)。根据图表回答下列问题: 2014-2018 年化妆品网络销售额超过 1500 亿元的年份有()个",
+    "analysisPreview": "37.下图反映了近五年某公司的收入额情况(单位:万元)。根据图表回答下列问 题: 第五年收入总额的增长率是（）。 A19.8% B16.5% C21.6%",
+    "pdfPage": 902
+  },
+  {
+    "id": "q-remaining-541941187ada88ba6b",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "冠军需要进行比赛 4-1=3 场， 然后争夺3、4 名还需要进行 1 场比赛， 所以整个比赛场次一共为12+3+1=16 场。 因此， 本题答案为 A 选项。 8 个一元真币和 1 个一元假币混在一起， 假币与真币外观相同， 但比真币略重。 问用一台天平最少称几次就一定可以 从这 9 个硬币中找出假币？（ ）",
+    "analysisPreview": "将 9 个硬币分为 3 组，选择两组放在天平上称第一次。如果天平平衡，那么假币在剩下的 一组里，取剩下的那组中的任意两枚称第二次，如果平衡就说明最后剩下的一枚是假币，如果不平衡则重的那一枚",
+    "pdfPage": 908
+  },
+  {
+    "id": "q-remaining-98f4c7e4fa81108eca",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "……88、90，为 2 的 倍数； 第二次操作后，剩下骨牌为 4、8、12……88，为 4 的倍数； 第三次操作后， 剩下骨牌为8、16……88，为 8 的倍数； 第四次操作后，剩下骨牌为 16、32……80，为 16 的倍数；第五次操作后，剩下骨牌为 32、64，为 32 的倍数；最后 一次操作后，剩下骨牌为 64。因此，本题答案为 B 选项。 A、B、C",
+    "analysisPreview": "解法一：打折前 A、B 两件衬衫的价格比为 5∶4，设 A、B、C 三件衬衫打折前价格分别为",
+    "pdfPage": 908
+  },
+  {
+    "id": "q-remaining-64bbd9e20d8dc7d171",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "（）人。",
+    "analysisPreview": "设方阵每行有 N 人，减少一行和一列，减少 319 人，可得 2N-1=319，N=160；根据方阵的 最外围人数公式：最外层人数=4（N-1）， 所 以4N-4=640-4=636。因此，本题答案选择 A 选项。",
+    "pdfPage": 912
+  },
+  {
+    "id": "q-remaining-2ba43d06d83f585072",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred"
+    ],
+    "questionPreview": "则是无数条。因此本题答案选择 C 选项。 从一副完整的扑克牌中，至少抽出（ ）张牌，才能保证至少 6 张牌的花色相同。",
+    "analysisPreview": "本题为典型的“抽屉原理”题目，采用其对应的解题方法即“最不利原则”来解。题目要求",
+    "pdfPage": 914
+  },
+  {
+    "id": "q-remaining-91f2e54c645b7c8eda",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred"
+    ],
+    "questionPreview": "多走了 270°，而分针每分钟比时针多走 5.5°。根据追及问题公式，追及的时间为 270÷5.5≈49（分钟） 。 大盒放有若干支同样的钢笔，小盒放有若干支同样的圆珠笔，两盒笔的总价相等。如果从大盒取出 8 支钢笔放入小 盒，从小盒取出 10 只圆珠笔放入大盒，必须还要在大盒中再添两支同样的钢笔，两盒笔的总价才相等。如果从大盒 里取 10 只钢笔放入小盒，",
+    "analysisPreview": "设刚开始时每盒笔的总价为 K 元，钢笔 a 元/支，圆珠笔 b 元/支。第一次转换后有 K－8a＋ 10b＋2a＝K－10b＋8a。 第二次转换后K－10a＋8b＋44＝K＋10a－8b， 解方程可得a＝5。 因此， 本题答案为C 选项。",
+    "pdfPage": 914
+  },
+  {
+    "id": "q-remaining-49dcaaf156aa1c25ec",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred"
+    ],
+    "questionPreview": "单独完成某项工作，甲需要 16 小时，乙需要 12 小时。如果按照甲、乙、甲、乙、……的顺序轮流工作，每次 1 小 时，那么完成这项工作需要多长时间？( )",
+    "analysisPreview": "解法一：假定工作总量＝48 ，则甲的工作效率＝3，乙的效率＝4，甲乙轮流做一小时的工 作量＝3＋4＝7，轮流 7 次后，可完成工作量＝7×7＝49，工作时间＝7×2＝14 小时；多完成工作量＝49－48＝1， 且是由乙完成的，需要时间＝1÷4＝0.25 小时＝15 分钟。则该工作需要时间＝14 小时 －15 分钟＝13 小时 45 分钟。",
+    "pdfPage": 915
+  },
+  {
+    "id": "q-remaining-cb38c3926f8dbd39d7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "比为 2:3， 每两根钢筋生产问构件后剩余一根2.1 米的钢筋，6 根后剩余 3 段 2.1 米， 因此再增加一根7.2 米的钢筋截 成 2 段 2.8 米即为所求答案。因此，本题答案为 B。 哥哥现在的年龄是弟弟当年年龄的 3 倍， 哥哥当年的年龄与弟弟现在的年龄相同， 哥哥与弟弟现在年龄的和是30 岁。 问哥哥现在多少岁？（ ）",
+    "analysisPreview": "解法一： 设当年哥哥为X 岁， 弟弟为Y 岁， 则现在哥哥的年龄为3Y， 弟弟为X 岁 。则 有3Y+X ＝30，3Y-X＝XY，解得 X=12，Y=6 所以，哥哥现在的年龄为 3×6＝18 岁，因此，本题答案为 C 选项。解法二：哥哥",
+    "pdfPage": 917
+  },
+  {
+    "id": "q-remaining-4d11d2204c37e458fd",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "工厂组织工人参加技能培训，参加车工培训的有 17 人，参加钳工培训的有 16 人，参加铸工培训的有 14 人，参加两 项及以上培训的人占参加培训总人数的 2/3，三项培训都参加的有 2 人，问总共有多少人参加了培训？",
+    "analysisPreview": "",
+    "pdfPage": 918
+  },
+  {
+    "id": "q-remaining-5fa6158ec07b2af525",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "盒子里有红、黄、绿三种颜色的大小相等的球，其中红球有 7 个，黄球有 5 个，从盒中任意拿出一个球，拿到黄球 的可能性为 1/3，问拿到绿球的可能性是多少？",
+    "analysisPreview": "",
+    "pdfPage": 919
+  },
+  {
+    "id": "q-remaining-83bf49ab5aa97b61c5",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "个工作日 完成？",
+    "analysisPreview": "设总工程量为 240，则有如下：甲＋乙＋丙＋丁＝",
+    "pdfPage": 921
+  },
+  {
+    "id": "q-remaining-a6c936bb47e4fff946",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred"
+    ],
+    "questionPreview": "24，甲＋乙＝10，丙＋丁＝14，为保证整 除，乙＋丙＝240÷15＝16，则甲＋丁＝8；又丙-丁＝乙-甲，解得甲＝3，乙＝7，丙＝9，丁＝5，则 240÷5＝48。 因此，本题选 B。 甲、乙、丙、丁四人，其中每三个人的岁数之和分别是 55、58、62、65。这四个人中年龄最小的是（ ）。",
+    "analysisPreview": "解法一：甲+乙+丙=55，甲+乙+丁=58，甲+丙+丁=62，乙+丙+丁=65，可知，每个人都出现了 3 次，把这三个方程相加后再除以 3 就是甲+乙+丙+丁=（55+58+62+65）÷3=80，那么年龄最小的为 80-65=15 岁，因 此,本题答案为 C。解法二：其中每三个人的岁数之和分别是 55、58、62、65。可知这四人每人约相差 3 岁左右，5",
+    "pdfPage": 921
+  },
+  {
+    "id": "q-remaining-f88af98d4281f6c8d3",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "90×1/18=5，第五天完成了 90×1/90=1 所以剩余 90-18-5-1=66，需要 66÷6=11 天，所以完成一共需要 5+11=16 天。 因此，本题答案为 D 甲、乙、丙、丁四人为地震灾捐款，甲捐款数是另外三人捐款总数的一半，乙捐款数是另外三人捐款总数的 1/3，丙 捐款数是另外三人捐款总数的 1/4，丁捐款 169 元。问四人一共捐了多少",
+    "analysisPreview": "解析一：甲捐款数是另外三人捐款总数的一半，可知甲捐款数是四人的三分之一，四人捐 款数是三的倍数，结合答案选项只有 A 选项符合，因此本题答案为 A 选项。 选项。",
+    "pdfPage": 922
+  },
+  {
+    "id": "q-remaining-539a018dfb0fb583b0",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [],
+    "questionPreview": "甲、乙各有钱若干元，甲拿出 1/3 给乙后，乙再拿出总数的 1/5 给甲，这时他们各有 160 元，问甲、乙原来各有多 少钱？",
+    "analysisPreview": "解法一：方程法。",
+    "pdfPage": 924
+  },
+  {
+    "id": "q-remaining-277c48ff290b899948",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "甲、乙两厂生产同一种汽车，甲厂每月产量保持不变，乙厂每月产量翻番。已知第 1 个月甲、乙两厂共生产 88 辆汽 车，第 2 个月甲、乙两厂共生产 96 辆汽车，那么乙厂每月产量第一次超过甲厂实在第（ ）个月。",
+    "analysisPreview": "",
+    "pdfPage": 925
+  },
+  {
+    "id": "q-remaining-8fc7e4c4d1e54bc7ae",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "甲、乙两船同时从 A 地出发，甲船逆流前往 B 地，乙船顺流前往 C 地，1 小时后两艘船同时掉头航向 A 地，甲船比 乙船早 1 小时返回，已知甲船的静水速度是水流的 3 倍，那么甲船的静水速度和乙船的静水速度之比是：",
+    "analysisPreview": "",
+    "pdfPage": 925
+  },
+  {
+    "id": "q-remaining-b5f8457a86671c6e43",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "48 的最小公倍数，N 为自然数） 。这样甲乙两班平均成绩分别为8N 和 7N，因此要使平均成绩大于 80 分且小于 100 分，N 只能为 12。因此，本题答案为 A 选项。 甲从 A 地到 B 地需要 30 分钟，乙从 B 地到 A 地需要 45 分钟，甲乙两人同时从 A、B 两地相向而行，中间甲休息了 20 分钟，乙也休 息了一段时间，最后两人在出发 ",
+    "analysisPreview": "本题属于行程问题。甲和乙走完全程分别要 30、45 分钟。甲在相遇时走了 20 分钟，走了 全程的 2/3，乙走了全程的 1/3，应该用 45×1/3=15 分钟。因此乙休息了 40-15=25 分钟。因此，答案选择 A 选项。",
+    "pdfPage": 928
+  },
+  {
+    "id": "q-remaining-660ba792709a12bd6d",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "7+18.9=24.6 （克） ，总溶液为190+210=400（克） ，混合后的浓度为24.6÷400×100%=6.15%，因此，本题答案为 B 选项。 甲商品 8 折后 的价格是乙商品原价的 4 倍，小王分别以 8 折和 7 折的价格买下了甲.乙两种商品，支出总额比甲商品 原价少 6 元，问乙商品的实际销售价格是多少元？",
+    "analysisPreview": "设甲商品原价为 x，乙商品原价为 y。依题意，0.8x=4y，0.8x+0.7y+6=x。解得 y=20，故乙商 品实际售价为 20×0.7=14 元。",
+    "pdfPage": 929
+  },
+  {
+    "id": "q-remaining-2f3e44078d91c596f4",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "甲乙两人各有一堆苹果，如果甲拿 12 个给乙，那么两个人的苹果数就一样多；如果乙拿 12 个给甲，那么甲的苹果 数就是乙的 2 倍.则甲、乙共有 （ ）个苹果。",
+    "analysisPreview": "",
+    "pdfPage": 932
+  },
+  {
+    "id": "q-remaining-a37c3fa3dfd9046d97",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [],
+    "questionPreview": "将 2 名教师，4 名学生分成 2 个小组，去甲乙两座城市参加数学建模比赛，每个小组都要包含 1 名教师和 2 名学生， 问不同的安排方法共有几种？",
+    "analysisPreview": "由题意可得： 。",
+    "pdfPage": 935
+  },
+  {
+    "id": "q-remaining-ad5aed44016f9dab27",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "是多少亩?（ ）",
+    "analysisPreview": "设种植水稻的面积是 x 亩，列方程得 2（x-122）+4＝x，解得 x＝240。因此，本题答案为 D 选项。",
+    "pdfPage": 949
+  },
+  {
+    "id": "q-remaining-9bb23ae5a89611e501",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "某集团与 A 和 B 两个公司，A 公司全年的销售任务是 B 公司的 1.2 倍， 前三季度B 公司的销售业绩是 A 公司的 1.2 倍， 如果照前三季度的平均销售业绩，B 公司到年底正好能完成销售任务。问如果 A 公司希望完成全年的销售任务，第 四季度的销售业绩需要达到前三季度平均销售业绩的多少倍？",
+    "analysisPreview": "",
+    "pdfPage": 962
+  },
+  {
+    "id": "q-remaining-ad4339f8050474d2f3",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [],
+    "questionPreview": "某科学兴趣小组在进行一项科学实验，从装满 100 克浓度为 80%的盐水中倒出 40 克盐水后，再倒入清水将杯倒满， 搅拌后再倒出 40 克盐水，然后再倒入清水将杯倒满，这样反复三次后，杯中盐水的浓度是：",
+    "analysisPreview": "【解析",
+    "pdfPage": 963
+  },
+  {
+    "id": "q-remaining-3f400c41701b34ce77",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "原价是多少?（ ）",
+    "analysisPreview": "设原价为 x 元，则 0.8×0.8x＝320，解得 x＝500。因此，本题答案为 A 选项。",
+    "pdfPage": 969
+  },
+  {
+    "id": "q-remaining-97071405f89d9665dd",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "某水果超市购进苹果和葡萄共计 100 千克，总值若干元，定价标准是苹果降价 20%，葡萄提价 20%，这样苹果和葡 萄每千克价格均为 9.6 元，总值比原来减少 140 元。计算一下，该超市购进苹果有多少千克：",
+    "analysisPreview": "",
+    "pdfPage": 974
+  },
+  {
+    "id": "q-remaining-8b5ff14ba22b96ce77",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "某学校要举行一次会议，为了让参会人员正确到达开会地点，需要在途径路上的 20 棵树上放置 3 个指示牌，假如树 的选择是随机的，那么，3 个指示牌等距排列（即相邻两个指示牌间隔的树的数目相同）的概率为",
+    "analysisPreview": "",
+    "pdfPage": 979
+  },
+  {
+    "id": "q-remaining-05abdbafcb73269d55",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "12×3＋0.07＋0.03＝0.46；87 粒=（20）×4+（5）×1+（1）×2 故钱数为 0.12×4＋0.04＋0.02＝0.54，则总钱数 为 0.46+0.54=1 元，1=0.12×8+0.04，故总共粒数最多为（20）×8+5=165。因此，本题答案为 B 选项。 上一个虎年老王和小赵的年龄和为 54 岁， 上上个虎年老王年龄是小赵年龄的6",
+    "analysisPreview": "解析:首先生肖排序为“鼠、牛、虎、兔、龙、蛇、马、羊、猴、鸡、狗、猪” 。上上个虎年 是 12 年前，年龄和减少 24 岁，为 30 岁。此时两个年龄是 6 倍多的关系，只能是 26 和 4。老王虎年 26 岁， 则 2 岁 时也是虎年，出 生于鼠年。",
+    "pdfPage": 989
+  },
+  {
+    "id": "q-remaining-1da368e1b8682a0b83",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "节能产品一定是有二级或是一级效能标识。因此，本题答案为 A 选项。 《宪法》第 40 条规定：中华人民共和国公民的通信自由和通信秘密受法律的保护。除因国家安全或者追查刑事犯 罪的需要， 由公安机关或者检察机关依照法律规定的程序对通信进行检查外， 任何组织或者个人不得以任何理由侵 犯公民的通信自由和通信秘密。依据上述规定，下列说法中正确的是（ ）。",
+    "analysisPreview": "“公安机关或者检察机关”是构成的主体。人民法院不在这个范围之内，无论任何理由都",
+    "pdfPage": 994
+  },
+  {
+    "id": "q-remaining-fd19100ec7ca6d560b",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred"
+    ],
+    "questionPreview": "不能“侵犯公民的通信自由和通信秘密” ，由此排除A、B、D 三个选项。故答案 C。 1784 年著名天文学家威廉· 赫歇尔曾经写道， 火星表面的黑暗区域是海洋， 而较明亮区域则是陆地。 赫歇尔推测， 火星上肯定有智慧生命存在， 它们或许与我们地球人差不多。 赫歇尔的理论流行了一个多世纪， 甚至其他一些天文 学家也附和称，在一些颜色较亮的区域可以观测到植被。如",
+    "analysisPreview": "本题考查加强型论证中双观点的加强。题干中论点为赫歇尔的推测：火星上肯定有智慧生",
+    "pdfPage": 994
+  },
+  {
+    "id": "q-remaining-26fd69e91c25ffb1ba",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "命存在。论据：火星表面的黑暗区域是海洋，而较明亮区域则是陆地。C 项建立了论据与论点之间的联系，即加强 了论证方式。故本题答案为 C 1980 年， 年龄在18 到 24 之间， 与父母生活在一起的占该年龄段人口的比例为48％ ，而 到1986 年， 这一比例升至 53％。可以说，在 1986 年，这一年龄段的人更加难于负担独立生活。上文得出的结论是基于下列",
+    "analysisPreview": "本题考察的是加强型论证，论点是在 1986 年，这一年龄段的人更加难于负担独立生活。 论据是 1980 年， 年龄在 18 到 24 之间与父母生活在一起的人占该年龄段人口的比例为 48 %，而 到 1986 年这一 比例升至 53%。要使论点 成立，就必须要求该年龄段的人除了“难以负担独立生活”以外，没有其他原因使他们 与父母同住。因此，选择 B 项。 1",
+    "pdfPage": 994
+  },
+  {
+    "id": "q-remaining-e88922d344f74f65ce",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "题一致原则，为正确答案。C 项无忧猜测，题干中朱鹮的数量已达 1617 只，但是题干主要中心论述其遗传多样性 的降低带来的一系列问题。D 项话题不一致， 题干论述的是遗传多样性降低对朱鹮的影响。 故本题正确答案为B 选 项。 1990 年元旦全国社会商品销售总额比上年同期增长 1.3％。彩色电视机销售量增加，服装基本持平，录音机、电冰 箱等产品有不同程度的下",
+    "analysisPreview": "此题考查的是结论类的日常推理题型。89 年的春节是在 2 月 ，所 以1 月是不受春节影响的， 而 90 年的春节是在 1 月， 但是其全国社会商品销售总额比上年同期增长1.3％， 这在一定程度上说明市场销售状况 尚没有出现明显的好转，C 选项正确，A 选项相反即错误， 排除；B 选项中的 “市场疲软” 在文中未提及到， 排除； 题干中出现销售总额的问题并不",
+    "pdfPage": 995
+  },
+  {
+    "id": "q-remaining-10e1b1b04df9dc50d7",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_analysis_missing"
+    ],
+    "questionPreview": "3％上升至 28.5％。与此同时，成本从每台 2126 美元下降至 1116 美元，分析人士预测，到 2008 年，笔记本电 脑的销售量终会超过台式电脑的销售量。最能支持上述论断的一项是（） 。",
+    "analysisPreview": "",
+    "pdfPage": 995
+  },
+  {
+    "id": "q-remaining-2457278fd3cca317c6",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_boundary_inferred",
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "： 【解析】论点为笔记本电脑的销售量终会超过台式电脑的销售量。市场需求影响销售量，两者具有 1995 年， 中国选手在世界性的重大体育比赛中， 共夺得103 个世界冠军， 创造了57 项世界纪录， 为历史之最；1995 年，中国升入大学的高中生只有 15％的人体检合格。因此，我们可以得出的正确结论是，在 1995 年 ，（）。",
+    "analysisPreview": "题干告诉我们中国选手在世界性的重大体育比赛中，共夺得 103 个世界冠军，创造了 57 项世界纪录，为历史之最。可以推出 C 项中国的竞技体育达到了历史的最高峰，因此本题答案为 C。 直接关系。 领先汽车的发动机问题与其他品牌车辆相比比较轻微",
+    "pdfPage": 995
+  },
+  {
+    "id": "q-remaining-8773e8fbcbfa225567",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "个人独资企业， 是指依法设立， 由一个自然人投资， 财产为投资人个人所有， 投资人以其个人财产对企业债务承担 无限责任的经营实体。根据上述定义，下列选项中叙述正确的是：",
+    "analysisPreview": "个人独资企业的定义要件为： （1）依法设立， （2）由一个自然人投资、财产为投资人个人 所有， （3）投资人以其个人财产对企业债务承担无限责任的经营实体。A 项债权人要求其家人代其偿还，不符合定 义中要求的投资人以其个人财产承担责任的要件；B 项小明虽身体残疾，但智力正常，属完全民事行为能力人，符 合定义要求；C 项晓辉 15 岁，未到法定年龄，属于限制民事",
+    "pdfPage": 1064
+  },
+  {
+    "id": "q-remaining-a35cb7dee08af11035",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "个人品德由道德认识、 道德情感、 道德意志和道德行为等因素所构成。 道德认识是社会的道德要求转化为个人内在 品德的首要环节，是品德形成的基础。因此（） 。",
+    "analysisPreview": "道德认识是社会道德要求转化为个人内在品德的首要环节，是品德形成的基础，因此要在 全社会大力倡导基本道德规范建设。所以选择 B 选项。",
+    "pdfPage": 1064
+  },
+  {
+    "id": "q-remaining-08304231030a945fd9",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_stem_review_required"
+    ],
+    "questionPreview": "个人所得税纳税主体是指在中国境内有固定住所， 或者无固定住所而在境内居住满一年的个人， 从中国境内和境外 取得的所得； 在中国境内无固定住所又不居住或者无固定住所而在境内居住不满一年的个人， 从中国境内取得的所 得。下列不必交个人所得税的一项是（ ）。",
+    "analysisPreview": "美国总统收入所得源于境外，与定义中的主体不符，故本题选 C。",
+    "pdfPage": 1065
+  },
+  {
+    "id": "q-remaining-efbb281131532330bd",
+    "file": "通用行测各类题型汇总及参考答案.pdf",
+    "flags": [
+      "remaining_pdf_context_asset_pending"
+    ],
+    "questionPreview": "根据对一万个经常上网的人的抽样凋查，承认上网后感到烦躁和恼火的人数达到了 1／3，而 20 岁以下的网迷则有 44%承认上网后感到紧张和烦躁。有关专家认为，确实存在着某种“互联网狂燥症” 。根据上述材料，以下哪项最 不可能成为导致“互联网狂燥症”的病因？",
+    "analysisPreview": "要解释的现象是“互联网狂燥症”的产生原因。C 制约了公众的上网，上网时间减少正可 以减少“互联网狂躁症”的发作，是最不可能成为导致“互联网狂燥症”病因。因此，本题答案为 C 选项。",
+    "pdfPage": 1066
+  },
+  {
+    "id": "q-duplicate-gap-01ecb45f21d3114a93",
+    "file": "2024北森测评题库整理（完整版.） .pdf",
+    "flags": [
+      "duplicate_pdf_manual_review_required"
+    ],
+    "questionPreview": "下图是一公司某年各地区的销售额比例图(单位:万元)。 根据图表回答下列问题: 从图中可推出的结论是( )。(1) J 与 A 的销售额相差最少;(2)销售额前五名之 外的其他地区的销售额小于 B 和 C 的销售额之和;(3) F 地区的销售额比 C 地区销售额少的比例小于 G 地区比 J 地区销售额少的比例。",
+    "analysisPreview": "",
+    "pdfPage": 179
+  },
+  {
+    "id": "q-duplicate-gap-a0867eddccda4db4d7",
+    "file": "2024北森测评题库整理（完整版.） .pdf",
+    "flags": [
+      "duplicate_pdf_manual_review_required"
+    ],
+    "questionPreview": "根据 XX 网店近两年 X 商品销售情况回答下列问题。若接下来的三个月，每月增长 10%，则销量能达 到",
+    "analysisPreview": "3512*1.1*1.1*1.1=4674.5 下表是 11 月某日的电影票房排行榜，根据图表回答下列问题:关于当天电影单场票房收入排序 正确的是( ) A: C>B>E> F B: B>A>E> D C: A>C>F> D D: A>B≥D> E 答案: D 解析: 求单场的票房(单位 万元) 电影 A ： 10010 / 91000 = 0.11 电影 ",
+    "pdfPage": 262
   }
 ]
