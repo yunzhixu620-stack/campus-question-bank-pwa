@@ -36,6 +36,15 @@ function readJson(relativePath) {
   }
 }
 
+function readText(relativePath) {
+  const fullPath = resolveInside(relativePath);
+  if (!fs.existsSync(fullPath)) {
+    fail(`Missing text file: ${relativePath}`);
+    return "";
+  }
+  return fs.readFileSync(fullPath, "utf8");
+}
+
 function firstAnswer(question) {
   return Array.isArray(question?.answer) ? question.answer[0] || "" : question?.answer || "";
 }
@@ -224,6 +233,22 @@ if (sourceStatus) {
   if (sourceQuestionCounts.review !== counts.review) fail("Source ledger review total does not match question classification.");
   if (sourceQuestionCounts.reference !== counts.reference) fail("Source ledger reference total does not match question classification.");
 }
+
+const rules = readText("PROJECT_RULES.md");
+if (!rules.includes(`已导入记录总量：${questions.length}`)) fail("PROJECT_RULES.md question total is stale.");
+if (!rules.includes(`${counts.practice} 道普通练习、${counts.review} 道待复核、${counts.reference} 道整图资料`)) {
+  fail("PROJECT_RULES.md classification totals are stale.");
+}
+
+const appSource = readText("app.js");
+if (/\bdemo-[a-z0-9-]+/i.test(appSource)) fail("Production app contains fallback demo questions.");
+if (/const\s+records\s*=/.test(appSource)) fail("Production app contains fallback record fixtures.");
+
+const htmlSource = readText("index.html");
+if (htmlSource.includes('id="plan-toggle"')) fail("Home page contains a nonfunctional plan toggle.");
+
+const serviceWorkerSource = readText("sw.js");
+if (!serviceWorkerSource.includes("primeQuestionDirectory")) fail("Service Worker does not prime the offline question directory.");
 
 for (const shard of index.shards || []) {
   const payload = readJson(shard.path);

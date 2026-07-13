@@ -6,72 +6,8 @@ const currentUserKey = "campus-question-bank-current-user";
 const PLAN_VERSION = 2;
 const APP_HISTORY_MARKER = "campus-question-bank";
 
-const chapters = [
-  { mark: "图", title: "图形推理", meta: "北森 / 智鼎 / 林木 · 1743 题 · 已练 42", progress: 8 },
-  { mark: "言", title: "言语理解与语义判断", meta: "北森核心看 · 2138 题 · 已练 31", progress: 5 },
-  { mark: "算", title: "数学运算与计算题", meta: "EPI / 微测 / 套题 · 1680 题 · 已练 28", progress: 11 },
-  { mark: "资", title: "资料分析", meta: "图表题 / 增长率 / 占比 · 927 题 · 已练 17", progress: 6 },
-  { mark: "套", title: "智鼎图片真题套题", meta: "套题 1-36 · 图片题保留原图 · 1120 题", progress: 3 },
-];
-
-let questions = [
-  {
-    id: "demo-ziliao-001",
-    source: "林木互联网校招笔试题库",
-    category: "资料分析",
-    type: "资料分析",
-    image: true,
-    text: "过去四年，A 手机与 B 手机的新用户增长情况如下。下列说法正确的是哪一项？",
-    options: [
-      "过去四年，A 手机的新用户总量大于 B 手机的新用户总量",
-      "过去四年，B 手机新用户的增长速度低于 A 手机新用户的增长速度",
-      "过去四年，B 手机在第二年的新用户增长率低于 A 手机的新用户增长率",
-      "过去四年，该地区 A 手机新用户数和 B 手机新用户数接近",
-    ],
-    answer: "A",
-    analysis: "A 项累计值明显高于 B 项；B、C 项比较的是增长速度，需要用相邻年份差值和基数计算，不能只看柱状高度。",
-  },
-  {
-    id: "demo-yanyu-001",
-    source: "北森题库",
-    category: "言语理解",
-    type: "言语理解",
-    image: false,
-    text: "“北麦南稻，南船北马”主要反映了我国不同地区哪方面的差异？",
-    options: ["地理环境和生活习俗", "行政区划差异", "人口数量差异", "语言文字差异"],
-    answer: "A",
-    analysis: "该表述分别涉及农作物和交通方式，核心是自然地理条件影响生活方式与生产方式。",
-  },
-  {
-    id: "demo-shuxue-001",
-    source: "EPI能力测试",
-    category: "数学运算",
-    type: "数学运算",
-    image: false,
-    text: "某产品原价 240 元，先降价 20%，再涨价 25%。现在价格与原价相比如何？",
-    options: ["相同", "上涨 5%", "下降 5%", "下降 10%"],
-    answer: "A",
-    analysis: "240 × 0.8 × 1.25 = 240。连续百分比变化要用乘法，不能直接把 20% 和 25% 相减。",
-  },
-];
-
-const records = {
-  mistakes: [
-    ["增长率比较题", "资料分析 · 错 2 次 · 今天加入", "错题"],
-    ["图形旋转规律", "图推 · 错 1 次 · 昨天加入", "待复习"],
-    ["语义排序题", "言语理解 · 错 3 次 · 3 天未看", "高频"],
-  ],
-  favorites: [
-    ["北森图表分析 427 页重点题", "资料分析 · 收藏于今天", "收藏"],
-    ["智鼎套题 10 图片题", "整题截图 · 可放大查看", "图片"],
-    ["EPI 数字推理母题", "数学运算 · 临考前背", "重点"],
-  ],
-  recent: [
-    ["今日抽样计划", "已完成 18 / 62 题", "继续"],
-    ["智鼎重点 2 · 套题 1", "上次做到第 12 题", "套题"],
-    ["北森言语理解", "随机练习 30 题", "模块"],
-  ],
-};
+const chapters = [];
+let questions = [];
 
 let currentQuestion = 0;
 let activeSession = null;
@@ -1290,6 +1226,7 @@ function renderChapters() {
     ? [...categoryMap.values()].sort((left, right) => right.practiceCount - left.practiceCount || right.count - left.count)
     : chapters.map((item) => ({ ...item, count: 0, practiceCount: 0, referenceCount: 0, done: 0, sources: new Set(["样本"]) }));
   list.innerHTML = displayChapters
+    .slice(0, 5)
     .map(
       (item) => {
         const progressPercent = item.practiceCount ? Math.round((item.done / item.practiceCount) * 100) : item.progress || 0;
@@ -1321,14 +1258,21 @@ function renderChapters() {
 function renderRecords(type, selector) {
   const list = document.querySelector(selector);
   const stateRecords = currentUserState?.[type] || [];
-  const displayRecords = stateRecords.length
-    ? stateRecords.map((item) => ({
-        questionId: item.questionId,
-        title: item.title || questionTitle(item.questionId),
-        meta: item.meta || "本地记录",
-        pill: item.pill || "记录",
-      }))
-    : records[type].map(([title, meta, pill]) => ({ title, meta, pill }));
+  if (!stateRecords.length) {
+    const emptyText = {
+      mistakes: "暂无错题",
+      favorites: "暂无收藏",
+      recent: "暂无练习记录",
+    };
+    list.innerHTML = `<div class="record-empty">${emptyText[type] || "暂无记录"}</div>`;
+    return;
+  }
+  const displayRecords = stateRecords.map((item) => ({
+    questionId: item.questionId,
+    title: item.title || questionTitle(item.questionId),
+    meta: item.meta || "本地记录",
+    pill: item.pill || "记录",
+  }));
   list.innerHTML = displayRecords
     .map(
       ({ questionId, title, meta, pill }) => `
@@ -2068,7 +2012,7 @@ function renderAnswerSheet() {
       const question = getQuestionById(id);
       const submitted = Boolean(examSession.submitted);
       const correct = submitted && answer && answer === firstAnswer(question);
-      const wrong = submitted && answer !== firstAnswer(question);
+      const wrong = submitted && answer && answer !== firstAnswer(question);
       return `<button class="${answer ? "done" : ""} ${index === examSession.index ? "current" : ""} ${correct ? "correct" : ""} ${wrong ? "wrong" : ""}" data-exam-index="${index}" type="button">${index + 1}</button>`;
     })
     .join("");
@@ -2087,7 +2031,8 @@ function renderExamScore() {
   const { correct, total, unanswered } = examSession.score;
   const percent = total ? Math.round((correct / total) * 100) : 0;
   scoreCard.querySelector("strong").textContent = `得分 ${correct} / ${total}`;
-  scoreCard.querySelector("span").textContent = `正确率 ${percent}% · 未答 ${unanswered} 题 · 用时 ${formatSeconds(examSession.seconds || 0)}，错题已进入错题本`;
+  const wrong = Math.max(0, total - correct - unanswered);
+  scoreCard.querySelector("span").textContent = `正确率 ${percent}% · 答错 ${wrong} 题 · 未答 ${unanswered} 题 · 用时 ${formatSeconds(examSession.seconds || 0)}`;
   scoreCard.classList.add("visible");
 }
 
@@ -2180,9 +2125,10 @@ function cancelExamSubmit() {
 }
 
 function recordExamQuestionResult(question, chosen, isCorrect) {
+  if (!chosen) return;
   const progress = getQuestionProgress(question.id);
-  progress.answeredCount += chosen ? 1 : 0;
-  progress.lastAnswer = chosen || "";
+  progress.answeredCount += 1;
+  progress.lastAnswer = chosen;
   progress.lastAnsweredAt = new Date().toISOString();
   progress.lastPracticedAt = new Date().toISOString();
   progress.done = true;
@@ -2198,7 +2144,7 @@ function recordExamQuestionResult(question, chosen, isCorrect) {
   currentUserState.mistakes = moveToFront(currentUserState.mistakes, {
     questionId: question.id,
     title: questionTitle(question.id),
-    meta: `${question.category} · ${chosen ? "模拟错题" : "模拟未答"} · 错 ${progress.wrongCount} 次`,
+    meta: `${question.category} · 模拟错题 · 错 ${progress.wrongCount} 次`,
     pill: "错题",
     updatedAt: new Date().toISOString(),
   });

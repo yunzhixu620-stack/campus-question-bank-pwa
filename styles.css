@@ -1865,6 +1865,19 @@ select {
   display: block;
 }
 
+.record-empty {
+  display: grid;
+  min-height: 180px;
+  place-items: center;
+  color: #8a94a2;
+  font-size: 14px;
+}
+
+.section-note {
+  color: #75808d;
+  font-size: 12px;
+}
+
 .view-sheet {
   display: none !important;
 }

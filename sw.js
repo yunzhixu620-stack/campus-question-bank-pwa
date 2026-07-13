@@ -1,7 +1,7 @@
 const CACHE_PREFIX = "campus-question-bank";
-const CORE_CACHE = `${CACHE_PREFIX}-core-v17`;
-const DATA_CACHE = `${CACHE_PREFIX}-data-v17`;
-const IMAGE_CACHE = `${CACHE_PREFIX}-images-v17`;
+const CORE_CACHE = `${CACHE_PREFIX}-core-v19`;
+const DATA_CACHE = `${CACHE_PREFIX}-data-v19`;
+const IMAGE_CACHE = `${CACHE_PREFIX}-images-v19`;
 const CORE_ASSETS = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.json", "./icon.svg"];
 
 function sameOrigin(request) {
@@ -47,8 +47,24 @@ async function cacheFirst(request, cacheName) {
   return response;
 }
 
+async function primeQuestionDirectory() {
+  try {
+    const indexRequest = new Request("./data/index.json", { cache: "reload" });
+    const indexResponse = await fetch(indexRequest);
+    if (!indexResponse.ok) return;
+    const index = await indexResponse.clone().json();
+    await cachePut(DATA_CACHE, indexRequest, indexResponse);
+    if (!index.catalog) return;
+    const catalogRequest = new Request(`./${index.catalog}`, { cache: "reload" });
+    const catalogResponse = await fetch(catalogRequest);
+    await cachePut(DATA_CACHE, catalogRequest, catalogResponse);
+  } catch {
+    // The application shell can still install; the next online request retries the directory.
+  }
+}
+
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CORE_CACHE).then((cache) => cache.addAll(CORE_ASSETS)));
+  event.waitUntil(Promise.all([caches.open(CORE_CACHE).then((cache) => cache.addAll(CORE_ASSETS)), primeQuestionDirectory()]));
   self.skipWaiting();
 });
 
